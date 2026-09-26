@@ -1,0 +1,1713 @@
+{
+  "schemaVersion": 2,
+  "lectureId": "lecture-2",
+  "date": "15 September 2026",
+  "title": {
+    "en": "Quality Management Methods in Health Service Management",
+    "zh": "医疗服务管理中的质量管理方法"
+  },
+  "course": {
+    "sourceNotice": {
+      "en": "Lecture 2, 15 September 2026. Based on the 51-page slide deck and classroom transcript. Summaries and practice questions are study aids; the transcript contains recognition errors.",
+      "zh": "Lecture 2（2026年9月15日）。根据51页课件与课堂转录整理；总结和练习为学习辅助，转录识别错误已按课件核对。"
+    },
+    "modules": [
+      {
+        "id": "L2-01",
+        "title": {
+          "en": "Why quality management matters",
+          "zh": "质量管理的目标与原则"
+        },
+        "objective": {
+          "en": "Explain the five benefits and five management principles.",
+          "zh": "掌握五项重要性及五项管理原则。"
+        },
+        "sections": [
+          {
+            "slide": 3,
+            "pages": [
+              3,
+              4,
+              5
+            ],
+            "title": "Five reasons for quality management",
+            "titleZh": "质量管理为什么重要：五点必记",
+            "html": "<div class=\"summary\"><div class=\"tag\">老师课堂明确强调 / Lecturer emphasis</div><div class=\"grid\"><div class=\"en\"><b>Five benefits: patient safety, patient experience, lower costs and waste, better clinical outcomes, and higher efficiency.</b></div><div class=\"zh\"><b>五项重要性：改善患者安全、提升患者体验、减少成本与浪费、改善临床结果、提高效率。</b></div></div></div><article class=\"card\"><div class=\"grid\"><div class=\"en\">Improved Patient Safety: reduce avoidable harm and medical errors.</div><div class=\"zh\">改善患者安全：减少可避免伤害与医疗差错。</div></div></article><article class=\"card\"><div class=\"grid\"><div class=\"en\">Enhanced Patient Experience: understand feedback and improve the experience of receiving care.</div><div class=\"zh\">提升患者体验：理解患者反馈，改善接受医疗服务的体验。</div></div></article><article class=\"card\"><div class=\"grid\"><div class=\"en\">Reduced Costs and Waste: use limited resources responsibly.</div><div class=\"zh\">减少成本与浪费：合理使用有限资源。</div></div></article><article class=\"card\"><div class=\"grid\"><div class=\"en\">Better Clinical Outcomes: improve results of care. Increased Efficiency: improve the use of time and resources.</div><div class=\"zh\">改善临床结果：提升治疗成效。提高效率：改善时间与资源使用。</div></div></article><article class=\"card\"><div class=\"grid\"><div class=\"en\">This lesson develops PDCA, 5S, BPR and QFD. Other methods in the overview are topics for later teaching.</div><div class=\"zh\">本讲详细讲 PDCA、5S、BPR、QFD；概览中的其他方法属于后续内容。</div></div></article><div class=\"note\"><b>老师课堂补充 / Classroom commentary</b><p>老师明确提醒这五点是他常问的课堂练习内容；也指出减少成本与提高效率之间可能存在取舍。This was explicitly highlighted for class-exercise revision; cost and efficiency can involve trade-offs.</p></div><div class=\"source\">Lecture 2(1).pdf · PDF pages 3, 4, 5；Lesson2.docx 课堂转录（整理意译）</div>"
+          },
+          {
+            "slide": 15,
+            "pages": [
+              15,
+              16
+            ],
+            "title": "Five management principles",
+            "titleZh": "质量管理的五项原则",
+            "html": "<div class=\"summary\"><div class=\"tag\">核心重点 / Key points</div><div class=\"grid\"><div class=\"en\"><b>Customer focus; continuous improvement; data-driven decision making; employee empowerment; systems thinking.</b></div><div class=\"zh\"><b>以服务对象为中心；持续改进；数据驱动决策；员工赋权；系统思维。</b></div></div></div><article class=\"card\"><div class=\"grid\"><div class=\"en\">Customers include patients, families and providers. Improvement should use evidence and feedback.</div><div class=\"zh\">服务对象包括患者、家属与服务提供者。改进应利用证据和反馈。</div></div></article><article class=\"card\"><div class=\"grid\"><div class=\"en\">Empower staff to contribute, and consider how departments and processes influence one another.</div><div class=\"zh\">让员工参与改进，并考虑部门与流程之间的相互影响。</div></div></article><article class=\"card\"><div class=\"grid\"><div class=\"en\">Audits, feedback, corrective/preventive actions, information systems and committed leadership support implementation.</div><div class=\"zh\">审核、反馈、纠正与预防措施、信息系统和领导支持有助于实施。</div></div></article><div class=\"note\"><b>老师课堂补充 / Classroom commentary</b><p>老师用质量与安全管理岗位说明：政策、风险管理、事故处理、安全文化和跨部门协作需要团队支持。The job example linked the concepts to policies, risks, incidents, safety culture and coordination.</p></div><div class=\"source\">Lecture 2(1).pdf · PDF pages 15, 16；Lesson2.docx 课堂转录（整理意译）</div>"
+          }
+        ]
+      },
+      {
+        "id": "L2-02",
+        "title": {
+          "en": "Donabedian and IOM",
+          "zh": "质量评估框架与六项目标"
+        },
+        "objective": {
+          "en": "Distinguish structure, process and outcome, and explain all six IOM aims.",
+          "zh": "区分结构、过程与结果，理解 IOM 六项目标。"
+        },
+        "sections": [
+          {
+            "slide": 7,
+            "pages": [
+              7,
+              8
+            ],
+            "title": "Structure: resources for care",
+            "titleZh": "结构：提供医疗服务的基础",
+            "html": "<div class=\"summary\"><div class=\"tag\">核心重点 / Key points</div><div class=\"grid\"><div class=\"en\"><b>Structure means the physical, organizational and human resources that support care.</b></div><div class=\"zh\"><b>结构（Structure）指支持医疗服务的物质、组织及人力资源。</b></div></div></div><article class=\"card\"><div class=\"grid\"><div class=\"en\">Examples: hospital facilities, equipment, staff qualifications and training, policies and financial resources.</div><div class=\"zh\">例子：医院设施、设备、人员资质与培训、政策和财务资源。</div></div></article><article class=\"card\"><div class=\"grid\"><div class=\"en\">A structural indicator can describe the proportion of appropriately accredited staff available for a procedure.</div><div class=\"zh\">结构指标可描述某项操作中具备适当认证资质的人员比例。</div></div></article><div class=\"small-note\"><b>辨析与学习提示 / Study note</b><p>口诀：Structure＝有什么；Process＝怎么做；Outcome＝结果怎样。This is a study aid, not a lecturer quotation.</p></div><div class=\"source\">Lecture 2(1).pdf · PDF pages 7, 8</div>"
+          },
+          {
+            "slide": 9,
+            "pages": [
+              9
+            ],
+            "title": "Process: actions during care",
+            "titleZh": "过程：医疗服务如何执行",
+            "html": "<div class=\"summary\"><div class=\"tag\">核心重点 / Key points</div><div class=\"grid\"><div class=\"en\"><b>Process is what staff and patients do during care, including communication and clinical procedures.</b></div><div class=\"zh\"><b>过程（Process）是医疗服务中的行动，包括沟通和临床操作。</b></div></div></div><article class=\"card\"><div class=\"grid\"><div class=\"en\">Examples: doctor-patient communication, medication administration protocols and infection control measures.</div><div class=\"zh\">例子：医患沟通、给药规程、感染控制措施。</div></div></article><article class=\"card\"><div class=\"grid\"><div class=\"en\">Process indicators assess whether evidence-based practices are followed consistently.</div><div class=\"zh\">过程指标评估循证实践是否得到一致执行。</div></div></article><div class=\"note\"><b>老师课堂补充 / Classroom commentary</b><p>老师强调：设备再好也不能替代良好的医患沟通；解释治疗可帮助患者理解与合作。Good equipment cannot replace communication that supports understanding and cooperation.</p></div><div class=\"source\">Lecture 2(1).pdf · PDF pages 9；Lesson2.docx 课堂转录（整理意译）</div>"
+          },
+          {
+            "slide": 10,
+            "pages": [
+              10
+            ],
+            "title": "Outcome: results of care",
+            "titleZh": "结果：治疗产生什么影响",
+            "html": "<div class=\"summary\"><div class=\"tag\">核心重点 / Key points</div><div class=\"grid\"><div class=\"en\"><b>Outcome reflects the results of care: health status, recovery and survival.</b></div><div class=\"zh\"><b>结果（Outcome）反映医疗服务产生的影响：健康状况、康复与生存。</b></div></div></div><article class=\"card\"><div class=\"grid\"><div class=\"en\">Examples: mortality, patient satisfaction, disease complications and hospital readmission rates.</div><div class=\"zh\">例子：死亡率、患者满意度、疾病并发症、再入院率。</div></div></article><article class=\"card\"><div class=\"grid\"><div class=\"en\">External factors may influence outcomes, so an outcome alone is not always a direct measure of care quality.</div><div class=\"zh\">结果可能受外部因素影响，因此单个结果指标未必直接等于医疗质量。</div></div></article><div class=\"note\"><b>老师课堂补充 / Classroom commentary</b><p>老师以出院后因伤口问题或病情恶化再次住院说明 readmission；高再入院率应促使团队调查。Readmissions can prompt investigation of care problems.</p></div><div class=\"small-note\"><b>辨析与学习提示 / Study note</b><p>学习辨析：比较医院结果时，应考虑患者病情等差异；不要直接把高死亡率解释为差质量。课件的“易测量”不表示所有结果均容易可靠测量。</p></div><div class=\"source\">Lecture 2(1).pdf · PDF pages 10；Lesson2.docx 课堂转录（整理意译）</div>"
+          },
+          {
+            "slide": 11,
+            "pages": [
+              11,
+              12
+            ],
+            "title": "Connect structure, process and outcome",
+            "titleZh": "把结构、过程与结果联系起来",
+            "html": "<div class=\"summary\"><div class=\"tag\">核心重点 / Key points</div><div class=\"grid\"><div class=\"en\"><b>Improve resources, optimize care processes, and monitor outcomes to identify further improvements.</b></div><div class=\"zh\"><b>改善资源基础、优化照护过程、监测结果，再寻找进一步改善机会。</b></div></div></div><article class=\"card\"><div class=\"grid\"><div class=\"en\">The diagram groups staff, equipment, guidelines and supplies under structure; interactions, investigations, treatment and counselling under process; morbidity, mortality and satisfaction under outcome.</div><div class=\"zh\">图中：人员、设备、指南和物资属于结构；互动、检查、治疗、辅导属于过程；患病情况、死亡和满意度属于结果。</div></div></article><article class=\"card\"><div class=\"grid\"><div class=\"en\">Having a guideline is a structural resource; following it in practice is a process.</div><div class=\"zh\">拥有指南属于结构资源；实际遵循指南属于过程。</div></div></article><div class=\"small-note\"><b>辨析与学习提示 / Study note</b><p>本题关键词检查只检查三类是否出现，不能自动判断排列是否正确；请按参考顺序自查。</p></div><div class=\"source\">Lecture 2(1).pdf · PDF pages 11, 12</div>"
+          },
+          {
+            "slide": 13,
+            "pages": [
+              13,
+              14
+            ],
+            "title": "The six IOM aims",
+            "titleZh": "IOM 六项目标：全部要记",
+            "html": "<div class=\"summary\"><div class=\"tag\">老师课堂明确强调 / Lecturer emphasis</div><div class=\"grid\"><div class=\"en\"><b>Safe, Timely, Effective, Efficient, Equitable, Patient-centered.</b></div><div class=\"zh\"><b>安全、及时、有效、高效、公平、以患者为中心。</b></div></div></div><article class=\"card\"><div class=\"grid\"><div class=\"en\">Safe: avoid harm from care. Timely: reduce waiting and harmful delays.</div><div class=\"zh\">安全：避免照护造成伤害。及时：减少等待和有害延误。</div></div></article><article class=\"card\"><div class=\"grid\"><div class=\"en\">Effective: use scientific knowledge for people who can benefit. Efficient: avoid waste of resources.</div><div class=\"zh\">有效：根据科学知识提供能让患者受益的服务。高效：避免资源浪费。</div></div></article><article class=\"card\"><div class=\"grid\"><div class=\"en\">Equitable: quality should not vary because of personal or social characteristics. Patient-centered: respect needs, preferences and values.</div><div class=\"zh\">公平：质量不应因个人或社会特征而不同。以患者为中心：尊重需求、偏好与价值观。</div></div></article><div class=\"note\"><b>老师课堂补充 / Classroom commentary</b><p>老师表示常在课堂练习中问六项目标，并特别补充 Patient-centered：虽然课件没有标红，它同样重要。All six matter, including patient-centered care, which was not highlighted in red.</p></div><div class=\"small-note\"><b>辨析与学习提示 / Study note</b><p>与 Lecture 1 区别：上一讲课件把 Timeliness and Efficiency 合在一个标题下；本讲 IOM 明确分为六项目标。</p></div><div class=\"source\">Lecture 2(1).pdf · PDF pages 13, 14；Lesson2.docx 课堂转录（整理意译）</div>"
+          },
+          {
+            "slide": 14,
+            "pages": [
+              14,
+              16
+            ],
+            "title": "Effective versus efficient",
+            "titleZh": "有效性与效率：容易混淆",
+            "html": "<div class=\"summary\"><div class=\"tag\">核心重点 / Key points</div><div class=\"grid\"><div class=\"en\"><b>Effective asks whether care achieves a useful health result based on evidence. Efficient asks whether resources are used without waste.</b></div><div class=\"zh\"><b>Effective 看循证服务是否达到有益健康结果；Efficient 看资源使用是否减少浪费。</b></div></div></div><article class=\"card\"><div class=\"grid\"><div class=\"en\">Timely concerns waiting and delays; equitable concerns fair quality; patient-centered concerns the individual’s needs and choices.</div><div class=\"zh\">Timely 关注等待与延误；Equitable 关注质量公平；Patient-centered 关注个人需求与选择。</div></div></article><div class=\"small-note\"><b>辨析与学习提示 / Study note</b><p>新增辨析练习。关键词不能判断两者是否被写反，请对照解释。</p></div><div class=\"source\">Lecture 2(1).pdf · PDF pages 14, 16</div>"
+          }
+        ]
+      },
+      {
+        "id": "L2-03",
+        "title": {
+          "en": "PDCA",
+          "zh": "PDCA 持续改进循环"
+        },
+        "objective": {
+          "en": "Explain each stage and apply the cycle to a healthcare problem.",
+          "zh": "解释四阶段，并用于医疗问题。"
+        },
+        "sections": [
+          {
+            "slide": 18,
+            "pages": [
+              18,
+              19,
+              20,
+              21,
+              26
+            ],
+            "title": "PDCA overview",
+            "titleZh": "PDCA 全称与循环性质",
+            "html": "<div class=\"summary\"><div class=\"tag\">核心重点 / Key points</div><div class=\"grid\"><div class=\"en\"><b>PDCA = Plan–Do–Check–Act. It is an iterative feedback cycle for continuous improvement.</b></div><div class=\"zh\"><b>PDCA＝计划—执行—检查—行动，是持续改进的迭代反馈循环。</b></div></div></div><article class=\"card\"><div class=\"grid\"><div class=\"en\">Plan defines the problem and goals; Do tests a change; Check compares evidence with goals; Act standardizes or revises.</div><div class=\"zh\">Plan 确定问题与目标；Do 测试改变；Check 将证据与目标比较；Act 标准化或修订。</div></div></article><article class=\"card\"><div class=\"grid\"><div class=\"en\">The slides associate the cycle with Shewhart and Deming. The key learning task is how the cycle works.</div><div class=\"zh\">课件将该循环与 Shewhart 和 Deming 联系起来；本节核心是理解它如何运作。</div></div></article><div class=\"note\"><b>老师课堂补充 / Classroom commentary</b><p>老师反复强调没有固定“结束点”，改进后仍要持续检视。Improvement is ongoing rather than a one-off event.</p></div><div class=\"small-note\"><b>辨析与学习提示 / Study note</b><p>Lecture 1 的 PDSA 使用 Study；本讲 PDCA 使用 Check。两者都是学习与改进循环，答题应按题目要求写全称。</p></div><div class=\"source\">Lecture 2(1).pdf · PDF pages 18, 19, 20, 21, 26；Lesson2.docx 课堂转录（整理意译）</div>"
+          },
+          {
+            "slide": 22,
+            "pages": [
+              22
+            ],
+            "title": "Plan",
+            "titleZh": "Plan：问题、目标与方案",
+            "html": "<div class=\"summary\"><div class=\"tag\">核心重点 / Key points</div><div class=\"grid\"><div class=\"en\"><b>Review the current process, identify the problem, define the desired result and plan a manageable change.</b></div><div class=\"zh\"><b>检视现有流程、找出问题、明确预期结果，并规划可管理的改变。</b></div></div></div><article class=\"card\"><div class=\"grid\"><div class=\"en\">A clear goal makes the result easier to monitor. Starting with a small change can make evaluation more manageable.</div><div class=\"zh\">目标清晰才能监测结果；从小改变开始，更容易评估。</div></div></article><div class=\"source\">Lecture 2(1).pdf · PDF pages 22</div>"
+          },
+          {
+            "slide": 23,
+            "pages": [
+              23
+            ],
+            "title": "Do",
+            "titleZh": "Do：小规模试行并收集数据",
+            "html": "<div class=\"summary\"><div class=\"tag\">核心重点 / Key points</div><div class=\"grid\"><div class=\"en\"><b>Implement the planned change on a small scale and collect information about its effect.</b></div><div class=\"zh\"><b>小规模实施计划中的改变，并收集效果资料。</b></div></div></div><article class=\"card\"><div class=\"grid\"><div class=\"en\">A pilot is a trial, not immediate full-scale rollout.</div><div class=\"zh\">Pilot 是试点，不是立即全面推广。</div></div></article><div class=\"source\">Lecture 2(1).pdf · PDF pages 23</div>"
+          },
+          {
+            "slide": 24,
+            "pages": [
+              24
+            ],
+            "title": "Check",
+            "titleZh": "Check：对照目标分析结果",
+            "html": "<div class=\"summary\"><div class=\"tag\">核心重点 / Key points</div><div class=\"grid\"><div class=\"en\"><b>Analyze data from the trial and compare results with the planned goals or previous performance.</b></div><div class=\"zh\"><b>分析试点数据，将结果与预设目标或以往表现比较。</b></div></div></div><article class=\"card\"><div class=\"grid\"><div class=\"en\">Charts can reveal patterns over repeated cycles and show which changes are promising.</div><div class=\"zh\">图表可呈现多轮循环的变化规律，帮助判断哪些改变值得保留。</div></div></article><div class=\"source\">Lecture 2(1).pdf · PDF pages 24</div>"
+          },
+          {
+            "slide": 25,
+            "pages": [
+              25,
+              26
+            ],
+            "title": "Act",
+            "titleZh": "Act：采用、调整或保留原标准",
+            "html": "<div class=\"summary\"><div class=\"tag\">核心重点 / Key points</div><div class=\"grid\"><div class=\"en\"><b>Use the findings to standardize an effective change, revise the plan, or retain the current standard if improvement is not demonstrated.</b></div><div class=\"zh\"><b>根据发现，将有效改变标准化、修订计划，或在未证实改善时保留现有标准。</b></div></div></div><article class=\"card\"><div class=\"grid\"><div class=\"en\">Unexpected results require further investigation and possibly another cycle.</div><div class=\"zh\">意外结果需要继续调查，必要时进入新一轮循环。</div></div></article><div class=\"note\"><b>老师课堂补充 / Classroom commentary</b><p>老师明确说：经过 PDCA 后决定保留现有标准，也可以是合理结果。Keeping the current standard can be a valid outcome.</p></div><div class=\"source\">Lecture 2(1).pdf · PDF pages 25, 26；Lesson2.docx 课堂转录（整理意译）</div>"
+          },
+          {
+            "slide": 27,
+            "pages": [
+              27
+            ],
+            "title": "PDCA in A&E",
+            "titleZh": "急症室等候时间的 PDCA 例子",
+            "html": "<div class=\"summary\"><div class=\"tag\">核心重点 / Key points</div><div class=\"grid\"><div class=\"en\"><b>Problem: long patient waits in A&amp;E. Plan: design triage and fast-track changes.</b></div><div class=\"zh\"><b>问题：急症室等候时间长。Plan：设计分流与快速通道改变。</b></div></div></div><article class=\"card\"><div class=\"grid\"><div class=\"en\">Do: pilot for one week. Check: review waiting times and satisfaction scores. Act: refine and consider wider implementation based on results.</div><div class=\"zh\">Do：试行一周。Check：分析等候时间和满意度。Act：依据结果调整，再考虑扩大实施。</div></div></article><div class=\"small-note\"><b>辨析与学习提示 / Study note</b><p>这是课件示例，不是直接可执行的临床分流方案；具体试点需按机构安全与审批要求设计。</p></div><div class=\"source\">Lecture 2(1).pdf · PDF pages 27</div>"
+          },
+          {
+            "slide": 28,
+            "pages": [
+              28,
+              29,
+              30,
+              31
+            ],
+            "title": "PDCA barriers and benefits",
+            "titleZh": "PDCA 障碍、益处与数据",
+            "html": "<div class=\"summary\"><div class=\"tag\">核心重点 / Key points</div><div class=\"grid\"><div class=\"en\"><b>Four barriers: resistance to change, inadequate data systems, insufficient training and unclear objectives.</b></div><div class=\"zh\"><b>四个障碍：变革阻力、数据系统不足、培训不足、目标不清晰。</b></div></div></div><article class=\"card\"><div class=\"grid\"><div class=\"en\">Benefits include reducing errors, anticipating disruptions, identifying problems, updating processes, reducing waste and continuous testing.</div><div class=\"zh\">益处包括减少错误、预防突发问题、识别问题、更新流程、减少浪费、持续测试。</div></div></article><article class=\"card\"><div class=\"grid\"><div class=\"en\">Accurate records can support demand analysis and better resource planning. PDCA does not guarantee that all errors disappear.</div><div class=\"zh\">准确记录有助于分析需求和规划资源；PDCA 并不保证消除所有错误。</div></div></article><article class=\"card\"><div class=\"grid\"><div class=\"en\">The medication-adherence paper is assigned further reading; its findings are not summarized here.</div><div class=\"zh\">用药依从性论文属于课件延伸阅读，本节不推断其研究结果。</div></div></article><div class=\"note\"><b>老师课堂补充 / Classroom commentary</b><p>老师强调工作负荷、资源限制及员工是否理解改变的目的；领导需要清晰解释目标并争取合作。Workload and staff understanding affect implementation.</p></div><div class=\"source\">Lecture 2(1).pdf · PDF pages 28, 29, 30, 31；Lesson2.docx 课堂转录（整理意译）</div>"
+          }
+        ]
+      },
+      {
+        "id": "L2-04",
+        "title": {
+          "en": "5S",
+          "zh": "5S 工作场所管理"
+        },
+        "objective": {
+          "en": "Know the five steps and distinguish standardizing from sustaining.",
+          "zh": "掌握五步骤，区分标准化与维持。"
+        },
+        "sections": [
+          {
+            "slide": 32,
+            "pages": [
+              32,
+              33,
+              34,
+              35
+            ],
+            "title": "The five S steps",
+            "titleZh": "5S 五步骤与顺序",
+            "html": "<div class=\"summary\"><div class=\"tag\">核心重点 / Key points</div><div class=\"grid\"><div class=\"en\"><b>Sort; Set in Order; Shine; Standardize; Sustain.</b></div><div class=\"zh\"><b>整理；整顿；清扫；标准化；维持。</b></div></div></div><article class=\"card\"><div class=\"grid\"><div class=\"en\">Sort (Seiri): remove unnecessary items. Set in Order (Seiton): arrange what remains for easy access.</div><div class=\"zh\">Sort：移除不需要的物品。Set in Order：将保留物品安排得易于取用。</div></div></article><article class=\"card\"><div class=\"grid\"><div class=\"en\">Shine (Seiso): clean and maintain. Standardize (Seiketsu): establish procedures. Sustain (Shitsuke): maintain and improve the system.</div><div class=\"zh\">Shine：清洁维护。Standardize：建立统一程序。Sustain：持续维持并改善系统。</div></div></article><article class=\"card\"><div class=\"grid\"><div class=\"en\">The diagram places the first three steps at the base, followed by standardizing and sustaining.</div><div class=\"zh\">课件图把前三步放在基础层，再推进标准化和维持。</div></div></article><div class=\"small-note\"><b>辨析与学习提示 / Study note</b><p>中文译名可能不同；复习以英文五个 S 和各自含义为准。</p></div><div class=\"source\">Lecture 2(1).pdf · PDF pages 32, 33, 34, 35</div>"
+          },
+          {
+            "slide": 36,
+            "pages": [
+              36,
+              38
+            ],
+            "title": "5S in a pharmacy and operating theatre",
+            "titleZh": "药房与手术室的 5S 应用",
+            "html": "<div class=\"summary\"><div class=\"tag\">核心重点 / Key points</div><div class=\"grid\"><div class=\"en\"><b>Pharmacy: remove expired medicines; label and organize shelves; clean workstations; standardize stocking and dispensing; audit regularly.</b></div><div class=\"zh\"><b>药房：移除过期药；标记并整理药架；清洁工作台；统一补货与配药流程；定期审核。</b></div></div></div><article class=\"card\"><div class=\"grid\"><div class=\"en\">Operating theatre: remove unnecessary items, organize instrument sets, maintain cleanliness, follow standard procedures and keep auditing.</div><div class=\"zh\">手术室：移除无关物品、安排器械套组、保持清洁、遵循标准程序、持续审核。</div></div></article><article class=\"card\"><div class=\"grid\"><div class=\"en\">Standardize creates a consistent procedure; Sustain keeps it followed over time.</div><div class=\"zh\">Standardize 是建立一致程序；Sustain 是让程序长期执行。</div></div></article><div class=\"note\"><b>老师课堂补充 / Classroom commentary</b><p>老师提醒：即使采用自动化设备，标准程序、遵循要求和定期审核仍然重要。Automation does not remove the need for procedures and audits.</p></div><div class=\"source\">Lecture 2(1).pdf · PDF pages 36, 38；Lesson2.docx 课堂转录（整理意译）</div>"
+          },
+          {
+            "slide": 37,
+            "pages": [
+              37,
+              38,
+              39
+            ],
+            "title": "5S case study and sustainability",
+            "titleZh": "5S 案例与持续实施",
+            "html": "<div class=\"summary\"><div class=\"tag\">核心重点 / Key points</div><div class=\"grid\"><div class=\"en\"><b>The slide reports a South Texas healthcare centre increasing bed space by 32% without new construction and improving HCAHPS scores.</b></div><div class=\"zh\"><b>课件报告一个南德州医疗中心案例：不新建建筑而增加 32% 床位空间，并改善 HCAHPS 评分。</b></div></div></div><article class=\"card\"><div class=\"grid\"><div class=\"en\">HCAHPS = Hospital Consumer Assessment of Healthcare Providers and Systems; the case links it to patient experience.</div><div class=\"zh\">HCAHPS 是 Hospital Consumer Assessment of Healthcare Providers and Systems；案例将其用于患者体验评价。</div></div></article><article class=\"card\"><div class=\"grid\"><div class=\"en\">The learning point is to examine how existing space is used before assuming that expansion is necessary.</div><div class=\"zh\">学习重点：先检查现有空间如何使用，再判断是否需要扩建。</div></div></article><article class=\"card\"><div class=\"grid\"><div class=\"en\">Study application: assign responsibility, train staff and use regular checks to help sustain 5S in a busy setting.</div><div class=\"zh\">学习应用：明确责任、培训员工、定期检查，有助于在繁忙环境中持续实施 5S。</div></div></article><div class=\"small-note\"><b>辨析与学习提示 / Study note</b><p>数字以 PDF 第37页的 32% 为准；课堂转录中的其他比例有明显噪声，不采用。课件提到27题问卷是该教学材料的表述，未作为当前问卷规格核实。</p></div><div class=\"source\">Lecture 2(1).pdf · PDF pages 37, 38, 39</div>"
+          }
+        ]
+      },
+      {
+        "id": "L2-05",
+        "title": {
+          "en": "BPR",
+          "zh": "业务流程再造 BPR"
+        },
+        "objective": {
+          "en": "Understand radical redesign, the four slide principles and digital risks.",
+          "zh": "理解根本性重设计、课件四原则及数字化风险。"
+        },
+        "sections": [
+          {
+            "slide": 40,
+            "pages": [
+              40,
+              41,
+              42
+            ],
+            "title": "BPR definition and principles",
+            "titleZh": "BPR 定义与四项原则",
+            "html": "<div class=\"summary\"><div class=\"tag\">核心重点 / Key points</div><div class=\"grid\"><div class=\"en\"><b>Business Process Re-engineering (BPR) radically redesigns core processes to improve efficiency and effectiveness.</b></div><div class=\"zh\"><b>BPR（业务流程再造）通过根本性重设计核心流程，提高效率与有效性。</b></div></div></div><article class=\"card\"><div class=\"grid\"><div class=\"en\">1. Organize around outcomes, not tasks. 2. Let those who use the output perform the process.</div><div class=\"zh\">1. 围绕结果组织流程，而不只围绕单项任务。2. 由流程输出的使用者执行流程。</div></div></article><article class=\"card\"><div class=\"grid\"><div class=\"en\">3. Integrate information processing into the work that produces information. 4. Treat dispersed resources as if centralized.</div><div class=\"zh\">3. 将信息处理融入产生信息的实际工作。4. 把分散资源视作集中资源来协调。</div></div></article><article class=\"card\"><div class=\"grid\"><div class=\"en\">Study comparison: PDCA often tests incremental changes; BPR focuses on substantial redesign.</div><div class=\"zh\">学习比较：PDCA 常用于逐步测试改变；BPR 侧重整体性重设计。</div></div></article><div class=\"small-note\"><b>辨析与学习提示 / Study note</b><p>这里列出的是本课件第42页的四项原则，不冒充其他文献中更完整的原则清单。</p></div><div class=\"source\">Lecture 2(1).pdf · PDF pages 40, 41, 42</div>"
+          },
+          {
+            "slide": 43,
+            "pages": [
+              43,
+              44
+            ],
+            "title": "BPR in patient admission",
+            "titleZh": "入院流程再造及风险",
+            "html": "<div class=\"summary\"><div class=\"tag\">核心重点 / Key points</div><div class=\"grid\"><div class=\"en\"><b>Example: one centralized online system for registration, insurance verification and appointment scheduling.</b></div><div class=\"zh\"><b>例子：通过集中式在线系统完成登记、保险核验及预约安排。</b></div></div></div><article class=\"card\"><div class=\"grid\"><div class=\"en\">Benefits: less paperwork, shorter waits and improved accuracy.</div><div class=\"zh\">益处：减少文书工作、缩短等候、提高准确性。</div></div></article><article class=\"card\"><div class=\"grid\"><div class=\"en\">Classroom risk discussion: patient privacy and data leakage require maintenance, updates and an ongoing security budget.</div><div class=\"zh\">课堂风险讨论：患者隐私和数据泄露需要维护、更新及持续安全预算。</div></div></article><article class=\"card\"><div class=\"grid\"><div class=\"en\">Sharing records across departments can support coordination and reduce repeated searches for paper records.</div><div class=\"zh\">跨部门共享病历有助于协调，减少反复寻找纸质记录。</div></div></article><div class=\"note\"><b>老师课堂补充 / Classroom commentary</b><p>老师接受了“patient privacy / data leakage”的课堂回答，并强调安全更新属于需要持续预算的费用。The lecturer emphasized ongoing maintenance and security spending.</p></div><div class=\"small-note\"><b>辨析与学习提示 / Study note</b><p>结合你的技术背景：可用权限控制、审计和故障回退分析案例；这些是应用延伸，不是课件原列项。</p></div><div class=\"source\">Lecture 2(1).pdf · PDF pages 43, 44；Lesson2.docx 课堂转录（整理意译）</div>"
+          }
+        ]
+      },
+      {
+        "id": "L2-06",
+        "title": {
+          "en": "QFD and method selection",
+          "zh": "质量功能展开 QFD 与方法选择"
+        },
+        "objective": {
+          "en": "Translate patient needs into service specifications and select an appropriate method.",
+          "zh": "把患者需求转化为服务规格，并选择适当方法。"
+        },
+        "sections": [
+          {
+            "slide": 45,
+            "pages": [
+              45,
+              46,
+              47
+            ],
+            "title": "QFD and the House of Quality",
+            "titleZh": "QFD 与质量屋",
+            "html": "<div class=\"summary\"><div class=\"tag\">核心重点 / Key points</div><div class=\"grid\"><div class=\"en\"><b>Quality Function Deployment (QFD) translates spoken and unspoken customer needs into design requirements.</b></div><div class=\"zh\"><b>质量功能展开（QFD）把顾客表达及未表达的需求转化为设计要求。</b></div></div></div><article class=\"card\"><div class=\"grid\"><div class=\"en\">House of Quality: a matrix relating what customers need to how the organization will respond.</div><div class=\"zh\">质量屋：用矩阵把顾客需要什么与机构如何回应联系起来。</div></div></article><article class=\"card\"><div class=\"grid\"><div class=\"en\">VoC = Voice of the Customer (Whats). VoB = Voice of the Business (Hows).</div><div class=\"zh\">VoC＝顾客之声（要什么）。VoB＝业务之声（如何做到）。</div></div></article><article class=\"card\"><div class=\"grid\"><div class=\"en\">Other slide components: interrelationship matrix, technical matrix, technical correlations and planning matrix.</div><div class=\"zh\">课件其他组成：关系矩阵、技术矩阵、技术相关性、规划矩阵。</div></div></article><div class=\"small-note\"><b>辨析与学习提示 / Study note</b><p>课堂转录有 VOP 等识别错误，按 PDF 第47页统一使用 VoB。质量屋不是建筑物，而是关系矩阵。</p></div><div class=\"source\">Lecture 2(1).pdf · PDF pages 45, 46, 47</div>"
+          },
+          {
+            "slide": 48,
+            "pages": [
+              48,
+              49
+            ],
+            "title": "QFD objectives and steps",
+            "titleZh": "QFD 三目标与四步骤",
+            "html": "<div class=\"summary\"><div class=\"tag\">核心重点 / Key points</div><div class=\"grid\"><div class=\"en\"><b>Three objectives: prioritize needs, translate needs into technical characteristics, and deliver a quality product or service that supports customer satisfaction.</b></div><div class=\"zh\"><b>三目标：排定需求优先级、把需求转成技术特征、提供让顾客满意的优质产品或服务。</b></div></div></div><article class=\"card\"><div class=\"grid\"><div class=\"en\">Four steps: identify customer requirements; translate them into technical specifications; relate specifications; develop and prioritize design targets.</div><div class=\"zh\">四步骤：识别顾客要求；转化为技术规格；分析规格间关系；制定设计目标并排序。</div></div></article><article class=\"card\"><div class=\"grid\"><div class=\"en\">Spoken needs can be stated directly; unspoken needs may require observation and careful questioning.</div><div class=\"zh\">已表达需求可直接收集；未表达需求可能需要观察和恰当提问。</div></div></article><div class=\"note\"><b>老师课堂补充 / Classroom commentary</b><p>老师强调把抽象需求具体化，例如服务频率或等候时间，才能设计改进。The lecturer emphasized making requirements concrete.</p></div><div class=\"source\">Lecture 2(1).pdf · PDF pages 48, 49；Lesson2.docx 课堂转录（整理意译）</div>"
+          },
+          {
+            "slide": 50,
+            "pages": [
+              50
+            ],
+            "title": "QFD rehabilitation example",
+            "titleZh": "康复服务：从需求到方案",
+            "html": "<div class=\"summary\"><div class=\"tag\">核心重点 / Key points</div><div class=\"grid\"><div class=\"en\"><b>Convenient appointment times → extended service hours.</b></div><div class=\"zh\"><b>方便的预约时间 → 延长服务时段。</b></div></div></div><article class=\"card\"><div class=\"grid\"><div class=\"en\">Personalized treatment plans → individualized assessment protocols.</div><div class=\"zh\">个性化治疗计划 → 个别化评估规程。</div></div></article><article class=\"card\"><div class=\"grid\"><div class=\"en\">Clear communication → patient education materials.</div><div class=\"zh\">清晰沟通 → 患者教育材料。</div></div></article><article class=\"card\"><div class=\"grid\"><div class=\"en\">Longer service hours require sufficient staffing and funding; the preferred design must be feasible.</div><div class=\"zh\">延长服务时段需要人手与经费，设计方案必须可行。</div></div></article><div class=\"note\"><b>老师课堂补充 / Classroom commentary</b><p>老师提醒延长服务时间会增加人手与成本，不能只写理想目标。Longer hours have staffing and cost implications.</p></div><div class=\"source\">Lecture 2(1).pdf · PDF pages 50；Lesson2.docx 课堂转录（整理意译）</div>"
+          },
+          {
+            "slide": 51,
+            "pages": [
+              51
+            ],
+            "title": "Capturing needs and setting priorities",
+            "titleZh": "收集需求与决定优先级",
+            "html": "<div class=\"summary\"><div class=\"tag\">核心重点 / Key points</div><div class=\"grid\"><div class=\"en\"><b>Patients may not state all their needs. Use feedback and observation, and prioritize requirements against available resources.</b></div><div class=\"zh\"><b>患者可能不会表达全部需求。结合反馈与观察，并按可用资源排列需求优先级。</b></div></div></div><article class=\"card\"><div class=\"grid\"><div class=\"en\">The slide asks how QFD could support a new patient portal; it emphasizes requirements, technical descriptors and prioritization.</div><div class=\"zh\">课件提出如何用 QFD 设计患者门户，重点是需求、技术描述与优先级。</div></div></article><article class=\"card\"><div class=\"grid\"><div class=\"en\">Study example: a patient wants fewer missed appointments → design reminders and measure successful delivery and user understanding.</div><div class=\"zh\">学习例子：患者希望少漏诊预约 → 设计提醒，并检查送达情况及患者是否理解。</div></div></article><article class=\"card\"><div class=\"grid\"><div class=\"en\">Leadership, clear direction and staff cooperation help turn the design into practice.</div><div class=\"zh\">领导支持、清晰方向和员工合作有助于落实设计。</div></div></article><div class=\"note\"><b>老师课堂补充 / Classroom commentary</b><p>老师指出部分患者不愿表达意见，捕捉“顾客之声”可能有困难。Some patients may be reluctant to express their views.</p></div><div class=\"small-note\"><b>辨析与学习提示 / Study note</b><p>门户提醒例子为新增学习应用，并非课件报告的真实项目或研究结果。</p></div><div class=\"source\">Lecture 2(1).pdf · PDF pages 51；Lesson2.docx 课堂转录（整理意译）</div>"
+          },
+          {
+            "slide": 17,
+            "pages": [
+              17,
+              26,
+              34,
+              41,
+              49
+            ],
+            "title": "Choose the right method",
+            "titleZh": "四种方法怎么选",
+            "html": "<div class=\"summary\"><div class=\"tag\">核心重点 / Key points</div><div class=\"grid\"><div class=\"en\"><b>PDCA: test and review changes repeatedly. 5S: organize and sustain the workplace.</b></div><div class=\"zh\"><b>PDCA：反复测试与检视改变。5S：整理并持续维护工作场所。</b></div></div></div><article class=\"card\"><div class=\"grid\"><div class=\"en\">BPR: redesign a core process. QFD: translate customer needs into design specifications.</div><div class=\"zh\">BPR：重设计核心流程。QFD：把顾客需求转成设计规格。</div></div></article><article class=\"card\"><div class=\"grid\"><div class=\"en\">Study synthesis: use QFD to define requirements, BPR to redesign a process, 5S to organize the workplace and PDCA to test improvements. They can complement one another.</div><div class=\"zh\">学习综合：QFD 明确需求、BPR 重设计流程、5S 整理现场、PDCA 测试改进；不同方法可互相配合。</div></div></article><div class=\"small-note\"><b>辨析与学习提示 / Study note</b><p>这是跨章节总结与新增练习，不是教师原题。</p></div><div class=\"source\">Lecture 2(1).pdf · PDF pages 17, 26, 34, 41, 49</div>"
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "L2-Q01",
+        "chapterId": "L2-01-01",
+        "module": "L2-01",
+        "slide": 3,
+        "question": {
+          "en": "List the five reasons why quality management matters in healthcare.",
+          "zh": "列出医疗质量管理重要性的五点。"
+        },
+        "answer": {
+          "en": "Patient safety; patient experience; reduced costs and waste; better clinical outcomes; increased efficiency.",
+          "zh": "患者安全；患者体验；减少成本与浪费；改善临床结果；提高效率。"
+        },
+        "rubric": [
+          {
+            "label": "patient safety",
+            "accept": [
+              "patient safety",
+              "患者安全"
+            ]
+          },
+          {
+            "label": "patient experience",
+            "accept": [
+              "patient experience",
+              "患者体验"
+            ]
+          },
+          {
+            "label": "costs and waste",
+            "accept": [
+              "costs and waste",
+              "成本与浪费"
+            ]
+          },
+          {
+            "label": "clinical outcomes",
+            "accept": [
+              "clinical outcomes",
+              "临床结果"
+            ]
+          },
+          {
+            "label": "efficiency",
+            "accept": [
+              "efficiency",
+              "效率"
+            ]
+          }
+        ],
+        "source": "学习辅助题（非教师原题）· Lecture 2 PDF pages 3, 4, 5",
+        "type": "short_answer"
+      },
+      {
+        "id": "L2-Q02",
+        "chapterId": "L2-01-02",
+        "module": "L2-01",
+        "slide": 15,
+        "question": {
+          "en": "Name the five key principles of quality management.",
+          "zh": "列出质量管理的五项原则。"
+        },
+        "answer": {
+          "en": "Customer focus; continuous improvement; data-driven decision making; employee empowerment; systems thinking.",
+          "zh": "以服务对象为中心；持续改进；数据驱动决策；员工赋权；系统思维。"
+        },
+        "rubric": [
+          {
+            "label": "customer focus",
+            "accept": [
+              "customer focus",
+              "以服务对象为中心"
+            ]
+          },
+          {
+            "label": "continuous improvement",
+            "accept": [
+              "continuous improvement",
+              "持续改进"
+            ]
+          },
+          {
+            "label": "data-driven",
+            "accept": [
+              "data-driven",
+              "数据驱动"
+            ]
+          },
+          {
+            "label": "employee empowerment",
+            "accept": [
+              "employee empowerment",
+              "员工赋权"
+            ]
+          },
+          {
+            "label": "systems thinking",
+            "accept": [
+              "systems thinking",
+              "系统思维"
+            ]
+          }
+        ],
+        "source": "学习辅助题（非教师原题）· Lecture 2 PDF pages 15, 16",
+        "type": "short_answer"
+      },
+      {
+        "id": "L2-Q03",
+        "chapterId": "L2-02-01",
+        "module": "L2-02",
+        "slide": 7,
+        "question": {
+          "en": "Name the three components of Donabedian’s framework and give one structural example.",
+          "zh": "列出 Donabedian 框架三部分，并举一个结构例子。"
+        },
+        "answer": {
+          "en": "Structure, process and outcome. Equipment is a structural example.",
+          "zh": "结构、过程、结果。设备属于结构。"
+        },
+        "rubric": [
+          {
+            "label": "Structure",
+            "accept": [
+              "structure",
+              "结构"
+            ]
+          },
+          {
+            "label": "Process",
+            "accept": [
+              "process",
+              "过程"
+            ]
+          },
+          {
+            "label": "Outcome",
+            "accept": [
+              "outcome",
+              "结果"
+            ]
+          },
+          {
+            "label": "Structural example",
+            "accept": [
+              "equipment",
+              "staff qualifications",
+              "facilities",
+              "设备",
+              "人员资质",
+              "设施"
+            ]
+          }
+        ],
+        "source": "学习辅助题（非教师原题）· Lecture 2 PDF pages 7, 8",
+        "type": "short_answer"
+      },
+      {
+        "id": "L2-Q04",
+        "chapterId": "L2-02-02",
+        "module": "L2-02",
+        "slide": 9,
+        "question": {
+          "en": "Give two process examples: one involving communication and one involving infection prevention.",
+          "zh": "举出两个过程例子：一个关于沟通，一个关于感染预防。"
+        },
+        "answer": {
+          "en": "Doctor-patient communication and infection control measures.",
+          "zh": "医患沟通和感染控制措施。"
+        },
+        "rubric": [
+          {
+            "label": "Communication",
+            "accept": [
+              "communication",
+              "沟通"
+            ]
+          },
+          {
+            "label": "Infection control",
+            "accept": [
+              "infection control",
+              "感染控制"
+            ]
+          }
+        ],
+        "source": "学习辅助题（非教师原题）· Lecture 2 PDF pages 9",
+        "type": "short_answer"
+      },
+      {
+        "id": "L2-Q05",
+        "chapterId": "L2-02-03",
+        "module": "L2-02",
+        "slide": 10,
+        "question": {
+          "en": "Name two outcome indicators: one about death and one about returning to hospital.",
+          "zh": "列出两个结果指标：一个关于死亡，一个关于再次住院。"
+        },
+        "answer": {
+          "en": "Mortality rate and hospital readmission rate.",
+          "zh": "死亡率和再入院率。"
+        },
+        "rubric": [
+          {
+            "label": "Mortality",
+            "accept": [
+              "mortality",
+              "死亡率"
+            ]
+          },
+          {
+            "label": "Readmission",
+            "accept": [
+              "readmission",
+              "再入院"
+            ]
+          }
+        ],
+        "source": "学习辅助题（非教师原题）· Lecture 2 PDF pages 10",
+        "type": "short_answer"
+      },
+      {
+        "id": "L2-Q06",
+        "chapterId": "L2-02-04",
+        "module": "L2-02",
+        "slide": 11,
+        "question": {
+          "en": "Classify equipment, medication administration and readmission rate in that order.",
+          "zh": "依次把设备、给药操作、再入院率分为哪三类？"
+        },
+        "answer": {
+          "en": "Structure; process; outcome.",
+          "zh": "结构；过程；结果。"
+        },
+        "rubric": [
+          {
+            "label": "Structure",
+            "accept": [
+              "structure",
+              "结构"
+            ]
+          },
+          {
+            "label": "Process",
+            "accept": [
+              "process",
+              "过程"
+            ]
+          },
+          {
+            "label": "Outcome",
+            "accept": [
+              "outcome",
+              "结果"
+            ]
+          }
+        ],
+        "source": "学习辅助题（非教师原题）· Lecture 2 PDF pages 11, 12",
+        "type": "short_answer"
+      },
+      {
+        "id": "L2-Q07",
+        "chapterId": "L2-02-05",
+        "module": "L2-02",
+        "slide": 13,
+        "question": {
+          "en": "List all six IOM aims.",
+          "zh": "列出 IOM 六项目标。"
+        },
+        "answer": {
+          "en": "Safe; timely; effective; efficient; equitable; patient-centered.",
+          "zh": "安全；及时；有效；高效；公平；以患者为中心。"
+        },
+        "rubric": [
+          {
+            "label": "safe",
+            "accept": [
+              "safe",
+              "安全"
+            ]
+          },
+          {
+            "label": "timely",
+            "accept": [
+              "timely",
+              "及时"
+            ]
+          },
+          {
+            "label": "effective",
+            "accept": [
+              "effective",
+              "有效"
+            ]
+          },
+          {
+            "label": "efficient",
+            "accept": [
+              "efficient",
+              "高效"
+            ]
+          },
+          {
+            "label": "equitable",
+            "accept": [
+              "equitable",
+              "公平"
+            ]
+          },
+          {
+            "label": "patient-centered",
+            "accept": [
+              "patient-centered",
+              "以患者为中心"
+            ]
+          }
+        ],
+        "source": "学习辅助题（非教师原题）· Lecture 2 PDF pages 13, 14",
+        "type": "short_answer"
+      },
+      {
+        "id": "L2-Q08",
+        "chapterId": "L2-02-06",
+        "module": "L2-02",
+        "slide": 14,
+        "question": {
+          "en": "Which aim concerns scientific evidence, and which concerns avoiding waste?",
+          "zh": "哪项目标关注科学证据？哪项关注避免浪费？"
+        },
+        "answer": {
+          "en": "Effective concerns scientific evidence; efficient concerns avoiding waste.",
+          "zh": "有效关注科学证据；高效关注避免浪费。"
+        },
+        "rubric": [
+          {
+            "label": "Effective",
+            "accept": [
+              "effective",
+              "有效"
+            ]
+          },
+          {
+            "label": "Efficient",
+            "accept": [
+              "efficient",
+              "高效"
+            ]
+          }
+        ],
+        "source": "学习辅助题（非教师原题）· Lecture 2 PDF pages 14, 16",
+        "type": "short_answer"
+      },
+      {
+        "id": "L2-Q09",
+        "chapterId": "L2-03-01",
+        "module": "L2-03",
+        "slide": 18,
+        "question": {
+          "en": "Expand PDCA in order.",
+          "zh": "依次写出 PDCA 全称。"
+        },
+        "answer": {
+          "en": "Plan, Do, Check, Act.",
+          "zh": "计划、执行、检查、行动。"
+        },
+        "rubric": [
+          {
+            "label": "plan",
+            "accept": [
+              "plan",
+              "计划"
+            ]
+          },
+          {
+            "label": "do",
+            "accept": [
+              "do",
+              "执行"
+            ]
+          },
+          {
+            "label": "check",
+            "accept": [
+              "check",
+              "检查"
+            ]
+          },
+          {
+            "label": "act",
+            "accept": [
+              "act",
+              "行动"
+            ]
+          }
+        ],
+        "source": "学习辅助题（非教师原题）· Lecture 2 PDF pages 18, 19, 20, 21, 26",
+        "type": "short_answer"
+      },
+      {
+        "id": "L2-Q10",
+        "chapterId": "L2-03-02",
+        "module": "L2-03",
+        "slide": 22,
+        "question": {
+          "en": "In Plan, what must you define before developing a change?",
+          "zh": "Plan 阶段在设计改变之前，需要明确什么？"
+        },
+        "answer": {
+          "en": "Define the problem and set goals.",
+          "zh": "明确问题并设定目标。"
+        },
+        "rubric": [
+          {
+            "label": "Problem",
+            "accept": [
+              "problem",
+              "问题"
+            ]
+          },
+          {
+            "label": "Goals",
+            "accept": [
+              "goals",
+              "goal",
+              "目标"
+            ]
+          }
+        ],
+        "source": "学习辅助题（非教师原题）· Lecture 2 PDF pages 22",
+        "type": "short_answer"
+      },
+      {
+        "id": "L2-Q11",
+        "chapterId": "L2-03-03",
+        "module": "L2-03",
+        "slide": 23,
+        "question": {
+          "en": "What two actions belong to Do?",
+          "zh": "Do 阶段做哪两件事？"
+        },
+        "answer": {
+          "en": "Pilot the change on a small scale and collect data.",
+          "zh": "小规模试点并收集数据。"
+        },
+        "rubric": [
+          {
+            "label": "Pilot",
+            "accept": [
+              "pilot",
+              "small scale",
+              "试点",
+              "小规模"
+            ]
+          },
+          {
+            "label": "Data",
+            "accept": [
+              "data",
+              "数据"
+            ]
+          }
+        ],
+        "source": "学习辅助题（非教师原题）· Lecture 2 PDF pages 23",
+        "type": "short_answer"
+      },
+      {
+        "id": "L2-Q12",
+        "chapterId": "L2-03-04",
+        "module": "L2-03",
+        "slide": 24,
+        "question": {
+          "en": "What happens in Check?",
+          "zh": "Check 阶段做什么？"
+        },
+        "answer": {
+          "en": "Analyze the data and compare results with goals.",
+          "zh": "分析数据，并将结果与目标比较。"
+        },
+        "rubric": [
+          {
+            "label": "Analyze data",
+            "accept": [
+              "analyze",
+              "analyse",
+              "分析"
+            ]
+          },
+          {
+            "label": "Compare",
+            "accept": [
+              "compare",
+              "comparison",
+              "比较",
+              "对照"
+            ]
+          }
+        ],
+        "source": "学习辅助题（非教师原题）· Lecture 2 PDF pages 24",
+        "type": "short_answer"
+      },
+      {
+        "id": "L2-Q13",
+        "chapterId": "L2-03-05",
+        "module": "L2-03",
+        "slide": 25,
+        "question": {
+          "en": "If a trial does not demonstrate improvement, must the new process replace the old standard?",
+          "zh": "如果试点未显示改善，是否必须用新流程替换原标准？"
+        },
+        "answer": {
+          "en": "No. Retain the current standard or revise the plan and test again.",
+          "zh": "不必须。可保留现有标准，或修订计划后再次测试。"
+        },
+        "rubric": [
+          {
+            "label": "Response",
+            "accept": [
+              "retain",
+              "revise",
+              "保留",
+              "修订"
+            ]
+          }
+        ],
+        "source": "学习辅助题（非教师原题）· Lecture 2 PDF pages 25, 26",
+        "type": "short_answer"
+      },
+      {
+        "id": "L2-Q14",
+        "chapterId": "L2-03-06",
+        "module": "L2-03",
+        "slide": 27,
+        "question": {
+          "en": "Which two outcomes are checked in the A&E example?",
+          "zh": "急症室例子在 Check 阶段检查哪两项？"
+        },
+        "answer": {
+          "en": "Waiting times and patient satisfaction scores.",
+          "zh": "等候时间与患者满意度。"
+        },
+        "rubric": [
+          {
+            "label": "Waiting time",
+            "accept": [
+              "waiting time",
+              "wait times",
+              "等候时间",
+              "等待时间",
+              "waiting times"
+            ]
+          },
+          {
+            "label": "Satisfaction",
+            "accept": [
+              "satisfaction",
+              "满意度"
+            ]
+          }
+        ],
+        "source": "学习辅助题（非教师原题）· Lecture 2 PDF pages 27",
+        "type": "short_answer"
+      },
+      {
+        "id": "L2-Q15",
+        "chapterId": "L2-03-07",
+        "module": "L2-03",
+        "slide": 28,
+        "question": {
+          "en": "List the four barriers to PDCA implementation.",
+          "zh": "列出实施 PDCA 的四个障碍。"
+        },
+        "answer": {
+          "en": "Resistance to change; inadequate data systems; insufficient training; unclear objectives.",
+          "zh": "变革阻力；数据系统不足；培训不足；目标不清晰。"
+        },
+        "rubric": [
+          {
+            "label": "Resistance",
+            "accept": [
+              "resistance",
+              "变革阻力"
+            ]
+          },
+          {
+            "label": "Data systems",
+            "accept": [
+              "data systems",
+              "数据系统"
+            ]
+          },
+          {
+            "label": "Training",
+            "accept": [
+              "training",
+              "培训"
+            ]
+          },
+          {
+            "label": "Objectives",
+            "accept": [
+              "objectives",
+              "目标"
+            ]
+          }
+        ],
+        "source": "学习辅助题（非教师原题）· Lecture 2 PDF pages 28, 29, 30, 31",
+        "type": "short_answer"
+      },
+      {
+        "id": "L2-Q16",
+        "chapterId": "L2-04-01",
+        "module": "L2-04",
+        "slide": 32,
+        "question": {
+          "en": "List the five S steps.",
+          "zh": "列出 5S 五步骤。"
+        },
+        "answer": {
+          "en": "Sort; Set in Order; Shine; Standardize; Sustain.",
+          "zh": "整理；整顿；清扫；标准化；维持。"
+        },
+        "rubric": [
+          {
+            "label": "sort",
+            "accept": [
+              "sort",
+              "整理"
+            ]
+          },
+          {
+            "label": "set in order",
+            "accept": [
+              "set in order",
+              "整顿"
+            ]
+          },
+          {
+            "label": "shine",
+            "accept": [
+              "shine",
+              "清扫"
+            ]
+          },
+          {
+            "label": "standardize",
+            "accept": [
+              "standardize",
+              "标准化"
+            ]
+          },
+          {
+            "label": "sustain",
+            "accept": [
+              "sustain",
+              "维持"
+            ]
+          }
+        ],
+        "source": "学习辅助题（非教师原题）· Lecture 2 PDF pages 32, 33, 34, 35",
+        "type": "short_answer"
+      },
+      {
+        "id": "L2-Q17",
+        "chapterId": "L2-04-02",
+        "module": "L2-04",
+        "slide": 36,
+        "question": {
+          "en": "Which S establishes procedures, and which S maintains them through regular audits?",
+          "zh": "哪个 S 建立程序？哪个 S 通过定期审核维持执行？"
+        },
+        "answer": {
+          "en": "Standardize establishes procedures; Sustain maintains them.",
+          "zh": "标准化建立程序；维持确保持续执行。"
+        },
+        "rubric": [
+          {
+            "label": "Standardize",
+            "accept": [
+              "standardize",
+              "standardise",
+              "标准化"
+            ]
+          },
+          {
+            "label": "Sustain",
+            "accept": [
+              "sustain",
+              "维持"
+            ]
+          }
+        ],
+        "source": "学习辅助题（非教师原题）· Lecture 2 PDF pages 36, 38",
+        "type": "short_answer"
+      },
+      {
+        "id": "L2-Q18",
+        "chapterId": "L2-04-03",
+        "module": "L2-04",
+        "slide": 37,
+        "question": {
+          "en": "In the slide’s case, how much did bed space increase without new construction?",
+          "zh": "课件案例在没有新建建筑的情况下增加多少床位空间？"
+        },
+        "answer": {
+          "en": "32%. This is a result reported in the teaching case, not a universal 5S effect.",
+          "zh": "32%。这是课件案例报告的结果，不是所有 5S 项目的保证效果。"
+        },
+        "rubric": [
+          {
+            "label": "32%",
+            "accept": [
+              "32"
+            ]
+          }
+        ],
+        "source": "学习辅助题（非教师原题）· Lecture 2 PDF pages 37, 38, 39",
+        "type": "short_answer"
+      },
+      {
+        "id": "L2-Q19",
+        "chapterId": "L2-05-01",
+        "module": "L2-05",
+        "slide": 40,
+        "question": {
+          "en": "What does BPR stand for, and what type of redesign does it emphasize?",
+          "zh": "BPR 全称是什么？强调哪种重新设计？"
+        },
+        "answer": {
+          "en": "Business Process Re-engineering; radical redesign of core processes.",
+          "zh": "业务流程再造；核心流程的根本性重新设计。"
+        },
+        "rubric": [
+          {
+            "label": "BPR",
+            "accept": [
+              "business process re-engineering",
+              "business process reengineering",
+              "业务流程再造"
+            ]
+          },
+          {
+            "label": "Radical redesign",
+            "accept": [
+              "radical",
+              "根本性"
+            ]
+          }
+        ],
+        "source": "学习辅助题（非教师原题）· Lecture 2 PDF pages 40, 41, 42",
+        "type": "short_answer"
+      },
+      {
+        "id": "L2-Q20",
+        "chapterId": "L2-05-02",
+        "module": "L2-05",
+        "slide": 43,
+        "question": {
+          "en": "Name two data-related risks discussed for the online admission system.",
+          "zh": "在线入院系统讨论了哪两个数据相关风险？"
+        },
+        "answer": {
+          "en": "Patient privacy risks and data leakage.",
+          "zh": "患者隐私风险与数据泄露。"
+        },
+        "rubric": [
+          {
+            "label": "Privacy",
+            "accept": [
+              "privacy",
+              "隐私"
+            ]
+          },
+          {
+            "label": "Leakage",
+            "accept": [
+              "leakage",
+              "breach",
+              "泄露"
+            ]
+          }
+        ],
+        "source": "学习辅助题（非教师原题）· Lecture 2 PDF pages 43, 44",
+        "type": "short_answer"
+      },
+      {
+        "id": "L2-Q21",
+        "chapterId": "L2-06-01",
+        "module": "L2-06",
+        "slide": 45,
+        "question": {
+          "en": "In the House of Quality, what do VoC and VoB mean?",
+          "zh": "质量屋中的 VoC 和 VoB 分别是什么？"
+        },
+        "answer": {
+          "en": "VoC: Voice of the Customer; VoB: Voice of the Business.",
+          "zh": "VoC：顾客之声；VoB：业务之声。"
+        },
+        "rubric": [
+          {
+            "label": "VoC",
+            "accept": [
+              "voice of the customer",
+              "顾客之声"
+            ]
+          },
+          {
+            "label": "VoB",
+            "accept": [
+              "voice of the business",
+              "业务之声"
+            ]
+          }
+        ],
+        "source": "学习辅助题（非教师原题）· Lecture 2 PDF pages 45, 46, 47",
+        "type": "short_answer"
+      },
+      {
+        "id": "L2-Q22",
+        "chapterId": "L2-06-02",
+        "module": "L2-06",
+        "slide": 48,
+        "question": {
+          "en": "What does QFD translate customer needs into?",
+          "zh": "QFD 把顾客需求转化为什么？"
+        },
+        "answer": {
+          "en": "Technical characteristics and specifications.",
+          "zh": "技术特征与技术规格。"
+        },
+        "rubric": [
+          {
+            "label": "Technical specifications",
+            "accept": [
+              "technical characteristics",
+              "technical specifications",
+              "技术特征",
+              "技术规格"
+            ]
+          }
+        ],
+        "source": "学习辅助题（非教师原题）· Lecture 2 PDF pages 48, 49",
+        "type": "short_answer"
+      },
+      {
+        "id": "L2-Q23",
+        "chapterId": "L2-06-03",
+        "module": "L2-06",
+        "slide": 50,
+        "question": {
+          "en": "Which technical response in the rehabilitation example supports clear communication?",
+          "zh": "康复服务例子用什么具体方案支持清晰沟通？"
+        },
+        "answer": {
+          "en": "Patient education materials.",
+          "zh": "患者教育材料。"
+        },
+        "rubric": [
+          {
+            "label": "Patient education materials",
+            "accept": [
+              "patient education materials",
+              "患者教育材料"
+            ]
+          }
+        ],
+        "source": "学习辅助题（非教师原题）· Lecture 2 PDF pages 50",
+        "type": "short_answer"
+      },
+      {
+        "id": "L2-Q24",
+        "chapterId": "L2-06-04",
+        "module": "L2-06",
+        "slide": 51,
+        "question": {
+          "en": "What two categories must managers balance when prioritizing QFD improvements?",
+          "zh": "为 QFD 改进排序时，管理者需要平衡哪两类因素？"
+        },
+        "answer": {
+          "en": "Customer requirements and available resources.",
+          "zh": "顾客需求与可用资源。"
+        },
+        "rubric": [
+          {
+            "label": "Requirements",
+            "accept": [
+              "requirements",
+              "needs",
+              "需求"
+            ]
+          },
+          {
+            "label": "Resources",
+            "accept": [
+              "resources",
+              "资源"
+            ]
+          }
+        ],
+        "source": "学习辅助题（非教师原题）· Lecture 2 PDF pages 51",
+        "type": "short_answer"
+      },
+      {
+        "id": "L2-Q25",
+        "chapterId": "L2-06-05",
+        "module": "L2-06",
+        "slide": 17,
+        "question": {
+          "en": "Which method organizes the workplace, and which translates customer needs into specifications?",
+          "zh": "哪种方法管理工作场所？哪种把顾客需求转成规格？"
+        },
+        "answer": {
+          "en": "5S organizes the workplace; QFD translates needs into specifications.",
+          "zh": "5S 管理工作场所；QFD 把需求转成规格。"
+        },
+        "rubric": [
+          {
+            "label": "5S",
+            "accept": [
+              "5s"
+            ]
+          },
+          {
+            "label": "QFD",
+            "accept": [
+              "qfd"
+            ]
+          }
+        ],
+        "source": "学习辅助题（非教师原题）· Lecture 2 PDF pages 17, 26, 34, 41, 49",
+        "type": "short_answer"
+      }
+    ],
+    "sourceFooter": "资料依据：Lecture 2(1).pdf，PDF第1–51页；Lesson2.docx（2026-09-15课堂转录）。本讲详讲PDCA、5S、BPR、QFD；其他工具仅为后续预告。练习为新增辅助题，不是教师原题。"
+  },
+  "vocab": {
+    "items": [
+      {
+        "id": "L2-V01",
+        "slide": 4,
+        "word": "quality",
+        "zh": "质量",
+        "ipa": "",
+        "example": ""
+      },
+      {
+        "id": "L2-V02",
+        "slide": 4,
+        "word": "safety",
+        "zh": "安全",
+        "ipa": "",
+        "example": ""
+      },
+      {
+        "id": "L2-V03",
+        "slide": 4,
+        "word": "experience",
+        "zh": "体验",
+        "ipa": "",
+        "example": ""
+      },
+      {
+        "id": "L2-V04",
+        "slide": 4,
+        "word": "waste",
+        "zh": "浪费",
+        "ipa": "",
+        "example": ""
+      },
+      {
+        "id": "L2-V05",
+        "slide": 4,
+        "word": "efficiency",
+        "zh": "效率",
+        "ipa": "",
+        "example": ""
+      },
+      {
+        "id": "L2-V06",
+        "slide": 15,
+        "word": "continuous improvement",
+        "zh": "持续改进",
+        "ipa": "",
+        "example": ""
+      },
+      {
+        "id": "L2-V07",
+        "slide": 15,
+        "word": "empowerment",
+        "zh": "赋权",
+        "ipa": "",
+        "example": ""
+      },
+      {
+        "id": "L2-V08",
+        "slide": 15,
+        "word": "systems thinking",
+        "zh": "系统思维",
+        "ipa": "",
+        "example": ""
+      },
+      {
+        "id": "L2-V09",
+        "slide": 8,
+        "word": "structure",
+        "zh": "结构",
+        "ipa": "",
+        "example": ""
+      },
+      {
+        "id": "L2-V10",
+        "slide": 8,
+        "word": "infrastructure",
+        "zh": "基础设施",
+        "ipa": "",
+        "example": ""
+      },
+      {
+        "id": "L2-V11",
+        "slide": 8,
+        "word": "qualification",
+        "zh": "资质",
+        "ipa": "",
+        "example": ""
+      },
+      {
+        "id": "L2-V12",
+        "slide": 9,
+        "word": "process",
+        "zh": "过程",
+        "ipa": "",
+        "example": ""
+      },
+      {
+        "id": "L2-V13",
+        "slide": 9,
+        "word": "protocol",
+        "zh": "规程",
+        "ipa": "",
+        "example": ""
+      },
+      {
+        "id": "L2-V14",
+        "slide": 9,
+        "word": "infection control",
+        "zh": "感染控制",
+        "ipa": "",
+        "example": ""
+      },
+      {
+        "id": "L2-V15",
+        "slide": 10,
+        "word": "outcome",
+        "zh": "结果",
+        "ipa": "",
+        "example": ""
+      },
+      {
+        "id": "L2-V16",
+        "slide": 10,
+        "word": "mortality",
+        "zh": "死亡率；死亡情况",
+        "ipa": "",
+        "example": ""
+      },
+      {
+        "id": "L2-V17",
+        "slide": 10,
+        "word": "readmission",
+        "zh": "再入院",
+        "ipa": "",
+        "example": ""
+      },
+      {
+        "id": "L2-V18",
+        "slide": 10,
+        "word": "complication",
+        "zh": "并发症",
+        "ipa": "",
+        "example": ""
+      },
+      {
+        "id": "L2-V19",
+        "slide": 12,
+        "word": "morbidity",
+        "zh": "患病情况",
+        "ipa": "",
+        "example": ""
+      },
+      {
+        "id": "L2-V20",
+        "slide": 14,
+        "word": "safe",
+        "zh": "安全的",
+        "ipa": "",
+        "example": ""
+      },
+      {
+        "id": "L2-V21",
+        "slide": 14,
+        "word": "timely",
+        "zh": "及时的",
+        "ipa": "",
+        "example": ""
+      },
+      {
+        "id": "L2-V22",
+        "slide": 14,
+        "word": "effective",
+        "zh": "有效的",
+        "ipa": "",
+        "example": ""
+      },
+      {
+        "id": "L2-V23",
+        "slide": 14,
+        "word": "efficient",
+        "zh": "高效的",
+        "ipa": "",
+        "example": ""
+      },
+      {
+        "id": "L2-V24",
+        "slide": 14,
+        "word": "equitable",
+        "zh": "公平的",
+        "ipa": "",
+        "example": ""
+      },
+      {
+        "id": "L2-V25",
+        "slide": 14,
+        "word": "patient-centered",
+        "zh": "以患者为中心的",
+        "ipa": "",
+        "example": ""
+      },
+      {
+        "id": "L2-V26",
+        "slide": 14,
+        "word": "preference",
+        "zh": "偏好",
+        "ipa": "",
+        "example": ""
+      },
+      {
+        "id": "L2-V27",
+        "slide": 18,
+        "word": "iterative",
+        "zh": "迭代的",
+        "ipa": "",
+        "example": ""
+      },
+      {
+        "id": "L2-V28",
+        "slide": 22,
+        "word": "plan",
+        "zh": "计划",
+        "ipa": "",
+        "example": ""
+      },
+      {
+        "id": "L2-V29",
+        "slide": 23,
+        "word": "pilot",
+        "zh": "试点；试行",
+        "ipa": "",
+        "example": ""
+      },
+      {
+        "id": "L2-V30",
+        "slide": 24,
+        "word": "benchmark",
+        "zh": "比较基准",
+        "ipa": "",
+        "example": ""
+      },
+      {
+        "id": "L2-V31",
+        "slide": 25,
+        "word": "standardize",
+        "zh": "标准化",
+        "ipa": "",
+        "example": ""
+      },
+      {
+        "id": "L2-V32",
+        "slide": 28,
+        "word": "resistance",
+        "zh": "阻力；抵制",
+        "ipa": "",
+        "example": ""
+      },
+      {
+        "id": "L2-V33",
+        "slide": 28,
+        "word": "adherence",
+        "zh": "依从性",
+        "ipa": "",
+        "example": ""
+      },
+      {
+        "id": "L2-V34",
+        "slide": 34,
+        "word": "sort",
+        "zh": "整理；分类",
+        "ipa": "",
+        "example": ""
+      },
+      {
+        "id": "L2-V35",
+        "slide": 34,
+        "word": "set in order",
+        "zh": "整顿；有序摆放",
+        "ipa": "",
+        "example": ""
+      },
+      {
+        "id": "L2-V36",
+        "slide": 34,
+        "word": "shine",
+        "zh": "清扫；保持清洁",
+        "ipa": "",
+        "example": ""
+      },
+      {
+        "id": "L2-V37",
+        "slide": 34,
+        "word": "sustain",
+        "zh": "维持",
+        "ipa": "",
+        "example": ""
+      },
+      {
+        "id": "L2-V38",
+        "slide": 36,
+        "word": "dispensing",
+        "zh": "配药",
+        "ipa": "",
+        "example": ""
+      },
+      {
+        "id": "L2-V39",
+        "slide": 36,
+        "word": "compliance",
+        "zh": "遵循要求；合规",
+        "ipa": "",
+        "example": ""
+      },
+      {
+        "id": "L2-V40",
+        "slide": 41,
+        "word": "radical redesign",
+        "zh": "根本性重新设计",
+        "ipa": "",
+        "example": ""
+      },
+      {
+        "id": "L2-V41",
+        "slide": 42,
+        "word": "centralized",
+        "zh": "集中的",
+        "ipa": "",
+        "example": ""
+      },
+      {
+        "id": "L2-V42",
+        "slide": 43,
+        "word": "verification",
+        "zh": "核验",
+        "ipa": "",
+        "example": ""
+      },
+      {
+        "id": "L2-V43",
+        "slide": 43,
+        "word": "scheduling",
+        "zh": "安排日程",
+        "ipa": "",
+        "example": ""
+      },
+      {
+        "id": "L2-V44",
+        "slide": 43,
+        "word": "privacy",
+        "zh": "隐私",
+        "ipa": "",
+        "example": ""
+      },
+      {
+        "id": "L2-V45",
+        "slide": 43,
+        "word": "data leakage",
+        "zh": "数据泄露",
+        "ipa": "",
+        "example": ""
+      },
+      {
+        "id": "L2-V46",
+        "slide": 46,
+        "word": "deployment",
+        "zh": "展开；部署",
+        "ipa": "",
+        "example": ""
+      },
+      {
+        "id": "L2-V47",
+        "slide": 47,
+        "word": "matrix",
+        "zh": "矩阵",
+        "ipa": "",
+        "example": ""
+      },
+      {
+        "id": "L2-V48",
+        "slide": 47,
+        "word": "correlation",
+        "zh": "相关关系",
+        "ipa": "",
+        "example": ""
+      },
+      {
+        "id": "L2-V49",
+        "slide": 49,
+        "word": "requirement",
+        "zh": "要求；需求",
+        "ipa": "",
+        "example": ""
+      },
+      {
+        "id": "L2-V50",
+        "slide": 49,
+        "word": "specification",
+        "zh": "规格",
+        "ipa": "",
+        "example": ""
+      },
+      {
+        "id": "L2-V51",
+        "slide": 49,
+        "word": "prioritize",
+        "zh": "确定优先级",
+        "ipa": "",
+        "example": ""
+      },
+      {
+        "id": "L2-V52",
+        "slide": 50,
+        "word": "rehabilitation",
+        "zh": "康复",
+        "ipa": "",
+        "example": ""
+      },
+      {
+        "id": "L2-V53",
+        "slide": 50,
+        "word": "individualized",
+        "zh": "个别化的",
+        "ipa": "",
+        "example": ""
+      }
+    ],
+    "source": "Learning glossary based on the supplied Lecture 2 materials. Chinese meanings are study translations. Audio uses browser speech synthesis; no unverified IPA is supplied."
+  }
+}
