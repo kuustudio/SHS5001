@@ -28,9 +28,9 @@ $('#breadcrumb').textContent=`SEHS5001 / ${current.id.replace('-',' ').toUpperCa
 all('[data-lang]').forEach(b=>b.classList.toggle('active',b.dataset.lang===state.lang));
 $('#voice-locale').value=state.locale;document.body.classList.remove('lang-zh','lang-en');if(state.lang!=='both')document.body.classList.add('lang-'+state.lang);
 }
-function shell(inner){$('#view').innerHTML=`<div class="layout">${inner}</div>`;updateNav()}
+function shell(inner){if(document.getElementById('selection-tools'))document.getElementById('selection-tools').hidden=true;$('#view').innerHTML=`<div class="layout">${inner}</div>`;updateNav()}
 function scrollToChapter(id){let el=document.getElementById('chapter-'+id);if(el){el.scrollIntoView({behavior:'smooth',block:'start'});if(el.classList.contains('closed'))toggle(id,true)}}
-function lectureHome(start){view='lecture';const parts=modules().map(m=>{let cs=chapters().filter(c=>c.module.id===m.id);return `<section class="spaced"><div class="chapter-title"><span class="badge">MODULE ${esc(m.id)}</span><h2>${bi(m.title)}</h2></div><p class="muted">${bi(m.objective)}</p>${cs.map(c=>renderChapter(c)).join('')}</section>`}).join('');shell(`<section class="hero"><div class="eyebrow">${esc(current.id.toUpperCase().replace('-',' '))} · ${esc(current.date)}</div><h1>${bi(current.title)}</h1><p>${bi(current.course.sourceNotice)}</p><div class="statrow"><div class="stat"><b>${chapters().length}</b><small>Chapters · 小节</small></div><div class="stat"><b>${completion()}/${chapters().length}</b><small>Completed · 已学</small></div><div class="stat"><b>${mastered()}/${current.vocab.items.length}</b><small>Remembered · 单词</small></div></div><div class="progress"><i style="width:${pct()}%"></i></div><div class="nextrow"><span class="muted">Lecture progress · 课程进度 ${pct()}%</span><button class="button primary" id="continue">▶ ${completion()?'继续学习 / Continue':'从第一小节开始 / Start'}</button></div></section><div class="small-note">瀑布式学习：每节依次阅读知识点 → 点击单词听读音 → 拼写记忆 → 输入并校验练习答案 → 下一节。章节可随时展开复习。<br>Waterfall learning: read → listen → recall → answer → advance.</div>${parts}<p class="small-note">资料依据：Lecture 1 PDF第6–31页及老师9月8日课堂转录。词汇IPA、拼写训练与PDSA四步骤说明为学习辅助内容。</p>`);
+function lectureHome(start){view='lecture';const parts=modules().map(m=>{let cs=chapters().filter(c=>c.module.id===m.id);return `<section class="spaced"><div class="chapter-title"><span class="badge">MODULE ${esc(m.id)}</span><h2>${bi(m.title)}</h2></div><p class="muted">${bi(m.objective)}</p>${cs.map(c=>renderChapter(c)).join('')}</section>`}).join('');shell(`<section class="hero"><div class="eyebrow">${esc(current.id.toUpperCase().replace('-',' '))} · ${esc(current.date)}</div><h1>${bi(current.title)}</h1><p>${bi(current.course.sourceNotice)}</p><div class="statrow"><div class="stat"><b>${chapters().length}</b><small>Chapters · 小节</small></div><div class="stat"><b>${completion()}/${chapters().length}</b><small>Completed · 已学</small></div><div class="stat"><b>${mastered()}/${current.vocab.items.length}</b><small>Remembered · 单词</small></div></div><div class="progress"><i style="width:${pct()}%"></i></div><div class="nextrow"><span class="muted">Lecture progress · 课程进度 ${pct()}%</span><button class="button primary" id="continue">▶ ${completion()?'继续学习 / Continue':'从第一小节开始 / Start'}</button></div></section><div class="small-note">💡 任意英文可划词：选中 → 发音 / 拼读 / 加入词典。<br>瀑布式学习：每节依次阅读知识点 → 点击单词听读音 → 拼写记忆 → 输入并校验练习答案 → 下一节。章节可随时展开复习。<br>Waterfall learning: read → listen → recall → answer → advance.</div>${parts}<p class="small-note">资料依据：Lecture 1 PDF第6–31页及老师9月8日课堂转录。词汇IPA、拼写训练与PDSA四步骤说明为学习辅助内容。</p>`);
 if(start){opened=start;toggle(start,true);requestAnimationFrame(()=>document.getElementById('chapter-'+start)?.scrollIntoView({behavior:'smooth',block:'start'}))}
 }
 const CHAPTER_ZH={'01-01':'香港Q-Mark优质产品认证','01-02':'理解医疗质量的含义','01-03':'医疗质量的关键维度','01-04':'利益相关者的质量观点','02-01':'质量成本的类型：预防、评估与失败','02-02':'质量成本对医疗机构的影响','02-03':'降低质量成本的策略','03-01':'质量保证的定义与目标','03-02':'质量保证系统的核心组成','03-03':'医疗质量保证工具与技术','03-04':'PDSA：计划—执行—研究—行动','04-01':'医疗复杂系统的定义','04-02':'医疗机构的相互作用与相互依赖','04-03':'复杂系统的管理挑战','05-01':'系统行为对医疗结果的影响','05-02':'患者安全与风险管理','05-03':'建立医疗安全文化','05-04':'第一讲总结'};
@@ -45,8 +45,8 @@ function evaluate(q,value){let found=q.rubric.filter(r=>r.accept.some(a=>matches
 function feedback(q,c){return `<div class="feedback ${c.grade==='full'?'good':c.grade}"><b>${c.grade==='full'?'✓ 匹配全部预设知识点 / Matched all rubric concepts':c.grade==='partial'?'◐ 部分匹配，请补全 / Partial match':'○ 未匹配预设词，可查看参考答案 / Compare reference'}</b><p>${c.found.length}/${q.rubric.length} key points · ${c.missing.length?'待补充 / Missing: '+c.missing.map(esc).join('、'):''}</p><small>关键词核对不等于人工评分；正确同义表达可能误判。<br>Keyword matching is not semantic grading; valid paraphrases may be missed.</small></div>`}
 function renderQ(q){let s=state.answers[key(q.id)]||'',c=state.checks[key(q.id)];return `<div class="qbox" id="question-${esc(q.id)}"><div class="eyebrow">${esc(q.id)} · PPT ${esc(q.slide)}</div><div class="quiz-q"><div class="grid"><div class="en"><h4>${esc(q.question.en)}</h4></div><div class="zh"><h4>${esc(q.question.zh)}</h4></div></div></div><textarea data-answer="${esc(q.id)}" aria-label="Answer ${esc(q.id)}" placeholder="Write your answer here / 在这里输入中英文答案">${esc(s)}</textarea><div class="actions"><button class="button primary" data-check="${esc(q.id)}">校验答案 / Check</button><button class="button" data-answer-reveal="${esc(q.id)}">显示答案 / Show answer</button></div><div id="feedback-${esc(q.id)}" role="status" aria-live="polite">${c?feedback(q,c):''}</div><div class="answer hidden" id="answer-${esc(q.id)}"><b>REFERENCE / 参考答案</b><div class="grid"><div class="en">${esc(q.answer.en)}</div><div class="zh">${esc(q.answer.zh)}</div></div><small>${esc(q.source)}</small></div></div>`}
 function makeInlineWords(panel,c){let holder=panel.querySelector('.lesson-content');if(!holder)return;let list=vocFor(c).filter(w=>!/^[A-Z]{3,}$/.test(w.word)).sort((a,b)=>b.word.length-a.word.length);let seen=new Set(),nodes=[];const walker=document.createTreeWalker(holder,NodeFilter.SHOW_TEXT,{acceptNode(n){if(!n.nodeValue.trim()||n.parentElement.closest('button,.tag,script,style'))return NodeFilter.FILTER_REJECT;return NodeFilter.FILTER_ACCEPT}});while(walker.nextNode())nodes.push(walker.currentNode);for(let n of nodes){let s=n.nodeValue;for(let w of list){if(seen.has(w.id))continue;let pattern=new RegExp('(?<![a-z])'+w.word.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')+'(?![a-z])','i'),m=s.match(pattern);if(!m)continue;let frag=document.createDocumentFragment();frag.appendChild(document.createTextNode(s.slice(0,m.index)));let b=document.createElement('button');b.className='inlineword';b.dataset.say=w.word;b.title=w.zh+' · '+w.ipa;b.textContent=m[0]+' 🔊';frag.appendChild(b);frag.appendChild(document.createTextNode(s.slice(m.index+m[0].length)));n.replaceWith(frag);seen.add(w.id);break}}}
-function say(word){if(!('speechSynthesis'in window)){notify('此浏览器没有语音合成功能 / Speech unavailable');return}speechSynthesis.cancel();let t=new SpeechSynthesisUtterance(word);t.lang=state.locale;t.rate=.83;t.pitch=1;let voices=speechSynthesis.getVoices();let v=voices.find(x=>x.lang.toLowerCase()===state.locale.toLowerCase())||voices.find(x=>x.lang.toLowerCase().startsWith('en-'));if(v)t.voice=v;t.onerror=()=>notify('播放失败。检查浏览器音量或切换英式/美式语音。');speechSynthesis.speak(t)}
-function vocabPage(){view='vocab';let allw=current.vocab.items;let due=allw.filter(v=>!state.mastered[key(v.id)]);shell(`<section class="hero"><div class="eyebrow">VOCABULARY · 术语与发音</div><h1>🔊 Vocabulary Lab / 单词记忆实验室</h1><p>按课件页码集中复习单词，点击即可听英式或美式读音，使用听写训练记忆。词汇IPA和例句为补充学习材料。</p><div class="statrow"><div class="stat"><b>${mastered()}/${allw.length}</b><small>Remembered</small></div><div class="stat"><b>${due.length}</b><small>To review · 待记</small></div></div><button class="button primary" id="play-due">▶ 播放下一个待记单词</button></section><div class="subhead">All vocabulary / 所有词汇</div><div class="vocab-wrap">${allw.map(wordCard).join('')}</div>`);$('#go-words').classList.add('active')}
+function say(word){if(!('speechSynthesis'in window)){notify('此浏览器没有语音合成功能 / Speech unavailable');return}speechSynthesis.cancel();let t=new SpeechSynthesisUtterance(word);t.lang=state.locale;t.rate=.83;t.pitch=1;let voices=speechSynthesis.getVoices();let v=voices.find(x=>x.lang.toLowerCase()===state.locale.toLowerCase())||voices.find(x=>x.lang.toLowerCase().startsWith('en-'));if(v)t.voice=v;t.onerror=e=>{if(!['canceled','interrupted'].includes(e.error))notify('播放失败。检查浏览器音量或切换英式/美式语音。')};speechSynthesis.speak(t)}
+function vocabPage(){view='vocab';let allw=current.vocab.items;let due=allw.filter(v=>!state.mastered[key(v.id)]);shell(`<section class="hero"><div class="eyebrow">VOCABULARY · 术语与发音</div><h1>🔊 Vocabulary Lab / 单词记忆实验室</h1><p>按课件页码集中复习单词，点击即可听英式或美式读音，使用听写训练记忆。词汇IPA和例句为补充学习材料。</p><div class="statrow"><div class="stat"><b>${mastered()}/${allw.length}</b><small>Remembered</small></div><div class="stat"><b>${due.length}</b><small>To review · 待记</small></div></div><button class="button primary" id="play-due">▶ 播放下一个待记单词</button></section><div class="subhead">All vocabulary / 所有词汇</div><div class="vocab-wrap">${allw.map(wordCard).join('')}</div>${dictionaryHTML()}`);$('#go-words').classList.add('active')}
 function reviewPage(){view='review';let q=current.course.questions,done=q.filter(x=>state.checks[key(x.id)]),needs=q.filter(x=>state.checks[key(x.id)]?.grade!=='full');shell(`<section class="hero"><div class="eyebrow">REVIEW · 课后复习</div><h1>Practice & Recall / 自由作答与校验</h1><p>已检查 ${done.length}/${q.length} · 待完成或待复习 ${needs.length}。可重复提交，查看参考答案。</p><div class="actions" style="margin-top:14px"><button class="button primary" id="only-missed">仅显示待复习题 / Needs review</button><button class="button" id="show-all">全部试题 / All</button></div></section><div id="review-list">${q.map(renderQ).join('')}</div>`);$('#go-review').classList.add('active')}
 function progressPage(){view='progress';shell(`<section class="hero"><div class="eyebrow">LEARNING RECORD</div><h1>📊 Progress / 学习进度</h1><div class="statrow"><div class="stat"><b>${pct()}%</b><small>Lecture completion</small></div><div class="stat"><b>${mastered()}/${current.vocab.items.length}</b><small>Words remembered</small></div><div class="stat"><b>${current.course.questions.filter(q=>state.checks[key(q.id)]).length}/${current.course.questions.length}</b><small>Answers checked</small></div></div><div class="progress"><i style="width:${pct()}%"></i></div></section><div class="spaced"><h2>Chapter progress / 小节完成情况</h2>${modules().map(m=>`<div class="review-item"><h3>${esc(m.title.en)} / ${esc(m.title.zh)}</h3><p class="muted">${m.sections.filter((s,i)=>state.completed[key(`${m.id}-${String(i+1).padStart(2,'0')}`)]).length}/${m.sections.length} chapters completed</p><button class="button" data-go-module="${esc(m.id)}">继续学习 / Continue →</button></div>`).join('')}</div><p class="small-note">学习进度仅保存在当前浏览器。建议定期导出JSON备份，以免清除浏览器数据后丢失。<br>Data stays in this browser; export backups regularly.</p>`);$('#go-progress').classList.add('active')}
 function exportProgress(){let payload={format:'SEHS5001_ACADEMY_PROGRESS',version:2,date:new Date().toISOString(),state};download('SEHS5001_learning_progress.json',JSON.stringify(payload,null,2))}
@@ -60,7 +60,7 @@ try{localStorage.setItem('sehs5001-extra-lectures-v2',JSON.stringify(lectures.fi
 current=l;state.selectedLecture=l.id;save();lectureHome();notify(`${l.id} 已导入 / Lecture imported`)}
 function setView(which){if(which==='vocab')vocabPage();else if(which==='review')reviewPage();else if(which==='progress')progressPage();else lectureHome();window.scrollTo({top:0,behavior:'smooth'})}
 function findQuestion(id){return current.course.questions.find(q=>q.id===id)}
-function findWord(id){return current.vocab.items.find(v=>v.id===id)}
+function findWord(id){return current.vocab.items.find(v=>v.id===id)||personalWords().find(v=>v.id===id)}
 function wordUpdate(id){let w=findWord(id);if(!w)return;all('#word-'+CSS.escape(id)).forEach(card=>{card.classList.toggle('mastered',!!state.mastered[key(id)]);card.querySelector('.wordline .badge').textContent=state.mastered[key(id)]?'✓ Remembered':'New';card.querySelector('[data-master]').textContent=state.mastered[key(id)]?'↩ 重学':'✓ 记住了'});$('#word-count').textContent=`${mastered()}/${current.vocab.items.length}`}
 function checkSpelling(id){
  const w=findWord(id),box=document.getElementById('spell-'+id);
@@ -108,8 +108,78 @@ if(n.id==='import-data'){$('#import-picker').click();return}
 document.addEventListener('input',e=>{let x=e.target;if(x.matches('[data-answer]')){state.answers[key(x.dataset.answer)]=x.value;delete state.checks[key(x.dataset.answer)];const feedbackEl=document.getElementById('feedback-'+x.dataset.answer);if(feedbackEl)feedbackEl.textContent='答案已修改，请重新核对 / Answer changed; check again';save()}});
 $('#voice-locale').addEventListener('change',e=>{state.locale=e.target.value;save()});
 $('#import-picker').addEventListener('change',e=>{let f=e.target.files[0];if(!f)return;f.text().then(t=>{try{importJSON(t)}catch(x){notify('导入失败 / Import failed: '+x.message)}});e.target.value=''});
+// Responsive course navigation.
+const sidebar=document.querySelector('.sidebar');sidebar.id='course-sidebar';
+const menuButton=document.createElement('button');menuButton.type='button';menuButton.id='menu-toggle';menuButton.className='smallbtn';menuButton.textContent='☰ 课程菜单';menuButton.setAttribute('aria-controls','course-sidebar');menuButton.setAttribute('aria-expanded','false');document.querySelector('.topbar').prepend(menuButton);
+const menuShade=document.createElement('button');menuShade.type='button';menuShade.id='menu-shade';menuShade.setAttribute('aria-label','关闭课程菜单');menuShade.tabIndex=-1;document.body.appendChild(menuShade);
+const mobileLayout=window.matchMedia('(max-width: 980px)');
+function setMenu(open,restoreFocus=false){document.body.classList.toggle('menu-open',open);menuButton.setAttribute('aria-expanded',String(open));sidebar.inert=mobileLayout.matches&&!open;if(restoreFocus)menuButton.focus()}
+menuButton.addEventListener('click',()=>setMenu(!document.body.classList.contains('menu-open')));
+menuShade.addEventListener('click',()=>setMenu(false,true));
+sidebar.addEventListener('click',e=>{if(mobileLayout.matches&&e.target.closest('button'))setMenu(false,true)});
+document.addEventListener('keydown',e=>{
+ if(!mobileLayout.matches||!document.body.classList.contains('menu-open'))return;
+ if(e.key==='Escape'){setMenu(false,true);return}
+ if(e.key==='Tab'){const nodes=[menuButton,...sidebar.querySelectorAll('button,a,input,select')];const i=nodes.indexOf(document.activeElement);e.preventDefault();nodes[(i+(e.shiftKey?-1:1)+nodes.length)%nodes.length].focus()}
+});
+mobileLayout.addEventListener('change',()=>setMenu(false));setMenu(false);
+// Personal dictionary and text-selection tools. Stored/exported with existing progress.
+function personalWords(){return Array.isArray(state.customWords)?state.customWords:[]}
+function cleanSelectedWord(text){
+ const value=String(text||'').normalize('NFKC').trim().replace(/\s+/g,' ');
+ return value.length<=100&&/^[A-Za-z]+(?:[ '-][A-Za-z]+)*$/.test(value)?value:'';
+}
+function addPersonalWord(raw){
+ const word=cleanSelectedWord(raw);
+ if(!word){notify('请选择或输入英文单词/短语（最多100字符）');return false}
+ if(personalWords().some(w=>w.word.toLowerCase()===word.toLowerCase())){notify('已在个人词典中 / Already saved');return true}
+ const known=current.vocab.items.find(w=>w.word.toLowerCase()===word.toLowerCase());
+ const entry={id:'personal-'+Date.now().toString(36)+'-'+Math.random().toString(36).slice(2,8),word:word.toLowerCase(),ipa:known?.ipa||'',zh:known?.zh||'',example:known?.example||'',lecture:current.id};
+ state.customWords=[...personalWords(),entry];save();notify('已加入个人词典 / Added to your dictionary');return true;
+}
+function dictionaryHTML(){return `<section class="spaced" id="personal-dictionary"><h2>📖 我的词典 / My Dictionary</h2><p class="small-note">在正文中拖动选中英文，或双击单词，即可发音、逐字母拼读和收藏。手机可长按选词。也可在这里手动添加。生词释义可自行填写；词典随进度一起导出。</p><form id="dictionary-add" class="dictionary-add"><input id="dictionary-word" aria-label="添加英文单词或短语" placeholder="例如 quality / effective" maxlength="100" required><button type="submit" class="button primary">＋ 加入词典</button></form><div class="vocab-wrap">${personalWords().map(w=>`<div class="personal-entry">${wordCard(w)}<label>中文释义 / 我的笔记<input class="dictionary-note" data-word-note="${esc(w.id)}" aria-label="${esc(w.word)} 的释义" value="${esc(w.zh)}" placeholder="填写中文含义或记忆提示"></label><div class="word-actions"><button class="button sm" data-letter-say="${esc(w.word)}">A·B·C 逐字母拼读</button><a class="button sm" href="https://dictionary.cambridge.org/dictionary/english-chinese-simplified/${encodeURIComponent(w.word)}" target="_blank" rel="noopener noreferrer">查词 ↗</a><button class="button sm" data-remove-word="${esc(w.id)}">移除</button></div></div>`).join('')||'<p class="empty">暂无收藏。试着选中 quality 或 effective 加入词典。</p>'}</div></section>`}
+const selectionTools=document.createElement('div');
+selectionTools.id='selection-tools';selectionTools.hidden=true;selectionTools.setAttribute('role','toolbar');selectionTools.setAttribute('aria-label','英文划词工具');
+selectionTools.innerHTML='<strong id="selected-word"></strong><div class="word-actions"><button type="button" class="button sm" data-selection-action="listen">🔊 发音</button><button type="button" class="button sm" data-selection-action="spell">A·B·C 拼读</button><button type="button" class="button sm primary" data-selection-action="save">＋ 加入词典</button><button type="button" class="button sm" data-selection-action="close" aria-label="关闭划词工具">关闭</button></div>';
+document.body.appendChild(selectionTools);
+let selectedWord='';
+function showSelectionTools(){
+ const selection=window.getSelection();
+ if(!selection||selection.isCollapsed)return;
+ const anchor=selection.anchorNode?.parentElement,focus=selection.focusNode?.parentElement;
+ if(!anchor?.closest('#view')||!focus?.closest('#view')||anchor.closest('input,textarea,[contenteditable]'))return;
+ const word=cleanSelectedWord(selection.toString());
+ if(!word){selectionTools.hidden=true;return}
+ selectedWord=word;document.getElementById('selected-word').textContent=word;selectionTools.hidden=false;
+}
+document.addEventListener('selectionchange',()=>{clearTimeout(showSelectionTools.timer);showSelectionTools.timer=setTimeout(showSelectionTools,180)});
+document.addEventListener('pointerup',e=>{if(!e.target.closest('#selection-tools'))setTimeout(showSelectionTools,0)});
+document.addEventListener('keydown',e=>{if(e.key==='Escape')selectionTools.hidden=true});
+selectionTools.addEventListener('pointerdown',e=>{if(e.pointerType==='mouse')e.preventDefault()});
+selectionTools.addEventListener('click',e=>{
+ const action=e.target.closest('[data-selection-action]')?.dataset.selectionAction;
+ if(action==='listen')say(selectedWord);
+ if(action==='spell')say([...selectedWord].map(c=>c===' '?'next word':c==='-'?'hyphen':c).join(', '));
+ if(action==='save'){addPersonalWord(selectedWord);if(view==='vocab')vocabPage()}
+ if(action==='close')selectionTools.hidden=true;
+});
+document.addEventListener('submit',e=>{
+ if(e.target.id!=='dictionary-add')return;e.preventDefault();
+ if(addPersonalWord(document.getElementById('dictionary-word').value)){vocabPage();document.getElementById('personal-dictionary').scrollIntoView({block:'start'})}
+});
+document.addEventListener('click',e=>{
+ const button=e.target.closest('button');if(!button)return;
+ if(button.dataset.letterSay)say([...button.dataset.letterSay].map(c=>c===' '?'next word':c==='-'?'hyphen':c).join(', '));
+ if(button.dataset.removeWord){state.customWords=personalWords().filter(w=>w.id!==button.dataset.removeWord);save();vocabPage();notify('已移除 / Removed')}
+});
+document.addEventListener('input',e=>{
+ if(!e.target.matches('[data-word-note]'))return;
+ const word=personalWords().find(w=>w.id===e.target.dataset.wordNote);if(word){word.zh=e.target.value;save()}
+});
+
 try{let extras=JSON.parse(localStorage.getItem('sehs5001-extra-lectures-v2')||'[]');if(Array.isArray(extras))lectures.push(...extras.filter(l=>l.id&&l.course?.modules&&l.vocab?.items))}catch(e){}
 current=lectures.find(l=>l.id===state.selectedLecture)||lectures[0];
 if(!('speechSynthesis'in window))$('#speech-status').textContent='⚠ 当前浏览器不支持语音播放';
 lectureHome();
 })();
+
