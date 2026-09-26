@@ -894,6 +894,269 @@
       "strictEnglish": false,
       "source": "Lecture 1 PPT · Slide 22",
       "type": "short_answer"
+    },
+    {
+      "id": "L1-Q18",
+      "chapterId": "01-01",
+      "module": "01",
+      "slide": 6,
+      "question": {
+        "en": "What two things does Q-Mark assess?",
+        "zh": "Q-Mark认证评估哪两个方面？"
+      },
+      "answer": {
+        "en": "Product standards and an effective quality management system.",
+        "zh": "产品标准，以及有效的质量管理体系。"
+      },
+      "rubric": [
+        {
+          "label": "Product standards",
+          "accept": [
+            "product standards",
+            "standards",
+            "产品标准",
+            "标准"
+          ]
+        },
+        {
+          "label": "Quality management system",
+          "accept": [
+            "quality management system",
+            "management system",
+            "质量管理体系",
+            "管理体系"
+          ]
+        }
+      ],
+      "type": "short_answer",
+      "source": "学习辅助题（非教师原题）· Based on the existing Lecture 1 summary, slide 6"
+    },
+    {
+      "id": "L1-Q19",
+      "chapterId": "01-04",
+      "module": "01",
+      "slide": 14,
+      "question": {
+        "en": "Which four stakeholder groups have different views of quality?",
+        "zh": "哪四类利益相关者对质量有不同关注？"
+      },
+      "answer": {
+        "en": "Patients, providers, payers and regulators.",
+        "zh": "患者、医疗服务提供者、支付方和监管机构。"
+      },
+      "rubric": [
+        {
+          "label": "Patients",
+          "accept": [
+            "patients",
+            "patient",
+            "患者"
+          ]
+        },
+        {
+          "label": "Providers",
+          "accept": [
+            "providers",
+            "provider",
+            "医护",
+            "提供者"
+          ]
+        },
+        {
+          "label": "Payers",
+          "accept": [
+            "payers",
+            "payer",
+            "支付方"
+          ]
+        },
+        {
+          "label": "Regulators",
+          "accept": [
+            "regulators",
+            "regulator",
+            "监管"
+          ]
+        }
+      ],
+      "type": "short_answer",
+      "source": "学习辅助题（非教师原题）· Based on the existing Lecture 1 summary, slide 14"
+    },
+    {
+      "id": "L1-Q20",
+      "chapterId": "02-02",
+      "module": "02",
+      "slide": 17,
+      "question": {
+        "en": "Which two types of investment help reduce failure costs?",
+        "zh": "哪两类投入有助于减少失败成本？"
+      },
+      "answer": {
+        "en": "Prevention and appraisal investments can reduce errors and failure costs.",
+        "zh": "预防与评估投入有助于减少错误及失败成本。"
+      },
+      "rubric": [
+        {
+          "label": "Prevention",
+          "accept": [
+            "prevention",
+            "预防"
+          ]
+        },
+        {
+          "label": "Appraisal",
+          "accept": [
+            "appraisal",
+            "评估"
+          ]
+        }
+      ],
+      "type": "short_answer",
+      "source": "学习辅助题（非教师原题）· Based on the existing Lecture 1 summary, slide 17"
+    },
+    {
+      "id": "L1-Q21",
+      "chapterId": "03-01",
+      "module": "03",
+      "slide": 20,
+      "question": {
+        "en": "What does QA stand for, and name one of its goals?",
+        "zh": "QA全称是什么？列出一个目标。"
+      },
+      "answer": {
+        "en": "Quality Assurance. Goals include maintaining quality, preventing errors and continuous improvement.",
+        "zh": "质量保证。目标包括维持质量、预防错误和持续改进。"
+      },
+      "rubric": [
+        {
+          "label": "Quality Assurance",
+          "accept": [
+            "quality assurance",
+            "质量保证"
+          ]
+        },
+        {
+          "label": "A QA goal",
+          "accept": [
+            "maintaining quality",
+            "maintain quality",
+            "preventing errors",
+            "prevent errors",
+            "continuous improvement",
+            "维持质量",
+            "预防错误",
+            "持续改进"
+          ]
+        }
+      ],
+      "type": "short_answer",
+      "source": "学习辅助题（非教师原题）· Based on the existing Lecture 1 summary, slide 20"
+    },
+    {
+      "id": "L1-Q22",
+      "chapterId": "04-01",
+      "module": "04",
+      "slide": 24,
+      "question": {
+        "en": "Why is healthcare a complex system? Name what interacts.",
+        "zh": "为什么医疗是复杂系统？指出相互影响的组成部分。"
+      },
+      "answer": {
+        "en": "Professions, processes and technologies are interconnected and interact dynamically.",
+        "zh": "不同专业、流程和技术彼此关联，并动态相互影响。"
+      },
+      "rubric": [
+        {
+          "label": "Components",
+          "accept": [
+            "professions",
+            "professionals",
+            "processes",
+            "technologies",
+            "专业",
+            "流程",
+            "技术"
+          ]
+        },
+        {
+          "label": "Interaction",
+          "accept": [
+            "interconnected",
+            "interact",
+            "interactions",
+            "interdependent",
+            "关联",
+            "相互影响",
+            "相互依赖",
+            "相互作用"
+          ]
+        }
+      ],
+      "type": "short_answer",
+      "source": "学习辅助题（非教师原题）· Based on the existing Lecture 1 summary, slide 24"
+    },
+    {
+      "id": "L1-Q23",
+      "chapterId": "05-01",
+      "module": "05",
+      "slide": 28,
+      "question": {
+        "en": "Which workflow and communication qualities help protect care quality?",
+        "zh": "什么样的工作流程和沟通有助于保障医疗质量？"
+      },
+      "answer": {
+        "en": "Use efficient workflows and clear communication. Early detection of system failures also helps.",
+        "zh": "使用高效流程和清晰沟通，及早发现系统故障也有帮助。"
+      },
+      "rubric": [
+        {
+          "label": "Efficient workflows",
+          "accept": [
+            "efficient workflows",
+            "efficient workflow",
+            "高效流程",
+            "高效工作流程"
+          ]
+        },
+        {
+          "label": "Clear communication",
+          "accept": [
+            "clear communication",
+            "清晰沟通",
+            "有效沟通"
+          ]
+        }
+      ],
+      "type": "short_answer",
+      "source": "学习辅助题（非教师原题）· Based on the existing Lecture 1 summary, slide 28"
+    },
+    {
+      "id": "L1-Q24",
+      "chapterId": "05-04",
+      "module": "05",
+      "slide": 31,
+      "question": {
+        "en": "When managing healthcare costs, what must not be compromised?",
+        "zh": "管理医疗成本时，不能牺牲什么？"
+      },
+      "answer": {
+        "en": "Patient outcomes must not be compromised.",
+        "zh": "不能牺牲患者结果。"
+      },
+      "rubric": [
+        {
+          "label": "Patient outcomes",
+          "accept": [
+            "patient outcomes",
+            "patient outcome",
+            "患者结果",
+            "患者治疗结果",
+            "治疗结果"
+          ]
+        }
+      ],
+      "type": "short_answer",
+      "source": "学习辅助题（非教师原题）· Based on the existing Lecture 1 summary, slide 31"
     }
   ]
 }
