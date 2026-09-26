@@ -1,0 +1,13 @@
+const fs=require('node:fs'),vm=require('node:vm'),assert=require('node:assert/strict');
+const src=fs.readFileSync('app.js','utf8'),state={},messages=[];
+const context={state,current:{id:'lecture-1',vocab:{items:[{word:'quality',zh:'质量',ipa:'/quality/'}]}},save(){},notify:m=>messages.push(m)};
+vm.createContext(context);
+vm.runInContext(src.slice(src.indexOf('function personalWords()'),src.indexOf('function dictionaryHTML()')),context);
+assert.equal(context.addPersonalWord('  quality  '),true);assert.equal(state.customWords[0].zh,'质量');
+context.addPersonalWord('QUALITY');assert.equal(state.customWords.length,1);
+context.addPersonalWord('effective');assert.equal(state.customWords.length,2);
+context.addPersonalWord('patient-centered care');assert.equal(state.customWords.length,3);
+assert.equal(context.addPersonalWord('<script>'),false);assert.equal(context.addPersonalWord('中文'),false);
+assert.equal(context.cleanSelectedWord('a'.repeat(101)),'');
+assert.equal(JSON.parse(JSON.stringify(state)).customWords.length,3);
+console.log('PASS: selection validation, dictionary insertion, duplicate prevention, known meaning reuse, phrases and serializable progress');
