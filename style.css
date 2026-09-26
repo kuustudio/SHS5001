@@ -8,3 +8,7 @@
 @media(prefers-reduced-motion:reduce){.sidebar{transition:none}}
 @media(max-width:980px){.sidebar .sidehead,.sidebar .sidefoot,.sidebar .chapter-mini,.sidebar .soon{display:block}.sidebar .logo{margin-bottom:20px}#selection-tools{box-sizing:border-box;bottom:max(12px,env(safe-area-inset-bottom))}.personal-entry,.word-card{overflow-wrap:anywhere}}
 @media print{#selection-tools,#menu-toggle,#menu-shade{display:none!important}}
+
+
+/* Bilingual text must never collapse into adjacent words. */
+.bilingual-text{display:block;min-width:0;overflow-wrap:anywhere}.bilingual-text>.bi-line{display:block}.bilingual-text>.zh{margin-top:.28em}h1 .bilingual-text>.zh,h2 .bilingual-text>.zh{font-size:.88em;line-height:1.4}.lang-zh .bilingual-text>.zh{margin-top:0}h1,h2{overflow-wrap:anywhere}
