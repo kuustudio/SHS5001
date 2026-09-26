@@ -2,6 +2,12 @@
   "name": "shs5001-learning-site",
   "version": "2.0.1",
   "private": true,
-  "scripts": {"build": "node scripts/build.mjs", "check": "node --check app.js && node scripts/build.mjs"},
-  "engines": {"node": ">=20"}
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "check": "node --check app.js && node scripts/build.mjs",
+    "deploy": "npm run build && npx wrangler deploy"
+  },
+  "engines": {
+    "node": ">=20"
+  }
 }
