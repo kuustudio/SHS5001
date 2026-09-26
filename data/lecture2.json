@@ -121,7 +121,7 @@
         "id": "L2-03",
         "title": {
           "en": "PDCA",
-          "zh": "PDCA 持续改进循环"
+          "zh": "持续改进循环"
         },
         "objective": {
           "en": "Explain each stage and apply the cycle to a healthcare problem.",
@@ -205,7 +205,7 @@
         "id": "L2-04",
         "title": {
           "en": "5S",
-          "zh": "5S 工作场所管理"
+          "zh": "工作场所管理"
         },
         "objective": {
           "en": "Know the five steps and distinguish standardizing from sustaining.",
@@ -251,7 +251,7 @@
         "id": "L2-05",
         "title": {
           "en": "BPR",
-          "zh": "业务流程再造 BPR"
+          "zh": "业务流程再造"
         },
         "objective": {
           "en": "Understand radical redesign, the four slide principles and digital risks.",
@@ -285,7 +285,7 @@
         "id": "L2-06",
         "title": {
           "en": "QFD and method selection",
-          "zh": "质量功能展开 QFD 与方法选择"
+          "zh": "质量功能展开与方法选择"
         },
         "objective": {
           "en": "Translate patient needs into service specifications and select an appropriate method.",
