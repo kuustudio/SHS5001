@@ -1,0 +1,1680 @@
+{
+  "schemaVersion": 2,
+  "lectureId": "lecture-3",
+  "date": "22 September 2026",
+  "title": {
+    "en": "Quality Management Methods II",
+    "zh": "质量管理方法 II"
+  },
+  "course": {
+    "sourceNotice": {
+      "en": "Lecture 3, 22 September 2026. Based on the 51-page student slide deck and classroom transcript. Incomplete slide sections are supplemented from the transcript and labelled. Case percentages are unverified teaching examples.",
+      "zh": "Lecture 3（2026年9月22日）。根据51页学生版课件与课堂转录整理，留空或不清晰处按课堂讲述补充并标注。案例百分比仅作课件示例记录，未核实为研究结论。"
+    },
+    "modules": [
+      {
+        "id": "L3-01",
+        "title": {
+          "en": "Advanced quality management",
+          "zh": "进阶质量管理概览"
+        },
+        "objective": {
+          "en": "Understand shared aims and proactive improvement.",
+          "zh": "理解共同目标与主动预防。"
+        },
+        "sections": [
+          {
+            "slide": 4,
+            "pages": [
+              4,
+              5,
+              6
+            ],
+            "title": "Shared goals and limitations",
+            "titleZh": "共同目标与实施限制",
+            "html": "<div class=\"summary\"><div class=\"tag\">核心重点 / Key points</div><div class=\"grid\"><div class=\"en\"><b>Advanced methods aim to enhance care quality, optimize operations, use evidence and support safety.</b></div><div class=\"zh\"><b>进阶方法旨在提升照护质量、优化运作、运用证据、支持安全目标。</b></div></div></div><article class=\"card\"><div class=\"grid\"><div class=\"en\">Core methods: Taguchi, FTA, FMEA, Kaizen, Quality Circles, Six Sigma, Lean and Lean Sigma.</div><div class=\"zh\">核心方法：田口方法、故障树分析、失效模式与影响分析、持续改善、品管圈、六西格玛、精益、精益六西格玛。</div></div></article><article class=\"card\"><div class=\"grid\"><div class=\"en\">Proactive improvement identifies potential failures before patients are harmed.</div><div class=\"zh\">主动预防是在患者受到伤害之前识别潜在失效。</div></div></article><article class=\"card\"><div class=\"grid\"><div class=\"en\">Benefits depend on resources, data, training, staff participation and the fit with local conditions.</div><div class=\"zh\">成效取决于资源、数据、培训、员工参与以及是否适合本地情境。</div></div></article><div class=\"note\"><b>老师课堂补充 / Classroom commentary</b><p>老师反复强调：方法不同，但患者安全、有效性、效率和减少浪费仍是共同方向。Different tools share common improvement goals.</p></div><div class=\"source\">Lecture 3-Quality Management Methods II-student(1).pdf · PDF pages 4, 5, 6；Lesson3.docx 课堂转录（整理意译）</div>"
+          }
+        ]
+      },
+      {
+        "id": "L3-02",
+        "title": {
+          "en": "Taguchi methods",
+          "zh": "田口方法与稳健设计"
+        },
+        "objective": {
+          "en": "Explain variation, robust design, noise factors and practical limits.",
+          "zh": "理解变异、稳健设计、噪声因素及实际限制。"
+        },
+        "sections": [
+          {
+            "slide": 8,
+            "pages": [
+              8,
+              9,
+              10
+            ],
+            "title": "Robust design",
+            "titleZh": "稳健设计的核心",
+            "html": "<div class=\"summary\"><div class=\"tag\">核心重点 / Key points</div><div class=\"grid\"><div class=\"en\"><b>Taguchi methods emphasize reducing unwanted variation during design so a product or process performs consistently under varying conditions.</b></div><div class=\"zh\"><b>田口方法强调在设计阶段减少不必要变异，使产品或流程在不同条件下仍保持稳定表现。</b></div></div></div><article class=\"card\"><div class=\"grid\"><div class=\"en\">Robust does not mean that conditions never change; it means performance is less sensitive to those changes.</div><div class=\"zh\">稳健不是条件永远不变，而是表现较少受条件变化影响。</div></div></article><article class=\"card\"><div class=\"grid\"><div class=\"en\">The slides credit Japanese engineer and statistician Genichi Taguchi.</div><div class=\"zh\">课件介绍该方法由日本工程师、统计学家 Genichi Taguchi 发展。</div></div></article><div class=\"small-note\"><b>辨析与学习提示 / Study note</b><p>重要辨析：不要把课堂中的“尽量减少变异”背成“完全没有变异”或“永远不用调整”。</p></div><div class=\"source\">Lecture 3-Quality Management Methods II-student(1).pdf · PDF pages 8, 9, 10</div>"
+          },
+          {
+            "slide": 10,
+            "pages": [
+              10
+            ],
+            "title": "Medical imaging example",
+            "titleZh": "医学影像设备的稳健设计",
+            "html": "<div class=\"summary\"><div class=\"tag\">核心重点 / Key points</div><div class=\"grid\"><div class=\"en\"><b>The student slide introduces a medical imaging device but leaves the example incomplete.</b></div><div class=\"zh\"><b>学生版课件引出医学影像设备，但例子文字未写完整。</b></div></div></div><article class=\"card\"><div class=\"grid\"><div class=\"en\">Classroom explanation: consider exposure settings and contrast alongside patient movement and machine calibration.</div><div class=\"zh\">课堂补充：同时考虑曝光设置、对比度、患者移动和机器校准。</div></div></article><article class=\"card\"><div class=\"grid\"><div class=\"en\">The design goal is reliable image quality despite variation in operating conditions.</div><div class=\"zh\">设计目标是在操作条件变化时仍保持可靠图像质量。</div></div></article><div class=\"note\"><b>老师课堂补充 / Classroom commentary</b><p>第10页留空部分依据老师讲述补充。老师提出把移动、校准和设置变化在设计阶段一起考虑。This completes the unfinished example using the transcript.</p></div><div class=\"small-note\"><b>辨析与学习提示 / Study note</b><p>可联系你的 DICOM 项目理解“图像质量是否稳定”；这是教学案例，不是设备参数或临床设置建议。</p></div><div class=\"source\">Lecture 3-Quality Management Methods II-student(1).pdf · PDF pages 10；Lesson3.docx 课堂转录（整理意译）</div>"
+          },
+          {
+            "slide": 11,
+            "pages": [
+              11,
+              13
+            ],
+            "title": "Orthogonal arrays and noise",
+            "titleZh": "正交表、参数与噪声因素",
+            "html": "<div class=\"summary\"><div class=\"tag\">核心重点 / Key points</div><div class=\"grid\"><div class=\"en\"><b>Orthogonal arrays organize selected combinations of factors to study them efficiently. Signal-to-noise ratios help compare performance robustness.</b></div><div class=\"zh\"><b>正交表组织选定的因素组合，以较有效率地研究因素；信噪比帮助比较表现的稳健性。</b></div></div></div><article class=\"card\"><div class=\"grid\"><div class=\"en\">The slides discuss dose, interval and biomarkers as factors, and patient differences or adherence as sources of variation.</div><div class=\"zh\">课件讨论剂量、间隔、生物标志物等因素，以及患者差异或依从性等变异来源。</div></div></article><article class=\"card\"><div class=\"grid\"><div class=\"en\">Noise means influences that are difficult to control in the design context, not necessarily audible sound.</div><div class=\"zh\">Noise 在这里指设计情境中难以控制的影响，不一定是声音。</div></div></article><article class=\"card\"><div class=\"grid\"><div class=\"en\">The chemotherapy example reports 35% fewer dose-related adverse events, but gives no identifiable study citation.</div><div class=\"zh\">化疗例子写到剂量相关不良事件减少35%，但没有提供可识别的研究出处。</div></div></article><div class=\"small-note\"><b>辨析与学习提示 / Study note</b><p>35%只作为课件示例数字记录。正交设计不能替代临床试验伦理、安全审查或个体化判断；不据此制定剂量。</p></div><div class=\"source\">Lecture 3-Quality Management Methods II-student(1).pdf · PDF pages 11, 13</div>"
+          },
+          {
+            "slide": 12,
+            "pages": [
+              12,
+              14
+            ],
+            "title": "Strengths, limits and software",
+            "titleZh": "优势、限制与分析工具",
+            "html": "<div class=\"summary\"><div class=\"tag\">核心重点 / Key points</div><div class=\"grid\"><div class=\"en\"><b>Strengths: reduced process variation, greater reliability and efficient use of experimental runs.</b></div><div class=\"zh\"><b>优势：减少流程变异、提高可靠性、较有效率地安排试验次数。</b></div></div></div><article class=\"card\"><div class=\"grid\"><div class=\"en\">Limits: complex interactions, nonlinear healthcare processes, statistical expertise, training and cultural resistance.</div><div class=\"zh\">限制：复杂交互作用、医疗流程的非线性、统计能力、培训和文化阻力。</div></div></article><article class=\"card\"><div class=\"grid\"><div class=\"en\">The software slide lists Minitab, JMP, Design-Expert and R as examples.</div><div class=\"zh\">工具页列出 Minitab、JMP、Design-Expert、R 作为例子。</div></div></article><article class=\"card\"><div class=\"grid\"><div class=\"en\">Clinical knowledge and statistical knowledge must be combined to interpret results meaningfully.</div><div class=\"zh\">解释结果需要结合临床知识与统计知识。</div></div></article><div class=\"note\"><b>老师课堂补充 / Classroom commentary</b><p>老师说软件名称用于举例，不要求全部背诵；也提醒只会计算、不了解临床背景并不够。Software was illustrative; clinical understanding is needed alongside analysis.</p></div><div class=\"small-note\"><b>辨析与学习提示 / Study note</b><p>第14页部分文字显示不清，结合可提取文字与课堂讲述整理。不将课件关于“线性”的简述推广为所有田口设计都只能处理线性关系。</p></div><div class=\"source\">Lecture 3-Quality Management Methods II-student(1).pdf · PDF pages 12, 14；Lesson3.docx 课堂转录（整理意译）</div>"
+          }
+        ]
+      },
+      {
+        "id": "L3-03",
+        "title": {
+          "en": "FTA and FMEA",
+          "zh": "系统性风险评估"
+        },
+        "objective": {
+          "en": "Distinguish failure causes from failure modes and effects.",
+          "zh": "区分失效原因与失效模式及影响。"
+        },
+        "sections": [
+          {
+            "slide": 16,
+            "pages": [
+              16,
+              17,
+              18,
+              19
+            ],
+            "title": "Fault Tree Analysis",
+            "titleZh": "故障树分析的方向与逻辑门",
+            "html": "<div class=\"summary\"><div class=\"tag\">核心重点 / Key points</div><div class=\"grid\"><div class=\"en\"><b>FTA = Fault Tree Analysis. Start from an undesired top event and trace combinations of contributing causes downward.</b></div><div class=\"zh\"><b>FTA＝故障树分析。从不希望发生的顶事件开始，向下追查促成原因及其组合。</b></div></div></div><article class=\"card\"><div class=\"grid\"><div class=\"en\">FTA is top-down and deductive; basic events are linked through AND and OR logic gates.</div><div class=\"zh\">FTA 是自上而下的演绎分析，以 AND、OR 逻辑门连接基本事件。</div></div></article><article class=\"card\"><div class=\"grid\"><div class=\"en\">AND requires the linked conditions together; OR can be satisfied by any linked condition.</div><div class=\"zh\">AND 要求相关条件同时成立；OR 表示任一相关条件成立即可。</div></div></article><article class=\"card\"><div class=\"grid\"><div class=\"en\">The slide’s diagram uses an incorrect insulin dose as the top event and traces possible delivery or calculation failures.</div><div class=\"zh\">课件图以错误胰岛素剂量为顶事件，追查可能的输送或计算失效。</div></div></article><div class=\"small-note\"><b>辨析与学习提示 / Study note</b><p>FTA 从失效事件往下找原因，不是单纯按时间顺序画流程图。它可帮助根因调查，但不等于所有 Root Cause Analysis 方法。</p></div><div class=\"source\">Lecture 3-Quality Management Methods II-student(1).pdf · PDF pages 16, 17, 18, 19</div>"
+          },
+          {
+            "slide": 17,
+            "pages": [
+              17,
+              20
+            ],
+            "title": "FTA healthcare cases",
+            "titleZh": "用药错误与麻醉设备案例",
+            "html": "<div class=\"summary\"><div class=\"tag\">核心重点 / Key points</div><div class=\"grid\"><div class=\"en\"><b>For medication errors, build a fault tree to identify critical pathways and select preventive measures.</b></div><div class=\"zh\"><b>针对用药错误，建立故障树识别关键路径，再选择预防措施。</b></div></div></div><article class=\"card\"><div class=\"grid\"><div class=\"en\">The anesthesia example traces gas leaks, incorrect settings, valve faults and missed pre-use checks associated with hypoxia.</div><div class=\"zh\">麻醉例子追查与缺氧相关的气体泄漏、设置错误、阀门故障及漏做使用前检查。</div></div></article><article class=\"card\"><div class=\"grid\"><div class=\"en\">Responses include preventive maintenance, pre-use checks and staff training.</div><div class=\"zh\">应对包括预防性维护、使用前检查和员工培训。</div></div></article><div class=\"small-note\"><b>辨析与学习提示 / Study note</b><p>这是风险分析学习，不是麻醉设备故障排查操作指引。</p></div><div class=\"source\">Lecture 3-Quality Management Methods II-student(1).pdf · PDF pages 17, 20</div>"
+          },
+          {
+            "slide": 21,
+            "pages": [
+              21,
+              22
+            ],
+            "title": "Failure modes and effects",
+            "titleZh": "FMEA 步骤与风险排序",
+            "html": "<div class=\"summary\"><div class=\"tag\">核心重点 / Key points</div><div class=\"grid\"><div class=\"en\"><b>FMEA = Failure Mode and Effects Analysis. Identify how a process may fail, its effects and actions to reduce the risk.</b></div><div class=\"zh\"><b>FMEA＝失效模式与影响分析。识别流程可能怎样失效、有什么影响，以及如何降低风险。</b></div></div></div><article class=\"card\"><div class=\"grid\"><div class=\"en\">Map the process, identify failure modes, assess effects and prioritize risks before selecting corrective actions.</div><div class=\"zh\">绘制流程、识别失效模式、评估影响、排列风险优先级，再选择改进措施。</div></div></article><article class=\"card\"><div class=\"grid\"><div class=\"en\">The medication case uses severity, occurrence and detection scores.</div><div class=\"zh\">用药案例使用严重度、发生频度和可检测性评分。</div></div></article><article class=\"card\"><div class=\"grid\"><div class=\"en\">Severity concerns consequences; occurrence concerns how often failure may happen; detection concerns finding it before harm.</div><div class=\"zh\">严重度关注后果；发生频度关注发生可能性；可检测性关注能否在造成伤害前发现。</div></div></article><div class=\"note\"><b>老师课堂补充 / Classroom commentary</b><p>老师特别补充：流程图应覆盖所有步骤，不应只画已经知道的高风险步骤。Map all steps, not just previously identified high-risk steps.</p></div><div class=\"small-note\"><b>辨析与学习提示 / Study note</b><p>不同评分表对 detection 的方向定义可能不同，本讲材料未给评分表，不能自行补出统一阈值。</p></div><div class=\"source\">Lecture 3-Quality Management Methods II-student(1).pdf · PDF pages 21, 22；Lesson3.docx 课堂转录（整理意译）</div>"
+          },
+          {
+            "slide": 22,
+            "pages": [
+              22,
+              23
+            ],
+            "title": "Medication and transfusion FMEA",
+            "titleZh": "用药与输血安全案例",
+            "html": "<div class=\"summary\"><div class=\"tag\">核心重点 / Key points</div><div class=\"grid\"><div class=\"en\"><b>The medication case examines prescribing, dispensing and administration, including wrong dose and wrong patient.</b></div><div class=\"zh\"><b>用药案例覆盖处方、配药和给药，识别错误剂量、错误患者等模式。</b></div></div></div><article class=\"card\"><div class=\"grid\"><div class=\"en\">The slides describe barcode scanning and double-check procedures for medication and transfusion safety.</div><div class=\"zh\">课件描述条码扫描与双重核对，用于用药和输血安全。</div></div></article><article class=\"card\"><div class=\"grid\"><div class=\"en\">The medication case reports a 58% error-rate reduction over six months; no study citation is supplied.</div><div class=\"zh\">用药案例报告六个月内错误率降低58%；材料没有附研究出处。</div></div></article><div class=\"small-note\"><b>辨析与学习提示 / Study note</b><p>58%是课件示例数据，不是已核实研究结论或普遍效果。技术仍需配合正确流程与员工遵循。</p></div><div class=\"source\">Lecture 3-Quality Management Methods II-student(1).pdf · PDF pages 22, 23</div>"
+          },
+          {
+            "slide": 18,
+            "pages": [
+              18,
+              21
+            ],
+            "title": "FTA versus FMEA",
+            "titleZh": "FTA 与 FMEA 怎么区分",
+            "html": "<div class=\"summary\"><div class=\"tag\">核心重点 / Key points</div><div class=\"grid\"><div class=\"en\"><b>FTA asks: what combinations of causes could lead to this failure event?</b></div><div class=\"zh\"><b>FTA 问：哪些原因组合可能导致这个失效事件？</b></div></div></div><article class=\"card\"><div class=\"grid\"><div class=\"en\">FMEA asks: how could each process step fail, what would happen, and how should we reduce the risk?</div><div class=\"zh\">FMEA 问：各流程步骤可能怎样失效、后果是什么、如何降低风险？</div></div></article><article class=\"card\"><div class=\"grid\"><div class=\"en\">They can complement each other in proactive risk assessment.</div><div class=\"zh\">两者可在主动风险评估中互相补充。</div></div></article><div class=\"small-note\"><b>辨析与学习提示 / Study note</b><p>辅助比较题；关键词检查不能判断名称是否写反，请结合参考答案自查。</p></div><div class=\"source\">Lecture 3-Quality Management Methods II-student(1).pdf · PDF pages 18, 21</div>"
+          }
+        ]
+      },
+      {
+        "id": "L3-04",
+        "title": {
+          "en": "Kaizen and Quality Circles",
+          "zh": "持续改善文化与品管圈"
+        },
+        "objective": {
+          "en": "Explain small improvements, frontline participation and sustainability.",
+          "zh": "理解小步改善、一线参与和长期维持。"
+        },
+        "sections": [
+          {
+            "slide": 25,
+            "pages": [
+              25,
+              26,
+              28
+            ],
+            "title": "Kaizen philosophy",
+            "titleZh": "Kaizen：小步、持续、全员",
+            "html": "<div class=\"summary\"><div class=\"tag\">核心重点 / Key points</div><div class=\"grid\"><div class=\"en\"><b>Kaizen means change for the better: small, incremental and continuous improvements involving employees.</b></div><div class=\"zh\"><b>Kaizen 指持续向好改变：通过员工参与，进行小规模、渐进、持续的改善。</b></div></div></div><article class=\"card\"><div class=\"grid\"><div class=\"en\">Core practices: daily improvements, staff empowerment, reducing waste, standardization, data-driven iteration and patient-centered care.</div><div class=\"zh\">核心做法：每日改善、员工赋权、减少浪费、标准化、数据驱动迭代、以患者为中心。</div></div></article><article class=\"card\"><div class=\"grid\"><div class=\"en\">Effective small changes become standards and provide a base for the next improvement.</div><div class=\"zh\">有效的小改变形成标准，并成为下一轮改善的基础。</div></div></article><div class=\"small-note\"><b>辨析与学习提示 / Study note</b><p>联系 Lesson 2：BPR 更强调根本性重设计；Kaizen 更强调日常小步改善。</p></div><div class=\"source\">Lecture 3-Quality Management Methods II-student(1).pdf · PDF pages 25, 26, 28</div>"
+          },
+          {
+            "slide": 27,
+            "pages": [
+              27,
+              29
+            ],
+            "title": "Kaizen cases",
+            "titleZh": "急症室与出院流程改善",
+            "html": "<div class=\"summary\"><div class=\"tag\">核心重点 / Key points</div><div class=\"grid\"><div class=\"en\"><b>A&amp;E example: map the patient journey, identify bottlenecks, test small fixes, measure results and repeat.</b></div><div class=\"zh\"><b>急症室例子：描绘患者流程、找瓶颈、尝试小改变、测量结果、再迭代。</b></div></div></div><article class=\"card\"><div class=\"grid\"><div class=\"en\">The slides mention lab-order preparation and better communication between triage and laboratory staff.</div><div class=\"zh\">课件举例包括检验申请准备、分流与检验人员之间的沟通改善。</div></div></article><article class=\"card\"><div class=\"grid\"><div class=\"en\">Discharge example: identify daily bottlenecks and streamline paperwork to improve patient flow.</div><div class=\"zh\">出院例子：每日识别瓶颈、简化文书，改善患者流转。</div></div></article><div class=\"note\"><b>老师课堂补充 / Classroom commentary</b><p>老师强调一线人员最熟悉步骤和问题，应先听取他们的意见，而不是管理者单独设计所有改变。Frontline knowledge should inform changes.</p></div><div class=\"source\">Lecture 3-Quality Management Methods II-student(1).pdf · PDF pages 27, 29；Lesson3.docx 课堂转录（整理意译）</div>"
+          },
+          {
+            "slide": 30,
+            "pages": [
+              30,
+              31
+            ],
+            "title": "Quality Circles",
+            "titleZh": "品管圈：小组定期解决问题",
+            "html": "<div class=\"summary\"><div class=\"tag\">核心重点 / Key points</div><div class=\"grid\"><div class=\"en\"><b>Quality Circles are small groups of employees who meet regularly to identify, analyze and solve work-related problems.</b></div><div class=\"zh\"><b>品管圈是员工组成的小组，定期识别、分析并解决工作相关问题。</b></div></div></div><article class=\"card\"><div class=\"grid\"><div class=\"en\">The slide describes typically 5–10 members from one unit, with a facilitator and management support.</div><div class=\"zh\">课件描述通常由同一单位5–10名成员组成，有引导者和管理支持。</div></div></article><article class=\"card\"><div class=\"grid\"><div class=\"en\">Tools include brainstorming, root cause analysis and PDCA. Participation builds shared responsibility and ownership.</div><div class=\"zh\">工具包括头脑风暴、根因分析和 PDCA；参与有助于形成共同责任和主人翁意识。</div></div></article><div class=\"note\"><b>老师课堂补充 / Classroom commentary</b><p>老师强调管理层支持的重要性：否则建议可能得不到资源落实。Management support helps turn ideas into action.</p></div><div class=\"source\">Lecture 3-Quality Management Methods II-student(1).pdf · PDF pages 30, 31；Lesson3.docx 课堂转录（整理意译）</div>"
+          },
+          {
+            "slide": 32,
+            "pages": [
+              32
+            ],
+            "title": "Sustain improvement cultures",
+            "titleZh": "持续开展的五个条件",
+            "html": "<div class=\"summary\"><div class=\"tag\">核心重点 / Key points</div><div class=\"grid\"><div class=\"en\"><b>Leadership commitment; staff engagement; training culture; open communication; system integration.</b></div><div class=\"zh\"><b>领导承诺、员工参与、培训文化、开放沟通、系统整合。</b></div></div></div><article class=\"card\"><div class=\"grid\"><div class=\"en\">Leaders allocate resources; staff contribute ideas; training builds capability; safe feedback channels allow problems to surface.</div><div class=\"zh\">领导配置资源；员工提供意见；培训建立能力；安全反馈渠道让问题能被提出。</div></div></article><article class=\"card\"><div class=\"grid\"><div class=\"en\">Align improvement with hospital goals and embed successful changes into policy and routine practice.</div><div class=\"zh\">让改善与医院目标一致，并把有效改变写入政策和日常实践。</div></div></article><div class=\"source\">Lecture 3-Quality Management Methods II-student(1).pdf · PDF pages 32</div>"
+          }
+        ]
+      },
+      {
+        "id": "L3-05",
+        "title": {
+          "en": "Six Sigma and Lean",
+          "zh": "六西格玛与精益管理"
+        },
+        "objective": {
+          "en": "Know DMAIC and distinguish variation reduction from waste reduction.",
+          "zh": "掌握 DMAIC，区分减少变异与减少浪费。"
+        },
+        "sections": [
+          {
+            "slide": 34,
+            "pages": [
+              34,
+              35
+            ],
+            "title": "Six Sigma and DMAIC",
+            "titleZh": "Six Sigma 与 DMAIC 五步",
+            "html": "<div class=\"summary\"><div class=\"tag\">核心重点 / Key points</div><div class=\"grid\"><div class=\"en\"><b>Six Sigma uses data to reduce defects and process variability.</b></div><div class=\"zh\"><b>Six Sigma 用数据减少缺陷和流程变异。</b></div></div></div><article class=\"card\"><div class=\"grid\"><div class=\"en\">DMAIC = Define, Measure, Analyze, Improve, Control.</div><div class=\"zh\">DMAIC＝定义、测量、分析、改进、控制。</div></div></article><article class=\"card\"><div class=\"grid\"><div class=\"en\">Define the problem; measure current performance; analyze causes; improve the process; control it to sustain gains.</div><div class=\"zh\">定义问题；测量当前表现；分析原因；改进流程；通过控制维持成效。</div></div></article><article class=\"card\"><div class=\"grid\"><div class=\"en\">Radiology example: analyze patient flow, locate bottlenecks and change scheduling to reduce waits.</div><div class=\"zh\">放射科例子：分析患者流转、找瓶颈、调整预约安排来减少等待。</div></div></article><div class=\"note\"><b>老师课堂补充 / Classroom commentary</b><p>老师说明 DMAIC 可用于真实流程问题分析，并提到以往学生曾用于作业或案例研究。DMAIC was discussed as an applied problem-solving structure.</p></div><div class=\"small-note\"><b>辨析与学习提示 / Study note</b><p>转录中的正态分布百分比识别不清，本笔记不据此给出“六西格玛等于某准确率”的结论。关键词匹配不检查步骤顺序。</p></div><div class=\"source\">Lecture 3-Quality Management Methods II-student(1).pdf · PDF pages 34, 35；Lesson3.docx 课堂转录（整理意译）</div>"
+          },
+          {
+            "slide": 36,
+            "pages": [
+              36,
+              37
+            ],
+            "title": "Lean management",
+            "titleZh": "Lean：减少不增值步骤",
+            "html": "<div class=\"summary\"><div class=\"tag\">核心重点 / Key points</div><div class=\"grid\"><div class=\"en\"><b>Lean eliminates waste and maximizes value by improving flow and removing non-value-added activities.</b></div><div class=\"zh\"><b>Lean 通过改善流转、减少不增值活动来消除浪费并提升价值。</b></div></div></div><article class=\"card\"><div class=\"grid\"><div class=\"en\">In the A&amp;E example, the team maps value streams, streamlines triage and improves bed turnover.</div><div class=\"zh\">急症室例子使用价值流分析、简化分流流程并改善床位周转。</div></div></article><article class=\"card\"><div class=\"grid\"><div class=\"en\">Visual management and daily huddles help sustain the changes.</div><div class=\"zh\">可视化管理和每日短会有助于维持改进。</div></div></article><article class=\"card\"><div class=\"grid\"><div class=\"en\">The example reports a 40% fall in triage assessment time; it supplies no study citation.</div><div class=\"zh\">例子报告分流评估时间下降40%；材料没有附研究出处。</div></div></article><div class=\"small-note\"><b>辨析与学习提示 / Study note</b><p>减少浪费不等于删除必要的安全检查。40%仅作为课件示例结果，不作为通用效果。</p></div><div class=\"source\">Lecture 3-Quality Management Methods II-student(1).pdf · PDF pages 36, 37</div>"
+          },
+          {
+            "slide": 37,
+            "pages": [
+              37
+            ],
+            "title": "Six Sigma versus Lean",
+            "titleZh": "变异与流程浪费的区别",
+            "html": "<div class=\"summary\"><div class=\"tag\">核心重点 / Key points</div><div class=\"grid\"><div class=\"en\"><b>Six Sigma focuses on defects and variability using data analysis and statistical control.</b></div><div class=\"zh\"><b>Six Sigma 重点是缺陷与变异，运用数据分析和统计控制。</b></div></div></div><article class=\"card\"><div class=\"grid\"><div class=\"en\">Lean focuses on flow, waiting, resource efficiency and removing non-value-added work.</div><div class=\"zh\">Lean 重点是流转、等待、资源效率和不增值工作。</div></div></article><article class=\"card\"><div class=\"grid\"><div class=\"en\">They overlap and can be combined; a delay problem may require both flow analysis and variation analysis.</div><div class=\"zh\">两者有交集，可以组合使用；延误问题可能同时需要流程分析与变异分析。</div></div></article><div class=\"small-note\"><b>辨析与学习提示 / Study note</b><p>这是一道辨析题；请自查两种方法是否写反，关键词核对不能替代理解。</p></div><div class=\"source\">Lecture 3-Quality Management Methods II-student(1).pdf · PDF pages 37</div>"
+          }
+        ]
+      },
+      {
+        "id": "L3-06",
+        "title": {
+          "en": "Lean Sigma",
+          "zh": "精益六西格玛的整合"
+        },
+        "objective": {
+          "en": "Combine flow and variation improvement, and evaluate outcomes carefully.",
+          "zh": "结合流转与变异改善，谨慎解释效果数据。"
+        },
+        "sections": [
+          {
+            "slide": 39,
+            "pages": [
+              39,
+              40
+            ],
+            "title": "Lean Sigma and surgical infections",
+            "titleZh": "Lean Sigma 与手术部位感染案例",
+            "html": "<div class=\"summary\"><div class=\"tag\">核心重点 / Key points</div><div class=\"grid\"><div class=\"en\"><b>Lean Sigma combines Lean’s flow and waste focus with Six Sigma’s defect and variation focus.</b></div><div class=\"zh\"><b>Lean Sigma 结合 Lean 对流转和浪费的关注，以及 Six Sigma 对缺陷和变异的关注。</b></div></div></div><article class=\"card\"><div class=\"grid\"><div class=\"en\">The surgical-site infection case streamlines surgical processes and examines sources of variation associated with infection rates.</div><div class=\"zh\">手术部位感染案例一方面梳理手术流程，另一方面分析与感染率相关的变异来源。</div></div></article><article class=\"card\"><div class=\"grid\"><div class=\"en\">The teaching case reports improved outcomes but does not provide a source study or detailed protocol.</div><div class=\"zh\">教学案例描述结果改善，但未提供研究来源或具体临床操作方案。</div></div></article><div class=\"source\">Lecture 3-Quality Management Methods II-student(1).pdf · PDF pages 39, 40</div>"
+          },
+          {
+            "slide": 41,
+            "pages": [
+              41
+            ],
+            "title": "Conditions for Lean Sigma",
+            "titleZh": "实施所需的四方面支持",
+            "html": "<div class=\"summary\"><div class=\"tag\">核心重点 / Key points</div><div class=\"grid\"><div class=\"en\"><b>Leadership, training, culture and organizational alignment support Lean Sigma implementation.</b></div><div class=\"zh\"><b>领导、培训、文化及组织目标一致性支持 Lean Sigma 实施。</b></div></div></div><article class=\"card\"><div class=\"grid\"><div class=\"en\">Leaders set goals and resources; staff learn DMAIC and value stream mapping; teams share accountability and collaborate.</div><div class=\"zh\">领导设定目标与资源；员工学习 DMAIC 和价值流分析；团队共同承担责任并协作。</div></div></article><article class=\"card\"><div class=\"grid\"><div class=\"en\">Shared vision helps integrate improvement into everyday work.</div><div class=\"zh\">共同愿景有助于把改善融入日常工作。</div></div></article><div class=\"note\"><b>老师课堂补充 / Classroom commentary</b><p>老师解释 accountability 不应理解为把所有责任推给一线，而应联系共同目标和责任。Accountability was linked to shared responsibility rather than blame shifting.</p></div><div class=\"source\">Lecture 3-Quality Management Methods II-student(1).pdf · PDF pages 41；Lesson3.docx 课堂转录（整理意译）</div>"
+          },
+          {
+            "slide": 42,
+            "pages": [
+              42
+            ],
+            "title": "Read performance metrics critically",
+            "titleZh": "如何看课件中的改善数据",
+            "html": "<div class=\"summary\"><div class=\"tag\">核心重点 / Key points</div><div class=\"grid\"><div class=\"en\"><b>The slide reports operational costs down 15–20%, transition defects down 40%, satisfaction scores up 30%, and average stay down 1.8 days within a year.</b></div><div class=\"zh\"><b>课件列出：运营成本下降15–20%、照护转衔缺陷下降40%、满意度评分上升30%、一年内平均住院日减少1.8天。</b></div></div></div><article class=\"card\"><div class=\"grid\"><div class=\"en\">These numbers lack named study sources, baseline definitions and sample details in the supplied material.</div><div class=\"zh\">所给材料未说明这些数字对应的具名研究、基线定义和样本细节。</div></div></article><article class=\"card\"><div class=\"grid\"><div class=\"en\">Study reflection: ask what was measured, the comparison period, patient differences and whether other changes could explain the result.</div><div class=\"zh\">学习反思：询问测量对象、比较时段、患者差异，以及是否存在其他解释。</div></div></article><div class=\"small-note\"><b>辨析与学习提示 / Study note</b><p>保留数字用于识别课件案例，但不当作已核实的研究证据，也不据此计算因果效果。</p></div><div class=\"source\">Lecture 3-Quality Management Methods II-student(1).pdf · PDF pages 42</div>"
+          }
+        ]
+      },
+      {
+        "id": "L3-07",
+        "title": {
+          "en": "Selection and adoption",
+          "zh": "方法选择、整合与采用障碍"
+        },
+        "objective": {
+          "en": "Select tools by problem and critically reflect on adoption barriers.",
+          "zh": "按问题选择工具，并反思实施障碍。"
+        },
+        "sections": [
+          {
+            "slide": 44,
+            "pages": [
+              44,
+              45
+            ],
+            "title": "Select and combine methods",
+            "titleZh": "如何选择及整合方法",
+            "html": "<div class=\"summary\"><div class=\"tag\">核心重点 / Key points</div><div class=\"grid\"><div class=\"en\"><b>Choose methods based on the problem, organizational size, culture, resources, data needs and team involvement.</b></div><div class=\"zh\"><b>按问题类型、机构规模、文化、资源、数据需求及团队参与选择方法。</b></div></div></div><article class=\"card\"><div class=\"grid\"><div class=\"en\">Possible matches: FMEA for potential process failures; FTA for failure pathways; Lean for waste and delays; Six Sigma for variability; Kaizen for daily incremental change.</div><div class=\"zh\">可用匹配：FMEA 识别潜在流程失效；FTA 分析故障路径；Lean 改善浪费与延误；Six Sigma 减少变异；Kaizen 支持日常小步改善。</div></div></article><article class=\"card\"><div class=\"grid\"><div class=\"en\">Integrate frameworks, standardize protocols, form cross-functional teams and use shared data platforms or dashboards.</div><div class=\"zh\">整合框架、统一规程、组成跨部门团队，并使用共享数据平台或仪表板。</div></div></article><div class=\"small-note\"><b>辨析与学习提示 / Study note</b><p>方法不是互斥选项；不要机械地把一个问题永久对应到一种工具。</p></div><div class=\"source\">Lecture 3-Quality Management Methods II-student(1).pdf · PDF pages 44, 45</div>"
+          },
+          {
+            "slide": 46,
+            "pages": [
+              46
+            ],
+            "title": "Digitalization, AI and benchmarking",
+            "titleZh": "数字化、AI 与国际对标",
+            "html": "<div class=\"summary\"><div class=\"tag\">核心重点 / Key points</div><div class=\"grid\"><div class=\"en\"><b>Digital tools such as EHRs and IoT can support data access and quality monitoring.</b></div><div class=\"zh\"><b>电子健康记录（EHR）和物联网（IoT）等数字工具可支持数据获取和质量监测。</b></div></div></div><article class=\"card\"><div class=\"grid\"><div class=\"en\">AI-assisted analysis can identify patterns and potential failures; global benchmarking helps identify performance gaps.</div><div class=\"zh\">AI 辅助分析可识别模式和潜在失效；国际对标有助于发现绩效差距。</div></div></article><article class=\"card\"><div class=\"grid\"><div class=\"en\">These are directions for quality improvement, not a guarantee that technology alone improves care.</div><div class=\"zh\">这些是质量改善方向，不代表技术本身就能保证改善照护。</div></div></article><div class=\"note\"><b>老师课堂补充 / Classroom commentary</b><p>老师补充患者隐私、数据泄露和系统安全维护问题。The lecturer highlighted privacy, leakage and security.</p></div><div class=\"small-note\"><b>辨析与学习提示 / Study note</b><p>学习延伸：防火墙只是安全控制的一部分；AI 还需可靠数据、验证和人工监督。这些不是课件所报告的效果保证。</p></div><div class=\"source\">Lecture 3-Quality Management Methods II-student(1).pdf · PDF pages 46；Lesson3.docx 课堂转录（整理意译）</div>"
+          },
+          {
+            "slide": 47,
+            "pages": [
+              47,
+              48,
+              49
+            ],
+            "title": "Resistance to change",
+            "titleZh": "采用障碍一：变革阻力",
+            "html": "<div class=\"summary\"><div class=\"tag\">老师课堂明确强调 / Lecturer emphasis</div><div class=\"grid\"><div class=\"en\"><b>Resistance may reflect fear of the unknown, loss of control, job-security concerns, communication gaps or lack of involvement.</b></div><div class=\"zh\"><b>阻力可能来自对未知的担心、失去控制感、工作保障顾虑、沟通不足或缺少参与。</b></div></div></div><article class=\"card\"><div class=\"grid\"><div class=\"en\">Critical reflection asks why resistance occurs and whether managers have explained the purpose, benefits and expectations.</div><div class=\"zh\">批判性反思是追问阻力为什么出现，以及管理者是否解释了目的、好处和预期。</div></div></article><article class=\"card\"><div class=\"grid\"><div class=\"en\">Involve affected staff in planning and decisions to support understanding and ownership.</div><div class=\"zh\">让受影响员工参与规划和决策，有助于理解及形成主人翁意识。</div></div></article><div class=\"note\"><b>老师课堂补充 / Classroom commentary</b><p>老师以员工担心 AI 影响工作保障为例，强调说明目的、听取意见和员工参与。The AI example illustrated job-security concerns.</p></div><div class=\"small-note\"><b>辨析与学习提示 / Study note</b><p>“Encourage critical reflection on barriers to adoption”＝鼓励深入分析新方法为何难以落实，并提出有依据的应对；不只是列出障碍名称。</p></div><div class=\"source\">Lecture 3-Quality Management Methods II-student(1).pdf · PDF pages 47, 48, 49；Lesson3.docx 课堂转录（整理意译）</div>"
+          },
+          {
+            "slide": 50,
+            "pages": [
+              50
+            ],
+            "title": "Resource constraints",
+            "titleZh": "采用障碍二：资源限制",
+            "html": "<div class=\"summary\"><div class=\"tag\">老师课堂明确强调 / Lecturer emphasis</div><div class=\"grid\"><div class=\"en\"><b>Consider funds, personnel, time, infrastructure, technology and technical support before implementation.</b></div><div class=\"zh\"><b>实施前考虑资金、人手、时间、基础设施、技术与支持能力。</b></div></div></div><article class=\"card\"><div class=\"grid\"><div class=\"en\">Opportunity cost is what must be given up or delayed when resources are committed to a new initiative.</div><div class=\"zh\">机会成本是把资源投入新计划时，需要放弃或推迟的其他选择。</div></div></article><article class=\"card\"><div class=\"grid\"><div class=\"en\">Assess capacity realistically, make trade-offs transparent and prioritize projects with staff input.</div><div class=\"zh\">现实评估能力、清晰说明取舍，并结合员工意见排列项目优先级。</div></div></article><div class=\"note\"><b>老师课堂补充 / Classroom commentary</b><p>老师结尾反复提醒管理者同时考虑 resistance to change 与 resource constraints。Both barriers were repeatedly emphasized at the end.</p></div><div class=\"source\">Lecture 3-Quality Management Methods II-student(1).pdf · PDF pages 50；Lesson3.docx 课堂转录（整理意译）</div>"
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "L3-Q01",
+        "chapterId": "L3-01-01",
+        "module": "L3-01",
+        "slide": 4,
+        "question": {
+          "en": "Name two shared aims: one about care quality and one about safety.",
+          "zh": "列出两个共同目标：一个关于照护质量，一个关于安全。"
+        },
+        "answer": {
+          "en": "Enhance care quality and support patient safety.",
+          "zh": "提升照护质量并支持患者安全。"
+        },
+        "rubric": [
+          {
+            "label": "Quality",
+            "accept": [
+              "quality",
+              "质量"
+            ]
+          },
+          {
+            "label": "Safety",
+            "accept": [
+              "safety",
+              "安全"
+            ]
+          }
+        ],
+        "source": "学习辅助题（非教师原题）· Lecture 3 PDF pages 4, 5, 6",
+        "type": "short_answer"
+      },
+      {
+        "id": "L3-Q02",
+        "chapterId": "L3-02-01",
+        "module": "L3-02",
+        "slide": 8,
+        "question": {
+          "en": "What does robust design try to maintain when conditions vary?",
+          "zh": "条件变化时，稳健设计希望保持什么？"
+        },
+        "answer": {
+          "en": "Consistent performance with reduced variation.",
+          "zh": "稳定表现，并减少变异。"
+        },
+        "rubric": [
+          {
+            "label": "Consistency",
+            "accept": [
+              "consistent",
+              "consistency",
+              "稳定"
+            ]
+          },
+          {
+            "label": "Variation",
+            "accept": [
+              "variation",
+              "variability",
+              "变异"
+            ]
+          }
+        ],
+        "source": "学习辅助题（非教师原题）· Lecture 3 PDF pages 8, 9, 10",
+        "type": "short_answer"
+      },
+      {
+        "id": "L3-Q03",
+        "chapterId": "L3-02-02",
+        "module": "L3-02",
+        "slide": 10,
+        "question": {
+          "en": "Which two sources of variation were discussed in the imaging example?",
+          "zh": "影像例子讨论了哪两个变异来源？"
+        },
+        "answer": {
+          "en": "Patient movement and machine calibration issues.",
+          "zh": "患者移动和机器校准问题。"
+        },
+        "rubric": [
+          {
+            "label": "Movement",
+            "accept": [
+              "patient movement",
+              "movement",
+              "患者移动"
+            ]
+          },
+          {
+            "label": "Calibration",
+            "accept": [
+              "calibration",
+              "校准"
+            ]
+          }
+        ],
+        "source": "学习辅助题（非教师原题）· Lecture 3 PDF pages 10",
+        "type": "short_answer"
+      },
+      {
+        "id": "L3-Q04",
+        "chapterId": "L3-02-03",
+        "module": "L3-02",
+        "slide": 11,
+        "question": {
+          "en": "Name the two Taguchi tools mentioned for arranging trials and comparing robustness.",
+          "zh": "写出组织试验与比较稳健性的两种田口工具。"
+        },
+        "answer": {
+          "en": "Orthogonal arrays and signal-to-noise ratios.",
+          "zh": "正交表和信噪比。"
+        },
+        "rubric": [
+          {
+            "label": "Orthogonal arrays",
+            "accept": [
+              "orthogonal arrays",
+              "orthogonal array",
+              "正交表"
+            ]
+          },
+          {
+            "label": "Signal-to-noise",
+            "accept": [
+              "signal-to-noise",
+              "信噪比"
+            ]
+          }
+        ],
+        "source": "学习辅助题（非教师原题）· Lecture 3 PDF pages 11, 13",
+        "type": "short_answer"
+      },
+      {
+        "id": "L3-Q05",
+        "chapterId": "L3-02-04",
+        "module": "L3-02",
+        "slide": 12,
+        "question": {
+          "en": "Name two implementation barriers concerning skills and change.",
+          "zh": "列出两个与能力和改变有关的实施障碍。"
+        },
+        "answer": {
+          "en": "Limited statistical expertise and resistance to change.",
+          "zh": "统计能力不足和变革阻力。"
+        },
+        "rubric": [
+          {
+            "label": "Statistical expertise",
+            "accept": [
+              "statistical",
+              "统计"
+            ]
+          },
+          {
+            "label": "Resistance",
+            "accept": [
+              "resistance",
+              "阻力"
+            ]
+          }
+        ],
+        "source": "学习辅助题（非教师原题）· Lecture 3 PDF pages 12, 14",
+        "type": "short_answer"
+      },
+      {
+        "id": "L3-Q06",
+        "chapterId": "L3-03-01",
+        "module": "L3-03",
+        "slide": 16,
+        "question": {
+          "en": "What is the direction of FTA, and which two logic gates are used?",
+          "zh": "FTA 分析方向是什么？使用哪两个逻辑门？"
+        },
+        "answer": {
+          "en": "Top-down; AND and OR gates.",
+          "zh": "自上而下；AND 和 OR 逻辑门。"
+        },
+        "rubric": [
+          {
+            "label": "Top-down",
+            "accept": [
+              "top-down",
+              "top down",
+              "自上而下"
+            ]
+          },
+          {
+            "label": "AND",
+            "accept": [
+              "and"
+            ]
+          },
+          {
+            "label": "OR",
+            "accept": [
+              "or"
+            ]
+          }
+        ],
+        "source": "学习辅助题（非教师原题）· Lecture 3 PDF pages 16, 17, 18, 19",
+        "type": "short_answer"
+      },
+      {
+        "id": "L3-Q07",
+        "chapterId": "L3-03-02",
+        "module": "L3-03",
+        "slide": 17,
+        "question": {
+          "en": "Name two prevention measures in the anesthesia example.",
+          "zh": "列出麻醉设备例子中的两项预防措施。"
+        },
+        "answer": {
+          "en": "Preventive maintenance and staff training.",
+          "zh": "预防性维护和员工培训。"
+        },
+        "rubric": [
+          {
+            "label": "Maintenance",
+            "accept": [
+              "maintenance",
+              "维护"
+            ]
+          },
+          {
+            "label": "Training",
+            "accept": [
+              "training",
+              "培训"
+            ]
+          }
+        ],
+        "source": "学习辅助题（非教师原题）· Lecture 3 PDF pages 17, 20",
+        "type": "short_answer"
+      },
+      {
+        "id": "L3-Q08",
+        "chapterId": "L3-03-03",
+        "module": "L3-03",
+        "slide": 21,
+        "question": {
+          "en": "Which three risk-rating dimensions appear in the medication FMEA case?",
+          "zh": "用药 FMEA 案例用了哪三个风险评分维度？"
+        },
+        "answer": {
+          "en": "Severity, occurrence and detection.",
+          "zh": "严重度、发生频度、可检测性。"
+        },
+        "rubric": [
+          {
+            "label": "severity",
+            "accept": [
+              "severity",
+              "严重度"
+            ]
+          },
+          {
+            "label": "occurrence",
+            "accept": [
+              "occurrence",
+              "发生频度"
+            ]
+          },
+          {
+            "label": "detection",
+            "accept": [
+              "detection",
+              "可检测性"
+            ]
+          }
+        ],
+        "source": "学习辅助题（非教师原题）· Lecture 3 PDF pages 21, 22",
+        "type": "short_answer"
+      },
+      {
+        "id": "L3-Q09",
+        "chapterId": "L3-03-04",
+        "module": "L3-03",
+        "slide": 22,
+        "question": {
+          "en": "Which two safety measures appear in the transfusion case?",
+          "zh": "输血案例提出哪两种安全措施？"
+        },
+        "answer": {
+          "en": "Double-check systems and barcode scanning.",
+          "zh": "双重核对和条码扫描。"
+        },
+        "rubric": [
+          {
+            "label": "Double-check",
+            "accept": [
+              "double-check",
+              "double check",
+              "双重核对"
+            ]
+          },
+          {
+            "label": "Barcode",
+            "accept": [
+              "barcode",
+              "条码"
+            ]
+          }
+        ],
+        "source": "学习辅助题（非教师原题）· Lecture 3 PDF pages 22, 23",
+        "type": "short_answer"
+      },
+      {
+        "id": "L3-Q10",
+        "chapterId": "L3-03-05",
+        "module": "L3-03",
+        "slide": 18,
+        "question": {
+          "en": "Which method uses a fault tree, and which examines failure modes and effects?",
+          "zh": "哪种方法用故障树？哪种分析失效模式与影响？"
+        },
+        "answer": {
+          "en": "FTA uses a fault tree; FMEA examines failure modes and effects.",
+          "zh": "FTA 用故障树；FMEA 分析失效模式与影响。"
+        },
+        "rubric": [
+          {
+            "label": "FTA",
+            "accept": [
+              "fta"
+            ]
+          },
+          {
+            "label": "FMEA",
+            "accept": [
+              "fmea"
+            ]
+          }
+        ],
+        "source": "学习辅助题（非教师原题）· Lecture 3 PDF pages 18, 21",
+        "type": "short_answer"
+      },
+      {
+        "id": "L3-Q11",
+        "chapterId": "L3-04-01",
+        "module": "L3-04",
+        "slide": 25,
+        "question": {
+          "en": "What three words describe the scale, pace and duration of Kaizen improvements?",
+          "zh": "用三个词描述 Kaizen 改善的规模、方式和持续性。"
+        },
+        "answer": {
+          "en": "Small, incremental and continuous.",
+          "zh": "小规模、渐进、持续。"
+        },
+        "rubric": [
+          {
+            "label": "small",
+            "accept": [
+              "small",
+              "小规模"
+            ]
+          },
+          {
+            "label": "incremental",
+            "accept": [
+              "incremental",
+              "渐进"
+            ]
+          },
+          {
+            "label": "continuous",
+            "accept": [
+              "continuous",
+              "持续"
+            ]
+          }
+        ],
+        "source": "学习辅助题（非教师原题）· Lecture 3 PDF pages 25, 26, 28",
+        "type": "short_answer"
+      },
+      {
+        "id": "L3-Q12",
+        "chapterId": "L3-04-02",
+        "module": "L3-04",
+        "slide": 27,
+        "question": {
+          "en": "What should a Kaizen team identify before testing small changes in patient flow?",
+          "zh": "在测试患者流转的小改变前，Kaizen 团队应找出什么？"
+        },
+        "answer": {
+          "en": "Bottlenecks in the patient journey.",
+          "zh": "患者流程中的瓶颈。"
+        },
+        "rubric": [
+          {
+            "label": "Bottlenecks",
+            "accept": [
+              "bottlenecks",
+              "bottleneck",
+              "瓶颈"
+            ]
+          }
+        ],
+        "source": "学习辅助题（非教师原题）· Lecture 3 PDF pages 27, 29",
+        "type": "short_answer"
+      },
+      {
+        "id": "L3-Q13",
+        "chapterId": "L3-04-03",
+        "module": "L3-04",
+        "slide": 30,
+        "question": {
+          "en": "What does a Quality Circle do regularly, and what group size is described?",
+          "zh": "品管圈定期做什么？课件描述多少名成员？"
+        },
+        "answer": {
+          "en": "Meet to identify, analyze and solve work problems; typically 5–10 members.",
+          "zh": "定期开会识别、分析、解决工作问题；通常5–10名成员。"
+        },
+        "rubric": [
+          {
+            "label": "Problem solving",
+            "accept": [
+              "problems",
+              "problem",
+              "问题"
+            ]
+          },
+          {
+            "label": "Size",
+            "accept": [
+              "5–10",
+              "5-10",
+              "5 to 10",
+              "5–10名",
+              "5到10名",
+              "5至10名"
+            ]
+          }
+        ],
+        "source": "学习辅助题（非教师原题）· Lecture 3 PDF pages 30, 31",
+        "type": "short_answer"
+      },
+      {
+        "id": "L3-Q14",
+        "chapterId": "L3-04-04",
+        "module": "L3-04",
+        "slide": 32,
+        "question": {
+          "en": "List the five conditions for sustaining Kaizen and Quality Circles.",
+          "zh": "列出维持 Kaizen 与品管圈的五个条件。"
+        },
+        "answer": {
+          "en": "Leadership commitment; staff engagement; training culture; open communication; system integration.",
+          "zh": "领导承诺；员工参与；培训文化；开放沟通；系统整合。"
+        },
+        "rubric": [
+          {
+            "label": "leadership",
+            "accept": [
+              "leadership",
+              "领导"
+            ]
+          },
+          {
+            "label": "staff engagement",
+            "accept": [
+              "staff engagement",
+              "员工参与"
+            ]
+          },
+          {
+            "label": "training",
+            "accept": [
+              "training",
+              "培训"
+            ]
+          },
+          {
+            "label": "open communication",
+            "accept": [
+              "open communication",
+              "开放沟通"
+            ]
+          },
+          {
+            "label": "system integration",
+            "accept": [
+              "system integration",
+              "系统整合"
+            ]
+          }
+        ],
+        "source": "学习辅助题（非教师原题）· Lecture 3 PDF pages 32",
+        "type": "short_answer"
+      },
+      {
+        "id": "L3-Q15",
+        "chapterId": "L3-05-01",
+        "module": "L3-05",
+        "slide": 34,
+        "question": {
+          "en": "Expand DMAIC in order.",
+          "zh": "按顺序写出 DMAIC。"
+        },
+        "answer": {
+          "en": "Define, Measure, Analyze, Improve, Control.",
+          "zh": "定义、测量、分析、改进、控制。"
+        },
+        "rubric": [
+          {
+            "label": "define",
+            "accept": [
+              "define",
+              "定义"
+            ]
+          },
+          {
+            "label": "measure",
+            "accept": [
+              "measure",
+              "测量"
+            ]
+          },
+          {
+            "label": "analyze",
+            "accept": [
+              "analyze",
+              "分析"
+            ]
+          },
+          {
+            "label": "improve",
+            "accept": [
+              "improve",
+              "改进"
+            ]
+          },
+          {
+            "label": "control",
+            "accept": [
+              "control",
+              "控制"
+            ]
+          }
+        ],
+        "source": "学习辅助题（非教师原题）· Lecture 3 PDF pages 34, 35",
+        "type": "short_answer"
+      },
+      {
+        "id": "L3-Q16",
+        "chapterId": "L3-05-02",
+        "module": "L3-05",
+        "slide": 36,
+        "question": {
+          "en": "What does Lean seek to eliminate, and what does it maximize?",
+          "zh": "Lean 希望消除什么、最大化什么？"
+        },
+        "answer": {
+          "en": "Eliminate waste and maximize value.",
+          "zh": "消除浪费、最大化价值。"
+        },
+        "rubric": [
+          {
+            "label": "Waste",
+            "accept": [
+              "waste",
+              "浪费"
+            ]
+          },
+          {
+            "label": "Value",
+            "accept": [
+              "value",
+              "价值"
+            ]
+          }
+        ],
+        "source": "学习辅助题（非教师原题）· Lecture 3 PDF pages 36, 37",
+        "type": "short_answer"
+      },
+      {
+        "id": "L3-Q17",
+        "chapterId": "L3-05-03",
+        "module": "L3-05",
+        "slide": 37,
+        "question": {
+          "en": "Which method emphasizes variability, and which emphasizes waste and flow?",
+          "zh": "哪种方法重点处理变异？哪种重点处理浪费与流转？"
+        },
+        "answer": {
+          "en": "Six Sigma addresses variability; Lean addresses waste and flow.",
+          "zh": "Six Sigma 处理变异；Lean 处理浪费与流转。"
+        },
+        "rubric": [
+          {
+            "label": "Six Sigma",
+            "accept": [
+              "six sigma",
+              "六西格玛"
+            ]
+          },
+          {
+            "label": "Lean",
+            "accept": [
+              "lean",
+              "精益"
+            ]
+          }
+        ],
+        "source": "学习辅助题（非教师原题）· Lecture 3 PDF pages 37",
+        "type": "short_answer"
+      },
+      {
+        "id": "L3-Q18",
+        "chapterId": "L3-06-01",
+        "module": "L3-06",
+        "slide": 39,
+        "question": {
+          "en": "Which two methods are combined in Lean Sigma?",
+          "zh": "Lean Sigma 结合哪两种方法？"
+        },
+        "answer": {
+          "en": "Lean and Six Sigma.",
+          "zh": "Lean 和 Six Sigma。"
+        },
+        "rubric": [
+          {
+            "label": "Lean",
+            "accept": [
+              "lean",
+              "精益"
+            ]
+          },
+          {
+            "label": "Six Sigma",
+            "accept": [
+              "six sigma",
+              "六西格玛"
+            ]
+          }
+        ],
+        "source": "学习辅助题（非教师原题）· Lecture 3 PDF pages 39, 40",
+        "type": "short_answer"
+      },
+      {
+        "id": "L3-Q19",
+        "chapterId": "L3-06-02",
+        "module": "L3-06",
+        "slide": 41,
+        "question": {
+          "en": "Name the four implementation supports described on the slide.",
+          "zh": "列出课件描述的四方面实施支持。"
+        },
+        "answer": {
+          "en": "Leadership; training; culture; alignment.",
+          "zh": "领导；培训；文化；目标一致性。"
+        },
+        "rubric": [
+          {
+            "label": "leadership",
+            "accept": [
+              "leadership",
+              "领导"
+            ]
+          },
+          {
+            "label": "training",
+            "accept": [
+              "training",
+              "培训"
+            ]
+          },
+          {
+            "label": "culture",
+            "accept": [
+              "culture",
+              "文化"
+            ]
+          },
+          {
+            "label": "alignment",
+            "accept": [
+              "alignment",
+              "一致性"
+            ]
+          }
+        ],
+        "source": "学习辅助题（非教师原题）· Lecture 3 PDF pages 41",
+        "type": "short_answer"
+      },
+      {
+        "id": "L3-Q20",
+        "chapterId": "L3-06-03",
+        "module": "L3-06",
+        "slide": 42,
+        "question": {
+          "en": "Can the slide percentages be treated as guaranteed results for every hospital?",
+          "zh": "能把这些百分比当作每家医院必然达到的效果吗？"
+        },
+        "answer": {
+          "en": "No. The source and context must be checked.",
+          "zh": "不能，需要核对来源与情境。"
+        },
+        "rubric": [
+          {
+            "label": "Qualification",
+            "accept": [
+              "no",
+              "不能",
+              "不可以"
+            ]
+          }
+        ],
+        "source": "学习辅助题（非教师原题）· Lecture 3 PDF pages 42",
+        "type": "short_answer"
+      },
+      {
+        "id": "L3-Q21",
+        "chapterId": "L3-07-01",
+        "module": "L3-07",
+        "slide": 44,
+        "question": {
+          "en": "Which three context factors on the slide influence method choice?",
+          "zh": "课件列出的哪三个情境因素影响方法选择？"
+        },
+        "answer": {
+          "en": "Organizational size, culture and resources.",
+          "zh": "机构规模、文化、资源。"
+        },
+        "rubric": [
+          {
+            "label": "Size",
+            "accept": [
+              "size",
+              "规模"
+            ]
+          },
+          {
+            "label": "Culture",
+            "accept": [
+              "culture",
+              "文化"
+            ]
+          },
+          {
+            "label": "Resources",
+            "accept": [
+              "resources",
+              "资源"
+            ]
+          }
+        ],
+        "source": "学习辅助题（非教师原题）· Lecture 3 PDF pages 44, 45",
+        "type": "short_answer"
+      },
+      {
+        "id": "L3-Q22",
+        "chapterId": "L3-07-02",
+        "module": "L3-07",
+        "slide": 46,
+        "question": {
+          "en": "Name the three future directions highlighted in this section.",
+          "zh": "列出本节强调的三项未来方向。"
+        },
+        "answer": {
+          "en": "Digitalization, AI-assisted quality control and global benchmarking.",
+          "zh": "数字化、AI辅助质量控制、国际对标。"
+        },
+        "rubric": [
+          {
+            "label": "Digitalization",
+            "accept": [
+              "digitalization",
+              "digitalisation",
+              "数字化"
+            ]
+          },
+          {
+            "label": "AI",
+            "accept": [
+              "ai",
+              "人工智能",
+              "AI辅助"
+            ]
+          },
+          {
+            "label": "Benchmarking",
+            "accept": [
+              "benchmarking",
+              "对标"
+            ]
+          }
+        ],
+        "source": "学习辅助题（非教师原题）· Lecture 3 PDF pages 46",
+        "type": "short_answer"
+      },
+      {
+        "id": "L3-Q23",
+        "chapterId": "L3-07-03",
+        "module": "L3-07",
+        "slide": 47,
+        "question": {
+          "en": "Name two management responses to resistance: one about communication and one about participation.",
+          "zh": "针对变革阻力，给出沟通与参与方面各一个应对。"
+        },
+        "answer": {
+          "en": "Explain the purpose clearly and involve staff in planning.",
+          "zh": "清晰沟通目的，并让员工参与规划。"
+        },
+        "rubric": [
+          {
+            "label": "Communication",
+            "accept": [
+              "explain",
+              "communication",
+              "沟通",
+              "解释"
+            ]
+          },
+          {
+            "label": "Involvement",
+            "accept": [
+              "involve",
+              "participation",
+              "参与"
+            ]
+          }
+        ],
+        "source": "学习辅助题（非教师原题）· Lecture 3 PDF pages 47, 48, 49",
+        "type": "short_answer"
+      },
+      {
+        "id": "L3-Q24",
+        "chapterId": "L3-07-04",
+        "module": "L3-07",
+        "slide": 50,
+        "question": {
+          "en": "What three basic resource shortages are listed under financial and human capital?",
+          "zh": "资金与人力资本一项列出哪三种基本资源不足？"
+        },
+        "answer": {
+          "en": "Insufficient funds, personnel and time.",
+          "zh": "资金、人手、时间不足。"
+        },
+        "rubric": [
+          {
+            "label": "Funds",
+            "accept": [
+              "funds",
+              "funding",
+              "资金"
+            ]
+          },
+          {
+            "label": "Personnel",
+            "accept": [
+              "personnel",
+              "staff",
+              "人手",
+              "人员"
+            ]
+          },
+          {
+            "label": "Time",
+            "accept": [
+              "time",
+              "时间"
+            ]
+          }
+        ],
+        "source": "学习辅助题（非教师原题）· Lecture 3 PDF pages 50",
+        "type": "short_answer"
+      }
+    ],
+    "sourceFooter": "资料依据：Lecture 3-Quality Management Methods II-student(1).pdf（PDF第1–51页）；Lesson3.docx（2026-09-22课堂转录）。练习为新增学习辅助，非教师原题；转录不清之处不作确定考题预测。"
+  },
+  "vocab": {
+    "items": [
+      {
+        "id": "L3-V01",
+        "slide": 4,
+        "word": "proactive",
+        "zh": "主动预防的",
+        "ipa": "",
+        "example": ""
+      },
+      {
+        "id": "L3-V02",
+        "slide": 4,
+        "word": "evidence",
+        "zh": "证据",
+        "ipa": "",
+        "example": ""
+      },
+      {
+        "id": "L3-V03",
+        "slide": 8,
+        "word": "variation",
+        "zh": "变异",
+        "ipa": "",
+        "example": ""
+      },
+      {
+        "id": "L3-V04",
+        "slide": 8,
+        "word": "variability",
+        "zh": "变异性",
+        "ipa": "",
+        "example": ""
+      },
+      {
+        "id": "L3-V05",
+        "slide": 10,
+        "word": "robust design",
+        "zh": "稳健设计",
+        "ipa": "",
+        "example": ""
+      },
+      {
+        "id": "L3-V06",
+        "slide": 10,
+        "word": "calibration",
+        "zh": "校准",
+        "ipa": "",
+        "example": ""
+      },
+      {
+        "id": "L3-V07",
+        "slide": 10,
+        "word": "exposure",
+        "zh": "曝光",
+        "ipa": "",
+        "example": ""
+      },
+      {
+        "id": "L3-V08",
+        "slide": 11,
+        "word": "orthogonal array",
+        "zh": "正交表",
+        "ipa": "",
+        "example": ""
+      },
+      {
+        "id": "L3-V09",
+        "slide": 11,
+        "word": "signal-to-noise ratio",
+        "zh": "信噪比",
+        "ipa": "",
+        "example": ""
+      },
+      {
+        "id": "L3-V10",
+        "slide": 11,
+        "word": "biomarker",
+        "zh": "生物标志物",
+        "ipa": "",
+        "example": ""
+      },
+      {
+        "id": "L3-V11",
+        "slide": 13,
+        "word": "adherence",
+        "zh": "依从性",
+        "ipa": "",
+        "example": ""
+      },
+      {
+        "id": "L3-V12",
+        "slide": 13,
+        "word": "comorbidity",
+        "zh": "共病",
+        "ipa": "",
+        "example": ""
+      },
+      {
+        "id": "L3-V13",
+        "slide": 14,
+        "word": "reliability",
+        "zh": "可靠性",
+        "ipa": "",
+        "example": ""
+      },
+      {
+        "id": "L3-V14",
+        "slide": 14,
+        "word": "interaction",
+        "zh": "交互作用",
+        "ipa": "",
+        "example": ""
+      },
+      {
+        "id": "L3-V15",
+        "slide": 16,
+        "word": "fault tree",
+        "zh": "故障树",
+        "ipa": "",
+        "example": ""
+      },
+      {
+        "id": "L3-V16",
+        "slide": 18,
+        "word": "deductive",
+        "zh": "演绎的",
+        "ipa": "",
+        "example": ""
+      },
+      {
+        "id": "L3-V17",
+        "slide": 18,
+        "word": "top-down",
+        "zh": "自上而下的",
+        "ipa": "",
+        "example": ""
+      },
+      {
+        "id": "L3-V18",
+        "slide": 18,
+        "word": "logic gate",
+        "zh": "逻辑门",
+        "ipa": "",
+        "example": ""
+      },
+      {
+        "id": "L3-V19",
+        "slide": 20,
+        "word": "malfunction",
+        "zh": "故障",
+        "ipa": "",
+        "example": ""
+      },
+      {
+        "id": "L3-V20",
+        "slide": 20,
+        "word": "hypoxia",
+        "zh": "缺氧",
+        "ipa": "",
+        "example": ""
+      },
+      {
+        "id": "L3-V21",
+        "slide": 20,
+        "word": "maintenance",
+        "zh": "维护",
+        "ipa": "",
+        "example": ""
+      },
+      {
+        "id": "L3-V22",
+        "slide": 21,
+        "word": "failure mode",
+        "zh": "失效模式",
+        "ipa": "",
+        "example": ""
+      },
+      {
+        "id": "L3-V23",
+        "slide": 22,
+        "word": "severity",
+        "zh": "严重度",
+        "ipa": "",
+        "example": ""
+      },
+      {
+        "id": "L3-V24",
+        "slide": 22,
+        "word": "occurrence",
+        "zh": "发生频度",
+        "ipa": "",
+        "example": ""
+      },
+      {
+        "id": "L3-V25",
+        "slide": 22,
+        "word": "detection",
+        "zh": "检测；发现",
+        "ipa": "",
+        "example": ""
+      },
+      {
+        "id": "L3-V26",
+        "slide": 23,
+        "word": "transfusion",
+        "zh": "输血",
+        "ipa": "",
+        "example": ""
+      },
+      {
+        "id": "L3-V27",
+        "slide": 23,
+        "word": "barcode",
+        "zh": "条码",
+        "ipa": "",
+        "example": ""
+      },
+      {
+        "id": "L3-V28",
+        "slide": 25,
+        "word": "incremental",
+        "zh": "渐进的",
+        "ipa": "",
+        "example": ""
+      },
+      {
+        "id": "L3-V29",
+        "slide": 26,
+        "word": "empowerment",
+        "zh": "赋权",
+        "ipa": "",
+        "example": ""
+      },
+      {
+        "id": "L3-V30",
+        "slide": 26,
+        "word": "standardization",
+        "zh": "标准化",
+        "ipa": "",
+        "example": ""
+      },
+      {
+        "id": "L3-V31",
+        "slide": 27,
+        "word": "bottleneck",
+        "zh": "瓶颈",
+        "ipa": "",
+        "example": ""
+      },
+      {
+        "id": "L3-V32",
+        "slide": 28,
+        "word": "throughput",
+        "zh": "单位时间处理量",
+        "ipa": "",
+        "example": ""
+      },
+      {
+        "id": "L3-V33",
+        "slide": 28,
+        "word": "morale",
+        "zh": "士气",
+        "ipa": "",
+        "example": ""
+      },
+      {
+        "id": "L3-V34",
+        "slide": 29,
+        "word": "discharge",
+        "zh": "出院",
+        "ipa": "",
+        "example": ""
+      },
+      {
+        "id": "L3-V35",
+        "slide": 30,
+        "word": "quality circle",
+        "zh": "品管圈",
+        "ipa": "",
+        "example": ""
+      },
+      {
+        "id": "L3-V36",
+        "slide": 31,
+        "word": "facilitator",
+        "zh": "引导者",
+        "ipa": "",
+        "example": ""
+      },
+      {
+        "id": "L3-V37",
+        "slide": 31,
+        "word": "ownership",
+        "zh": "主人翁意识",
+        "ipa": "",
+        "example": ""
+      },
+      {
+        "id": "L3-V38",
+        "slide": 32,
+        "word": "psychological safety",
+        "zh": "心理安全",
+        "ipa": "",
+        "example": ""
+      },
+      {
+        "id": "L3-V39",
+        "slide": 34,
+        "word": "defect",
+        "zh": "缺陷",
+        "ipa": "",
+        "example": ""
+      },
+      {
+        "id": "L3-V40",
+        "slide": 34,
+        "word": "measure",
+        "zh": "测量",
+        "ipa": "",
+        "example": ""
+      },
+      {
+        "id": "L3-V41",
+        "slide": 34,
+        "word": "analyze",
+        "zh": "分析",
+        "ipa": "",
+        "example": ""
+      },
+      {
+        "id": "L3-V42",
+        "slide": 34,
+        "word": "control",
+        "zh": "控制",
+        "ipa": "",
+        "example": ""
+      },
+      {
+        "id": "L3-V43",
+        "slide": 36,
+        "word": "value stream",
+        "zh": "价值流",
+        "ipa": "",
+        "example": ""
+      },
+      {
+        "id": "L3-V44",
+        "slide": 36,
+        "word": "triage",
+        "zh": "分流",
+        "ipa": "",
+        "example": ""
+      },
+      {
+        "id": "L3-V45",
+        "slide": 36,
+        "word": "huddle",
+        "zh": "短会",
+        "ipa": "",
+        "example": ""
+      },
+      {
+        "id": "L3-V46",
+        "slide": 37,
+        "word": "non-value-added",
+        "zh": "不增值的",
+        "ipa": "",
+        "example": ""
+      },
+      {
+        "id": "L3-V47",
+        "slide": 41,
+        "word": "accountability",
+        "zh": "责任承担",
+        "ipa": "",
+        "example": ""
+      },
+      {
+        "id": "L3-V48",
+        "slide": 41,
+        "word": "alignment",
+        "zh": "目标一致性",
+        "ipa": "",
+        "example": ""
+      },
+      {
+        "id": "L3-V49",
+        "slide": 42,
+        "word": "length of stay",
+        "zh": "住院日数",
+        "ipa": "",
+        "example": ""
+      },
+      {
+        "id": "L3-V50",
+        "slide": 44,
+        "word": "context",
+        "zh": "情境",
+        "ipa": "",
+        "example": ""
+      },
+      {
+        "id": "L3-V51",
+        "slide": 45,
+        "word": "cross-functional",
+        "zh": "跨职能的",
+        "ipa": "",
+        "example": ""
+      },
+      {
+        "id": "L3-V52",
+        "slide": 46,
+        "word": "benchmarking",
+        "zh": "对标",
+        "ipa": "",
+        "example": ""
+      },
+      {
+        "id": "L3-V53",
+        "slide": 49,
+        "word": "resistance",
+        "zh": "阻力",
+        "ipa": "",
+        "example": ""
+      },
+      {
+        "id": "L3-V54",
+        "slide": 49,
+        "word": "involvement",
+        "zh": "参与",
+        "ipa": "",
+        "example": ""
+      },
+      {
+        "id": "L3-V55",
+        "slide": 50,
+        "word": "resource constraints",
+        "zh": "资源限制",
+        "ipa": "",
+        "example": ""
+      },
+      {
+        "id": "L3-V56",
+        "slide": 50,
+        "word": "opportunity cost",
+        "zh": "机会成本",
+        "ipa": "",
+        "example": ""
+      },
+      {
+        "id": "L3-V57",
+        "slide": 50,
+        "word": "trade-off",
+        "zh": "取舍",
+        "ipa": "",
+        "example": ""
+      }
+    ],
+    "source": "Study glossary from Lecture 3 materials; meanings are study translations. Audio uses browser speech synthesis."
+  }
+}
