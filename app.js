@@ -11,7 +11,8 @@ for(const packet of builtInPackets){lectures.push({id:packet.lectureId,title:pac
 let current=lectures[0],view='lecture',opened=null;
 const $=s=>document.querySelector(s),all=s=>[...document.querySelectorAll(s)];
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-const bi=(o,bold=false)=>`<span class="en">${bold?'<b>':''}${esc(o?.en||'')}${bold?'</b>':''}</span><span class="zh">${bold?'<b>':''}${esc(o?.zh||'')}${bold?'</b>':''}</span>`;
+const bi=(o,bold=false)=>`<span class="bilingual-text"><span class="en bi-line">${bold?'<b>':''}${esc(o?.en||'')}${bold?'</b>':''}</span>
+<span class="zh bi-line">${bold?'<b>':''}${esc(o?.zh||'')}${bold?'</b>':''}</span></span>`;
 function save(){try{localStorage.setItem(STORAGE,JSON.stringify(state))}catch(e){notify('Storage unavailable. Export your progress / 无法保存，请导出进度。')}}
 function notify(s){let n=$('#toast');n.textContent=s;n.classList.add('show');clearTimeout(notify.timer);notify.timer=setTimeout(()=>n.classList.remove('show'),3300)}
 function modules(){return current.course.modules}
@@ -203,6 +204,7 @@ current=lectures.find(l=>l.id===state.selectedLecture)||lectures[0];
 if(!('speechSynthesis'in window))$('#speech-status').textContent='⚠ 当前浏览器不支持语音播放';
 lectureHome();
 })();
+
 
 
 
