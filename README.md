@@ -64,3 +64,7 @@ python3 -m http.server 8765 --directory dist
 - `tests/interactions.cjs`: 浏览器回归测试。
 
 验证：`npm run check`。运行交互测试需安装 Playwright 及 Chromium；启动上面的本地服务器后运行 `node tests/interactions.cjs`，可用 TEST_URL 指定地址。
+
+## 验证记录
+
+已通过 JavaScript 语法检查、生产构建及 `node tests/spelling.cjs` 回归检查（实际核对点击分支、空输入、错误/正确输入、反馈、保存调用与计数）。完整 Playwright 浏览器测试脚本已提供，但本次执行环境缺少浏览器且下载失败，因此尚未完成浏览器端到端验证。

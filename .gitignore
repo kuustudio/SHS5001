@@ -1,0 +1,5 @@
+node_modules/
+dist/
+.wrangler/
+SEHS5001_Interactive_Academy_Offline.html
+test-results/

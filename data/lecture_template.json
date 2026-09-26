@@ -1,0 +1,12 @@
+{
+  "schemaVersion":2,
+  "lectureId":"lecture-2",
+  "date":"ADD REAL LECTURE DATE",
+  "title":{"en":"ADD REAL LECTURE TITLE","zh":"添加真实课程标题"},
+  "course":{
+    "sourceNotice":{"en":"Replace with the lecture's real PDF and transcript citations.","zh":"根据该讲真实PPT与录音填写。"},
+    "modules":[{"id":"01","title":{"en":"Module title","zh":"模块标题"},"objective":{"en":"Learning objective","zh":"学习目标"},"sections":[{"slide":1,"title":"PPT 1 · Real chapter title","html":"<div class=\"summary\"><b>Source-grounded English and Chinese notes go here.</b></div>"}]}],
+    "questions":[]
+  },
+  "vocab":{"items":[]}
+}

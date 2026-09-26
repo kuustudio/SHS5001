@@ -1,0 +1,20 @@
+const {chromium}=require('playwright');
+const assert=require('node:assert/strict');
+(async()=>{
+ const browser=await chromium.launch({headless:true});const page=await browser.newPage();const errors=[];
+ page.on('pageerror',e=>errors.push(e.message));
+ await page.goto(process.env.TEST_URL||'http://127.0.0.1:8765');
+ await page.click('#go-words');await page.click('[data-spell="v01"]');
+ const result=page.locator('#spell-v01 .spelling-result'),input=page.locator('[data-spelling="v01"]');
+ await page.click('[data-spellcheck="v01"]');assert.match(await result.textContent(),/Enter a word/);
+ await input.fill('wrong');await page.click('[data-spellcheck="v01"]');assert.match(await result.textContent(),/Try again/);
+ await input.fill(' QUALITY ');await input.press('Enter');assert.match(await result.textContent(),/Correct!/);
+ assert.match(await page.locator('#word-v01 .badge').textContent(),/Remembered/);
+ assert.match(await page.locator('#toast').textContent(),/Correct!/);
+ await page.reload();await page.click('#go-words');assert.match(await page.locator('#word-v01 .badge').textContent(),/Remembered/);
+ await page.click('#go-review');const q=page.locator('[data-answer]').first(),check=page.locator('[data-check]').first();
+ await check.click();assert.match(await page.locator('#toast').textContent(),/Enter an answer/);
+ await q.fill('quality');await check.click();assert.ok(await page.locator('.feedback').count());
+ await q.fill('changed');assert.match(await page.locator('[id^="feedback-"]').first().textContent(),/check again/);
+ assert.deepEqual(errors,[]);await browser.close();console.log('PASS: empty/wrong/correct spelling, Enter, toast, persistence, answer feedback, stale result reset; no page errors');
+})().catch(e=>{console.error(e);process.exit(1)});
