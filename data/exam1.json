@@ -77,7 +77,8 @@
           ]
         }
       ],
-      "note": "照片把 Timeliness and Efficiency 合在一个标题下；这里拆成两个维度记忆。"
+      "note": "照片把 Timeliness and Efficiency 合在一个标题下；这里拆成两个维度记忆。",
+      "highlightReview": true
     },
     {
       "id": "E1-02",
@@ -100,7 +101,8 @@
           ]
         }
       ],
-      "note": ""
+      "note": "",
+      "highlightReview": true
     },
     {
       "id": "E1-03",
@@ -123,7 +125,8 @@
           ]
         }
       ],
-      "note": ""
+      "note": "",
+      "highlightReview": true
     },
     {
       "id": "E1-04",
@@ -164,7 +167,8 @@
           ]
         }
       ],
-      "note": ""
+      "note": "",
+      "highlightReview": true
     },
     {
       "id": "E1-05",
@@ -200,7 +204,8 @@
           ]
         }
       ],
-      "note": ""
+      "note": "",
+      "highlightReview": true
     },
     {
       "id": "E1-06",
@@ -260,7 +265,8 @@
           ]
         }
       ],
-      "note": ""
+      "note": "",
+      "highlightReview": true
     },
     {
       "id": "E1-07",
@@ -309,7 +315,8 @@
           ]
         }
       ],
-      "note": ""
+      "note": "",
+      "highlightReview": true
     },
     {
       "id": "E1-08",
@@ -332,7 +339,8 @@
           ]
         }
       ],
-      "note": ""
+      "note": "",
+      "highlightReview": true
     },
     {
       "id": "E1-09",
@@ -356,7 +364,8 @@
           ]
         }
       ],
-      "note": ""
+      "note": "",
+      "highlightReview": true
     },
     {
       "id": "E1-10",
@@ -397,7 +406,8 @@
           ]
         }
       ],
-      "note": ""
+      "note": "",
+      "highlightReview": false
     },
     {
       "id": "E1-11",
@@ -447,7 +457,8 @@
         }
       ],
       "note": "顺序：Plan → Do → Check → Act。不能把 Check 写成 PDSA 中的 Study。",
-      "ordered": true
+      "ordered": true,
+      "highlightReview": true
     },
     {
       "id": "E1-12",
@@ -489,7 +500,8 @@
           ]
         }
       ],
-      "note": ""
+      "note": "",
+      "highlightReview": true
     },
     {
       "id": "E1-13",
@@ -524,7 +536,8 @@
           ]
         }
       ],
-      "note": ""
+      "note": "",
+      "highlightReview": true
     },
     {
       "id": "E1-14",
@@ -560,7 +573,8 @@
           ]
         }
       ],
-      "note": ""
+      "note": "",
+      "highlightReview": true
     },
     {
       "id": "E1-15",
@@ -601,7 +615,8 @@
           ]
         }
       ],
-      "note": ""
+      "note": "",
+      "highlightReview": true
     },
     {
       "id": "E1-16",
@@ -669,7 +684,8 @@
           ]
         }
       ],
-      "note": "“Prevents shocks and surprises”是照片原有标题，可理解为提前规划、降低突发问题风险。"
+      "note": "“Prevents shocks and surprises”是照片原有标题，可理解为提前规划、降低突发问题风险。",
+      "highlightReview": true
     },
     {
       "id": "E1-17",
@@ -731,7 +747,8 @@
           ]
         }
       ],
-      "note": "先分析需求与技术要求，再排序、实施，并观察满意度；不需要背照片整段文字。"
+      "note": "先分析需求与技术要求，再排序、实施，并观察满意度；不需要背照片整段文字。",
+      "highlightReview": true
     },
     {
       "id": "E1-18",
@@ -763,7 +780,8 @@
           ]
         }
       ],
-      "note": ""
+      "note": "",
+      "highlightReview": true
     },
     {
       "id": "E1-19",
@@ -797,7 +815,8 @@
           ]
         }
       ],
-      "note": ""
+      "note": "",
+      "highlightReview": false
     },
     {
       "id": "E1-20",
@@ -827,7 +846,8 @@
           ]
         }
       ],
-      "note": ""
+      "note": "",
+      "highlightReview": false
     },
     {
       "id": "E1-21",
@@ -858,7 +878,8 @@
           ]
         }
       ],
-      "note": ""
+      "note": "",
+      "highlightReview": false
     },
     {
       "id": "E1-22",
@@ -889,7 +910,8 @@
           ]
         }
       ],
-      "note": ""
+      "note": "",
+      "highlightReview": false
     },
     {
       "id": "E1-23",
@@ -922,7 +944,8 @@
           ]
         }
       ],
-      "note": ""
+      "note": "",
+      "highlightReview": true
     },
     {
       "id": "E1-24",
@@ -945,7 +968,8 @@
           ]
         }
       ],
-      "note": ""
+      "note": "",
+      "highlightReview": true
     },
     {
       "id": "E1-25",
@@ -978,7 +1002,8 @@
           ]
         }
       ],
-      "note": "课件强调简化假设与复杂医疗环境的差距，不应概括为所有田口设计都只能处理线性问题。"
+      "note": "课件强调简化假设与复杂医疗环境的差距，不应概括为所有田口设计都只能处理线性问题。",
+      "highlightReview": true
     },
     {
       "id": "E1-26",
@@ -1018,7 +1043,8 @@
           ]
         }
       ],
-      "note": ""
+      "note": "",
+      "highlightReview": true
     },
     {
       "id": "E1-27",
@@ -1039,11 +1065,14 @@
             "Identifying potential causes of system failure",
             "识别系统失效的潜在原因",
             "potential causes of system failure",
-            "identify causes of system failure"
+            "identify causes of system failure",
+            "identifying potential causes of system failures",
+            "identify potential causes of system failures"
           ]
         }
       ],
-      "note": ""
+      "note": "完整定义见 E1-51：A systematic approach to identifying potential causes of system failures.",
+      "highlightReview": true
     },
     {
       "id": "E1-28",
@@ -1076,7 +1105,8 @@
           ]
         }
       ],
-      "note": ""
+      "note": "",
+      "highlightReview": true
     },
     {
       "id": "E1-29",
@@ -1107,7 +1137,8 @@
           ]
         }
       ],
-      "note": ""
+      "note": "",
+      "highlightReview": true
     },
     {
       "id": "E1-30",
@@ -1140,7 +1171,8 @@
           ]
         }
       ],
-      "note": ""
+      "note": "",
+      "highlightReview": true
     },
     {
       "id": "E1-31",
@@ -1163,7 +1195,8 @@
           ]
         }
       ],
-      "note": ""
+      "note": "",
+      "highlightReview": true
     },
     {
       "id": "E1-32",
@@ -1204,7 +1237,8 @@
           ]
         }
       ],
-      "note": ""
+      "note": "Kaizen: Continuous, incremental improvement involving all employees. 持续、渐进、全员参与的改善。",
+      "highlightReview": true
     },
     {
       "id": "E1-33",
@@ -1254,7 +1288,8 @@
           ]
         }
       ],
-      "note": ""
+      "note": "",
+      "highlightReview": false
     },
     {
       "id": "E1-34",
@@ -1286,7 +1321,8 @@
           ]
         }
       ],
-      "note": ""
+      "note": "",
+      "highlightReview": true
     },
     {
       "id": "E1-35",
@@ -1318,7 +1354,8 @@
           ]
         }
       ],
-      "note": ""
+      "note": "",
+      "highlightReview": true
     },
     {
       "id": "E1-36",
@@ -1353,7 +1390,8 @@
           ]
         }
       ],
-      "note": ""
+      "note": "Lean Management: Eliminating waste and maximizing value. 精益管理：消除浪费、最大化价值。",
+      "highlightReview": true
     },
     {
       "id": "E1-37",
@@ -1384,7 +1422,8 @@
           ]
         }
       ],
-      "note": ""
+      "note": "",
+      "highlightReview": true
     },
     {
       "id": "E1-38",
@@ -1407,7 +1446,8 @@
           ]
         }
       ],
-      "note": ""
+      "note": "",
+      "highlightReview": true
     },
     {
       "id": "E1-39",
@@ -1439,7 +1479,8 @@
           ]
         }
       ],
-      "note": "Lean → streamline process；Six Sigma → reduce variation。"
+      "note": "Lean → streamline process；Six Sigma → reduce variation。",
+      "highlightReview": true
     },
     {
       "id": "E1-40",
@@ -1488,7 +1529,8 @@
           ]
         }
       ],
-      "note": ""
+      "note": "",
+      "highlightReview": true
     },
     {
       "id": "E1-41",
@@ -1518,7 +1560,8 @@
           ]
         }
       ],
-      "note": ""
+      "note": "",
+      "highlightReview": true
     },
     {
       "id": "E1-42",
@@ -1548,7 +1591,8 @@
           ]
         }
       ],
-      "note": ""
+      "note": "",
+      "highlightReview": true
     },
     {
       "id": "E1-43",
@@ -1580,7 +1624,8 @@
           ]
         }
       ],
-      "note": ""
+      "note": "",
+      "highlightReview": false
     },
     {
       "id": "E1-44",
@@ -1618,7 +1663,8 @@
           ]
         }
       ],
-      "note": ""
+      "note": "",
+      "highlightReview": false
     },
     {
       "id": "E1-45",
@@ -1656,7 +1702,8 @@
           ]
         }
       ],
-      "note": ""
+      "note": "",
+      "highlightReview": false
     },
     {
       "id": "E1-46",
@@ -1695,7 +1742,8 @@
           ]
         }
       ],
-      "note": ""
+      "note": "",
+      "highlightReview": false
     },
     {
       "id": "E1-47",
@@ -1736,7 +1784,8 @@
           ]
         }
       ],
-      "note": ""
+      "note": "",
+      "highlightReview": false
     },
     {
       "id": "E1-48",
@@ -1776,7 +1825,8 @@
           ]
         }
       ],
-      "note": ""
+      "note": "",
+      "highlightReview": false
     },
     {
       "id": "E1-49",
@@ -1853,9 +1903,1255 @@
           ]
         }
       ],
-      "note": "简短参考答案：Resistance to change: Use open communication and staff involvement to help staff understand and accept changes. Resource constraints: Improve resource allocation and prioritisation with AI support. Use clear rules and human review to check AI suggestions. 中文：变革阻力：通过开放沟通和员工参与，帮助员工理解和接受改变。资源限制：用 AI 辅助资源配置和优先级安排，并通过明确规则和人工审核检查 AI 建议。 课件核心关键词：Resistance to change; Open communication; Staff involvement; Resource constraints; Resource allocation; Prioritisation。AI support、clear rules、human review 是补充应用例子，不作为本题必答评分点；AI 也需要投入资源，不能直接消除资源不足。学习整理，非老师逐字标准答案。"
+      "note": "简短参考答案：Resistance to change: Use open communication and staff involvement to help staff understand and accept changes. Resource constraints: Improve resource allocation and prioritisation with AI support. Use clear rules and human review to check AI suggestions. 中文：变革阻力：通过开放沟通和员工参与，帮助员工理解和接受改变。资源限制：用 AI 辅助资源配置和优先级安排，并通过明确规则和人工审核检查 AI 建议。 课件核心关键词：Resistance to change; Open communication; Staff involvement; Resource constraints; Resource allocation; Prioritisation。AI support、clear rules、human review 是补充应用例子，不作为本题必答评分点；AI 也需要投入资源，不能直接消除资源不足。学习整理，非老师逐字标准答案。",
+      "highlightReview": false
+    },
+    {
+      "id": "E1-50",
+      "group": "Lecture 3 · 定义与案例补全",
+      "pages": [
+        35,
+        36
+      ],
+      "question": {
+        "en": "What does FTA stand for?",
+        "zh": "FTA 的英文全称是什么？"
+      },
+      "points": [
+        {
+          "label": "Fault Tree Analysis",
+          "zh": "故障树分析",
+          "accept": [
+            "Fault Tree Analysis",
+            "故障树分析"
+          ]
+        }
+      ],
+      "note": "",
+      "sourceText": "",
+      "highlightReview": true
+    },
+    {
+      "id": "E1-51",
+      "group": "Lecture 3 · 定义与案例补全",
+      "pages": [
+        35,
+        36
+      ],
+      "question": {
+        "en": "Define FTA using the two key parts of the slide definition.",
+        "zh": "按课件的两个要点定义 FTA。"
+      },
+      "points": [
+        {
+          "label": "Systematic approach",
+          "zh": "系统性方法",
+          "accept": [
+            "Systematic approach",
+            "系统性方法",
+            "systematic method"
+          ]
+        },
+        {
+          "label": "Identifying potential causes of system failures",
+          "zh": "识别系统失效的潜在原因",
+          "accept": [
+            "Identifying potential causes of system failures",
+            "识别系统失效的潜在原因",
+            "identifying potential causes of system failure",
+            "identify potential causes of system failures"
+          ]
+        }
+      ],
+      "note": "课件原文：A systematic approach to identifying potential causes of system failures. 黄色重点：identifying potential causes of system failures。简答：FTA systematically identifies potential causes of system failures.",
+      "sourceText": "",
+      "highlightReview": true
+    },
+    {
+      "id": "E1-52",
+      "group": "Lecture 3 · 定义与案例补全",
+      "pages": [
+        35
+      ],
+      "question": {
+        "en": "Name two healthcare applications of FTA.",
+        "zh": "FTA 在医疗领域的两项应用？"
+      },
+      "points": [
+        {
+          "label": "Preventing errors",
+          "zh": "预防错误",
+          "accept": [
+            "Preventing errors",
+            "预防错误",
+            "prevent errors"
+          ]
+        },
+        {
+          "label": "Risk management",
+          "zh": "风险管理",
+          "accept": [
+            "Risk management",
+            "风险管理"
+          ]
+        }
+      ],
+      "note": "",
+      "sourceText": "",
+      "highlightReview": true
+    },
+    {
+      "id": "E1-53",
+      "group": "Lecture 3 · 定义与案例补全",
+      "pages": [],
+      "question": {
+        "en": "In the medication-error FTA case, state the background, analysis and outcome.",
+        "zh": "FTA 用药错误案例：背景、分析方法及结果？"
+      },
+      "points": [
+        {
+          "label": "Frequent medication errors",
+          "zh": "频繁用药错误",
+          "accept": [
+            "Frequent medication errors",
+            "频繁用药错误"
+          ]
+        },
+        {
+          "label": "Fault tree",
+          "zh": "故障树",
+          "accept": [
+            "Fault tree",
+            "故障树"
+          ]
+        },
+        {
+          "label": "Root causes",
+          "zh": "根本原因",
+          "accept": [
+            "Root causes",
+            "根本原因"
+          ]
+        },
+        {
+          "label": "Preventive measures",
+          "zh": "预防措施",
+          "accept": [
+            "Preventive measures",
+            "预防措施"
+          ]
+        },
+        {
+          "label": "Reduced error rates",
+          "zh": "降低错误率",
+          "accept": [
+            "Reduced error rates",
+            "降低错误率",
+            "reducing error rates"
+          ]
+        }
+      ],
+      "note": "简答：Create a fault tree to identify root causes, then implement preventive measures based on critical pathways to reduce medication errors. 属课件案例，不补造具体药物、数值或医院名称。",
+      "sourceText": "IMG_1626 Small.jpeg · 课堂PPT 18；Lecture 3 学生PDF 17",
+      "highlightReview": true
+    },
+    {
+      "id": "E1-54",
+      "group": "Lecture 3 · 定义与案例补全",
+      "pages": [
+        12
+      ],
+      "question": {
+        "en": "What risk prompted the transfusion FMEA case?",
+        "zh": "输血 FMEA 案例的背景风险是什么？"
+      },
+      "points": [
+        {
+          "label": "Incorrect blood type administration",
+          "zh": "输错血型",
+          "accept": [
+            "Incorrect blood type administration",
+            "输错血型",
+            "wrong blood type"
+          ]
+        }
+      ],
+      "note": "完整案例：Improving blood transfusion safety → incorrect blood type administration → assess potential failures → double-check systems and barcode scanning。对应 E1-30、31。",
+      "sourceText": "",
+      "highlightReview": true
+    },
+    {
+      "id": "E1-55",
+      "group": "Lecture 3 · 定义与案例补全",
+      "pages": [
+        14
+      ],
+      "question": {
+        "en": "What were the two results of the Kaizen discharge case?",
+        "zh": "Kaizen 出院案例的两个结果？"
+      },
+      "points": [
+        {
+          "label": "Reduced discharge times",
+          "zh": "缩短出院时间",
+          "accept": [
+            "Reduced discharge times",
+            "缩短出院时间",
+            "reduce discharge times"
+          ]
+        },
+        {
+          "label": "Improved patient flow",
+          "zh": "改善患者流动",
+          "accept": [
+            "Improved patient flow",
+            "改善患者流动",
+            "improve patient flow"
+          ]
+        }
+      ],
+      "note": "背景：Inefficient discharge processes led to delays。措施见 E1-34。",
+      "sourceText": "",
+      "highlightReview": true
+    },
+    {
+      "id": "E1-56",
+      "group": "Lecture 3 · 定义与案例补全",
+      "pages": [
+        14
+      ],
+      "question": {
+        "en": "Who should participate in Kaizen, and how can improvement become routine?",
+        "zh": "Kaizen 由谁参与？怎样使改善成为日常工作？"
+      },
+      "points": [
+        {
+          "label": "All employees",
+          "zh": "全体员工",
+          "accept": [
+            "All employees",
+            "全体员工",
+            "employee involvement"
+          ]
+        },
+        {
+          "label": "Continuous improvement",
+          "zh": "持续改善",
+          "accept": [
+            "Continuous improvement",
+            "持续改善"
+          ]
+        },
+        {
+          "label": "Incremental improvement",
+          "zh": "渐进改善",
+          "accept": [
+            "Incremental improvement",
+            "渐进改善"
+          ]
+        }
+      ],
+      "note": "学习整理短答：Involve all employees in small, continuous improvements, such as identifying bottlenecks every day. 全员参与日常识别瓶颈和小步改善。",
+      "sourceText": "",
+      "highlightReview": true
+    },
+    {
+      "id": "E1-57",
+      "group": "Lecture 3 · 定义与案例补全",
+      "pages": [
+        15
+      ],
+      "question": {
+        "en": "Name two main problems in the Lean A&E case.",
+        "zh": "Lean 急诊案例的两项主要问题？"
+      },
+      "points": [
+        {
+          "label": "Overcrowding",
+          "zh": "过度拥挤",
+          "accept": [
+            "Overcrowding",
+            "过度拥挤"
+          ]
+        },
+        {
+          "label": "Delayed triage",
+          "zh": "分诊延迟",
+          "accept": [
+            "Delayed triage",
+            "分诊延迟"
+          ]
+        }
+      ],
+      "note": "高患者量、低效流程增加资源与员工压力，并影响满意度和安全。",
+      "sourceText": "",
+      "highlightReview": true
+    },
+    {
+      "id": "E1-58",
+      "group": "Lecture 3 · 定义与案例补全",
+      "pages": [
+        15
+      ],
+      "question": {
+        "en": "Name three implementation actions in the Lean A&E case.",
+        "zh": "Lean 急诊案例的三项实施措施？"
+      },
+      "points": [
+        {
+          "label": "Value stream mapping",
+          "zh": "价值流图",
+          "accept": [
+            "Value stream mapping",
+            "价值流图",
+            "mapping value streams"
+          ]
+        },
+        {
+          "label": "Identifying non-value-added activities",
+          "zh": "识别不增值活动",
+          "accept": [
+            "Identifying non-value-added activities",
+            "识别不增值活动",
+            "identify non value added activities"
+          ]
+        },
+        {
+          "label": "Standardized workflows",
+          "zh": "标准化工作流程",
+          "accept": [
+            "Standardized workflows",
+            "标准化工作流程",
+            "standardised workflows"
+          ]
+        }
+      ],
+      "note": "通过精简分诊流程、减少等待、改善床位周转提升效率。维持措施见 E1-37。",
+      "sourceText": "",
+      "highlightReview": true
+    },
+    {
+      "id": "E1-59",
+      "group": "Lecture 3 · 定义与案例补全",
+      "pages": [
+        15
+      ],
+      "question": {
+        "en": "What happened to triage time and overcrowding in the slide case?",
+        "zh": "课件案例中分诊时间和拥挤情况如何变化？"
+      },
+      "points": [
+        {
+          "label": "40%",
+          "zh": "百分之四十",
+          "accept": [
+            "40%",
+            "百分之四十",
+            "40 percent"
+          ]
+        },
+        {
+          "label": "Decreased overcrowding",
+          "zh": "减少拥挤",
+          "accept": [
+            "Decreased overcrowding",
+            "减少拥挤",
+            "overcrowding decreased"
+          ]
+        }
+      ],
+      "note": "课件报告分诊评估时间下降40%，患者流动更可预测。40%是此教学案例的数字，不是所有 Lean 项目的保证效果。",
+      "sourceText": "",
+      "highlightReview": true
+    },
+    {
+      "id": "E1-60",
+      "group": "Lecture 3 · 定义与案例补全",
+      "pages": [
+        16
+      ],
+      "question": {
+        "en": "Define Six Sigma using three key phrases.",
+        "zh": "用三个短语定义 Six Sigma。"
+      },
+      "points": [
+        {
+          "label": "Data-driven methodology",
+          "zh": "数据驱动的方法",
+          "accept": [
+            "Data-driven methodology",
+            "数据驱动的方法",
+            "data driven method"
+          ]
+        },
+        {
+          "label": "Reducing defects",
+          "zh": "减少缺陷",
+          "accept": [
+            "Reducing defects",
+            "减少缺陷",
+            "reduce defects"
+          ]
+        },
+        {
+          "label": "Reducing variability",
+          "zh": "减少变异",
+          "accept": [
+            "Reducing variability",
+            "减少变异",
+            "reduce variability"
+          ]
+        }
+      ],
+      "note": "Six Sigma is a data-driven methodology for reducing defects and variability.",
+      "sourceText": "",
+      "highlightReview": true
+    },
+    {
+      "id": "E1-61",
+      "group": "Lecture 3 · 定义与案例补全",
+      "pages": [
+        16
+      ],
+      "question": {
+        "en": "Distinguish the main focus of Six Sigma from Lean.",
+        "zh": "Six Sigma 和 Lean 的主要区别？"
+      },
+      "points": [
+        {
+          "label": "Process variation reduction",
+          "zh": "减少流程变异",
+          "accept": [
+            "Process variation reduction",
+            "减少流程变异",
+            "reduce process variation"
+          ]
+        },
+        {
+          "label": "Workflow optimization",
+          "zh": "优化工作流程",
+          "accept": [
+            "Workflow optimization",
+            "优化工作流程",
+            "workflow optimisation"
+          ]
+        }
+      ],
+      "note": "Six Sigma reduces variability through statistical control; Lean removes non-value-added steps to improve workflow and value delivery. 两者共同改善质量和效率。",
+      "sourceText": "",
+      "highlightReview": true
+    },
+    {
+      "id": "E1-62",
+      "group": "Lecture 3 · 定义与案例补全",
+      "pages": [
+        17
+      ],
+      "question": {
+        "en": "What problem prompted the Lean Sigma surgical case?",
+        "zh": "Lean Sigma 手术案例针对什么问题？"
+      },
+      "points": [
+        {
+          "label": "High rates of infections post-surgery",
+          "zh": "术后感染率高",
+          "accept": [
+            "High rates of infections post-surgery",
+            "术后感染率高",
+            "high postoperative infection rates",
+            "high rates of post surgery infections"
+          ]
+        }
+      ],
+      "note": "案例题名：Reducing Surgical Site Infections。两种方法各自的作用见 E1-39。",
+      "sourceText": "",
+      "highlightReview": true
+    },
+    {
+      "id": "E1-63",
+      "group": "Lecture 3 · 定义与案例补全",
+      "pages": [
+        17
+      ],
+      "question": {
+        "en": "Name two outcomes in the Lean Sigma infection case.",
+        "zh": "Lean Sigma 感染案例的两个结果？"
+      },
+      "points": [
+        {
+          "label": "Reduced infection rates",
+          "zh": "降低感染率",
+          "accept": [
+            "Reduced infection rates",
+            "降低感染率"
+          ]
+        },
+        {
+          "label": "Improved patient outcomes",
+          "zh": "改善患者结局",
+          "accept": [
+            "Improved patient outcomes",
+            "改善患者结局"
+          ]
+        }
+      ],
+      "note": "",
+      "sourceText": "",
+      "highlightReview": true
+    },
+    {
+      "id": "E1-64",
+      "group": "Lecture 3 · 定义与案例补全",
+      "pages": [
+        18
+      ],
+      "question": {
+        "en": "Name three cultural features supporting Lean Sigma.",
+        "zh": "支持 Lean Sigma 的三个文化要点？"
+      },
+      "points": [
+        {
+          "label": "Accountability",
+          "zh": "问责",
+          "accept": [
+            "Accountability",
+            "问责",
+            "责任意识"
+          ]
+        },
+        {
+          "label": "Collaboration",
+          "zh": "协作",
+          "accept": [
+            "Collaboration",
+            "协作"
+          ]
+        },
+        {
+          "label": "Data-driven decisions",
+          "zh": "数据驱动决策",
+          "accept": [
+            "Data-driven decisions",
+            "数据驱动决策"
+          ]
+        }
+      ],
+      "note": "这些要点有助于 ownership（主人翁意识）和 sustained engagement（持续参与）。",
+      "sourceText": "",
+      "highlightReview": true
+    },
+    {
+      "id": "E1-65",
+      "group": "Lecture 3 · 定义与案例补全",
+      "pages": [
+        18
+      ],
+      "question": {
+        "en": "What should align with Lean Sigma principles, and what supports integration?",
+        "zh": "什么应与 Lean Sigma 原则一致？什么支持融入日常工作？"
+      },
+      "points": [
+        {
+          "label": "Organizational values",
+          "zh": "组织价值观",
+          "accept": [
+            "Organizational values",
+            "组织价值观",
+            "organisational values"
+          ]
+        },
+        {
+          "label": "Shared vision",
+          "zh": "共同愿景",
+          "accept": [
+            "Shared vision",
+            "共同愿景"
+          ]
+        }
+      ],
+      "note": "Align organizational values with Lean Sigma principles; use a shared vision to integrate improvements into daily operations.",
+      "sourceText": "",
+      "highlightReview": true
+    },
+    {
+      "id": "E1-66",
+      "group": "Lecture 3 · 定义与案例补全",
+      "pages": [
+        18
+      ],
+      "question": {
+        "en": "Besides goals and resources, what should Lean Sigma leaders do?",
+        "zh": "除目标和资源外，Lean Sigma 领导者还应做什么？"
+      },
+      "points": [
+        {
+          "label": "Champion change",
+          "zh": "推动变革",
+          "accept": [
+            "Champion change",
+            "推动变革"
+          ]
+        },
+        {
+          "label": "Commitment to continuous improvement",
+          "zh": "承诺持续改善",
+          "accept": [
+            "Commitment to continuous improvement",
+            "承诺持续改善"
+          ]
+        }
+      ],
+      "note": "领导者应以身作则；基础职责 clear goals / resources 见 E1-41。",
+      "sourceText": "",
+      "highlightReview": true
+    },
+    {
+      "id": "E1-67",
+      "group": "Lecture 3 · 定义与案例补全",
+      "pages": [
+        18
+      ],
+      "question": {
+        "en": "What training approach supports consistent Lean Sigma application?",
+        "zh": "什么培训方式支持 Lean Sigma 的一致应用？"
+      },
+      "points": [
+        {
+          "label": "Structured training",
+          "zh": "结构化培训",
+          "accept": [
+            "Structured training",
+            "结构化培训"
+          ]
+        },
+        {
+          "label": "Competency development",
+          "zh": "能力发展",
+          "accept": [
+            "Competency development",
+            "能力发展"
+          ]
+        }
+      ],
+      "note": "工具：DMAIC、value stream mapping（E1-42）；目的：consistent application across departments。",
+      "sourceText": "",
+      "highlightReview": true
+    },
+    {
+      "id": "E1-68",
+      "group": "Lecture 3 · 定义与案例补全",
+      "pages": [
+        11
+      ],
+      "question": {
+        "en": "Why do orthogonal arrays improve data efficiency?",
+        "zh": "正交表为什么能提高数据效率？"
+      },
+      "points": [
+        {
+          "label": "Minimize experimental runs",
+          "zh": "减少试验次数",
+          "accept": [
+            "Minimize experimental runs",
+            "减少试验次数",
+            "minimise experimental runs"
+          ]
+        },
+        {
+          "label": "Save time and resources",
+          "zh": "节省时间和资源",
+          "accept": [
+            "Save time and resources",
+            "节省时间和资源",
+            "saving time and resources"
+          ]
+        }
+      ],
+      "note": "Healthcare trials are costly and ethically constrained. 医疗试验成本高且受伦理约束。",
+      "sourceText": "",
+      "highlightReview": true
+    },
+    {
+      "id": "E1-69",
+      "group": "Lecture 3 · 定义与案例补全",
+      "pages": [
+        11
+      ],
+      "question": {
+        "en": "Give the clinical example and benefit of Taguchi methods.",
+        "zh": "Taguchi 的临床应用例子及好处？"
+      },
+      "points": [
+        {
+          "label": "Drug dosing",
+          "zh": "药物剂量",
+          "accept": [
+            "Drug dosing",
+            "药物剂量"
+          ]
+        },
+        {
+          "label": "Consistency",
+          "zh": "一致性",
+          "accept": [
+            "Consistency",
+            "一致性"
+          ]
+        },
+        {
+          "label": "Precision",
+          "zh": "精确性",
+          "accept": [
+            "Precision",
+            "精确性"
+          ]
+        }
+      ],
+      "note": "Optimize treatment protocols such as drug dosing; consistency improves patient outcomes and precision in diagnostic and therapeutic processes. 此处仅复习方法概念。",
+      "sourceText": "",
+      "highlightReview": true
+    },
+    {
+      "id": "E1-70",
+      "group": "Lecture 1 · 定义与案例补全",
+      "pages": [
+        23,
+        24,
+        25
+      ],
+      "question": {
+        "en": "What does equity mean in healthcare quality?",
+        "zh": "医疗质量中的 Equity 是什么？"
+      },
+      "points": [
+        {
+          "label": "Care quality does not vary",
+          "zh": "医疗质量不因人而异",
+          "accept": [
+            "Care quality does not vary",
+            "医疗质量不因人而异",
+            "quality does not vary"
+          ]
+        },
+        {
+          "label": "Personal characteristics",
+          "zh": "个人特征",
+          "accept": [
+            "Personal characteristics",
+            "个人特征"
+          ]
+        },
+        {
+          "label": "Demographics",
+          "zh": "人口特征",
+          "accept": [
+            "Demographics",
+            "人口特征"
+          ]
+        }
+      ],
+      "note": "Care quality should not vary because of personal characteristics or demographics. 公平强调不因个人或人口特征而产生质量差别。",
+      "sourceText": "",
+      "highlightReview": true
+    },
+    {
+      "id": "E1-71",
+      "group": "Lecture 1 · 定义与案例补全",
+      "pages": [
+        23
+      ],
+      "question": {
+        "en": "What approach and outcome define effective care?",
+        "zh": "有效照护采用什么方式，达到什么结果？"
+      },
+      "points": [
+        {
+          "label": "Evidence-based treatments",
+          "zh": "循证治疗",
+          "accept": [
+            "Evidence-based treatments",
+            "循证治疗"
+          ]
+        },
+        {
+          "label": "Desired health outcomes",
+          "zh": "预期健康结局",
+          "accept": [
+            "Desired health outcomes",
+            "预期健康结局"
+          ]
+        }
+      ],
+      "note": "Providing evidence-based treatments achieves desired health outcomes. 黄色重点：desired health outcomes。",
+      "sourceText": "",
+      "highlightReview": true
+    },
+    {
+      "id": "E1-72",
+      "group": "Lecture 2 · 定义与案例补全",
+      "pages": [
+        29
+      ],
+      "question": {
+        "en": "What is PDCA, beyond spelling out its four stages?",
+        "zh": "除了四步全称，PDCA 是什么？"
+      },
+      "points": [
+        {
+          "label": "Persistent feedback loop",
+          "zh": "持续反馈循环",
+          "accept": [
+            "Persistent feedback loop",
+            "持续反馈循环",
+            "continuous feedback loop"
+          ]
+        },
+        {
+          "label": "Corrective measures",
+          "zh": "纠正措施",
+          "accept": [
+            "Corrective measures",
+            "纠正措施",
+            "corrective actions"
+          ]
+        }
+      ],
+      "note": "PDCA is a persistent feedback loop for learning and improvement, used to identify variation and initiate corrective measures. 四步见 E1-11。",
+      "sourceText": "",
+      "highlightReview": true
+    },
+    {
+      "id": "E1-73",
+      "group": "Lecture 2 · 定义与案例补全",
+      "pages": [
+        29
+      ],
+      "question": {
+        "en": "According to the slide, who first presented PDCA and who promoted it?",
+        "zh": "按课件表述，谁最早提出、谁推广 PDCA？"
+      },
+      "points": [
+        {
+          "label": "Walter Shewhart",
+          "zh": "沃尔特休哈特",
+          "accept": [
+            "Walter Shewhart",
+            "沃尔特休哈特",
+            "Shewhart"
+          ]
+        },
+        {
+          "label": "W. Edwards Deming",
+          "zh": "戴明",
+          "accept": [
+            "W. Edwards Deming",
+            "戴明",
+            "Deming"
+          ]
+        }
+      ],
+      "note": "课件记述：Shewhart（1929），Deming（1950s）。此题按课堂资料记忆，不作独立历史考证。",
+      "sourceText": "",
+      "highlightReview": true
+    },
+    {
+      "id": "E1-74",
+      "group": "Lecture 2 · 定义与案例补全",
+      "pages": [
+        29
+      ],
+      "question": {
+        "en": "What does the PDCA feedback loop identify, and what does it initiate?",
+        "zh": "PDCA 反馈循环识别什么，并启动什么？"
+      },
+      "points": [
+        {
+          "label": "Sources of variation",
+          "zh": "变异来源",
+          "accept": [
+            "Sources of variation",
+            "变异来源",
+            "sources of variations"
+          ]
+        },
+        {
+          "label": "Corrective measures",
+          "zh": "纠正措施",
+          "accept": [
+            "Corrective measures",
+            "纠正措施",
+            "corrective actions"
+          ]
+        }
+      ],
+      "note": "课件表述：分析、衡量并识别偏离客户要求的变异来源，继而采取纠正措施。",
+      "sourceText": "",
+      "highlightReview": true
+    },
+    {
+      "id": "E1-75",
+      "group": "Lecture 2 · 定义与案例补全",
+      "pages": [
+        31
+      ],
+      "question": {
+        "en": "Which customer requirements should QFD prioritise?",
+        "zh": "QFD 应优先处理哪些客户需求？"
+      },
+      "points": [
+        {
+          "label": "Maximum impact on the outcome",
+          "zh": "对结果影响最大",
+          "accept": [
+            "Maximum impact on the outcome",
+            "对结果影响最大",
+            "maximum impact"
+          ]
+        }
+      ],
+      "note": "同时平衡 available resources 和 target requirements（E1-18）。强有力的领导方向有助于实施。",
+      "sourceText": "",
+      "highlightReview": true
+    },
+    {
+      "id": "E1-76",
+      "group": "Lecture 3 · 定义与案例补全",
+      "pages": [
+        16
+      ],
+      "question": {
+        "en": "Give one Six Sigma example and two Lean workflow examples from the slide.",
+        "zh": "课件中的 Six Sigma 例子和两个 Lean 流程例子？"
+      },
+      "points": [
+        {
+          "label": "Lab results",
+          "zh": "检验结果",
+          "accept": [
+            "Lab results",
+            "检验结果",
+            "medication dosing",
+            "药物剂量"
+          ]
+        },
+        {
+          "label": "Emergency triage",
+          "zh": "急诊分诊",
+          "accept": [
+            "Emergency triage",
+            "急诊分诊"
+          ]
+        },
+        {
+          "label": "Surgical scheduling",
+          "zh": "手术排程",
+          "accept": [
+            "Surgical scheduling",
+            "手术排程"
+          ]
+        }
+      ],
+      "note": "Six Sigma：减少检验结果或给药中的缺陷；Lean：精简急诊分诊和手术排程以减少延误。第一项两种例子任选一种。",
+      "sourceText": "",
+      "highlightReview": true
+    },
+    {
+      "id": "E1-77",
+      "group": "Lecture 1 · 定义与案例补全",
+      "pages": [
+        27
+      ],
+      "question": {
+        "en": "Which safety-culture element upholds safety standards?",
+        "zh": "安全文化中哪一项支持维持安全标准？"
+      },
+      "points": [
+        {
+          "label": "Leadership commitment",
+          "zh": "领导承诺",
+          "accept": [
+            "Leadership commitment",
+            "领导承诺"
+          ]
+        }
+      ],
+      "note": "",
+      "sourceText": "",
+      "highlightReview": true
+    },
+    {
+      "id": "E1-78",
+      "group": "Lecture 1 · 定义与案例补全",
+      "pages": [
+        27
+      ],
+      "question": {
+        "en": "Which element means active participation in safety and continuous improvement?",
+        "zh": "主动参与安全实践和持续改善属于哪一项？"
+      },
+      "points": [
+        {
+          "label": "Staff engagement",
+          "zh": "员工参与",
+          "accept": [
+            "Staff engagement",
+            "员工参与"
+          ]
+        }
+      ],
+      "note": "",
+      "sourceText": "",
+      "highlightReview": true
+    },
+    {
+      "id": "E1-79",
+      "group": "Lecture 3 · 定义与案例补全",
+      "pages": [
+        11
+      ],
+      "question": {
+        "en": "Name the five headings used to evaluate Taguchi in the slide.",
+        "zh": "评价 Taguchi 的五个课件标题？"
+      },
+      "points": [
+        {
+          "label": "Strengths",
+          "zh": "优势",
+          "accept": [
+            "Strengths",
+            "优势"
+          ]
+        },
+        {
+          "label": "Data efficiency",
+          "zh": "数据效率",
+          "accept": [
+            "Data efficiency",
+            "数据效率"
+          ]
+        },
+        {
+          "label": "Clinical fit",
+          "zh": "临床适用性",
+          "accept": [
+            "Clinical fit",
+            "临床适用性"
+          ]
+        },
+        {
+          "label": "Complexity barrier",
+          "zh": "复杂性障碍",
+          "accept": [
+            "Complexity barrier",
+            "复杂性障碍"
+          ]
+        },
+        {
+          "label": "Adoption challenges",
+          "zh": "采用挑战",
+          "accept": [
+            "Adoption challenges",
+            "采用挑战"
+          ]
+        }
+      ],
+      "note": "复杂性：非线性与变量交互作用；采用：统计能力不足、文化阻力、培训不足。不要把课件的简化表述推成所有田口设计都只能处理线性关系。",
+      "sourceText": "",
+      "highlightReview": true
     }
   ],
   "scopeNote": "已核对37页，重复照片合并；第2、34页为Lecture 3目录，第22页为考试通知。通知范围为Lecture 1–3，照片重点不代表排除其他课件内容。",
-  "supplement": "Quality Circles 在目录中出现，但本附件未提供其详细页，可回到 Lecture 3 品管圈章节补充复习。PDSA 属 Lecture 1 内容，与本附件中的 PDCA 区分；在原课程中复习。"
+  "supplement": "Quality Circles 在目录中出现，但本附件未提供其详细页，可回到 Lecture 3 品管圈章节补充复习。PDSA 属 Lecture 1 内容，与本附件中的 PDCA 区分；在原课程中复习。",
+  "photoAudit": [
+    {
+      "photo": "IMG_1627(3).jpg",
+      "focus": "FMEA 输血案例：Title / Background / Process / Corrective Actions",
+      "questionIds": [
+        "E1-30",
+        "E1-31",
+        "E1-54"
+      ],
+      "change": "补背景风险；保留潜在失效、双重核对和条码扫描。"
+    },
+    {
+      "photo": "IMG_1625 Small.jpeg",
+      "focus": "Taguchi 五个加粗标题与正文",
+      "questionIds": [
+        "E1-23",
+        "E1-24",
+        "E1-25",
+        "E1-26",
+        "E1-68",
+        "E1-69",
+        "E1-79"
+      ],
+      "change": "补数据效率理由、临床应用和五标题总览。"
+    },
+    {
+      "photo": "IMG_1626 Small.jpeg",
+      "focus": "FTA 用药案例：Background / Analysis / Outcome",
+      "questionIds": [
+        "E1-53"
+      ],
+      "change": "新增完整案例，来源直接标照片，不伪造重点PDF页码。"
+    },
+    {
+      "photo": "IMG_1627 Small.jpeg",
+      "focus": "FMEA 输血案例（与大图重复）",
+      "questionIds": [
+        "E1-30",
+        "E1-31",
+        "E1-54"
+      ],
+      "change": "与 IMG_1627(3).jpg 合并，不重复出题。"
+    },
+    {
+      "photo": "IMG_1629 Small.jpeg",
+      "focus": "Kaizen 定义、员工参与、出院案例",
+      "questionIds": [
+        "E1-32",
+        "E1-34",
+        "E1-55",
+        "E1-56"
+      ],
+      "change": "补背景、结果和参与的应用短答。"
+    },
+    {
+      "photo": "IMG_1630 Small.jpeg",
+      "focus": "Lean 急诊：问题、实施、效率、持续效果",
+      "questionIds": [
+        "E1-37",
+        "E1-38",
+        "E1-57",
+        "E1-58",
+        "E1-59"
+      ],
+      "change": "补拥挤/分诊延迟、标准化流程及案例40%结果。"
+    },
+    {
+      "photo": "IMG_1631 Small.jpeg",
+      "focus": "Six Sigma / Lean 定义、核心区别、例子",
+      "questionIds": [
+        "E1-35",
+        "E1-36",
+        "E1-60",
+        "E1-61",
+        "E1-76"
+      ],
+      "change": "补 data-driven methodology 与比较题。"
+    },
+    {
+      "photo": "IMG_1632 Small.jpeg",
+      "focus": "Lean Sigma 感染案例：Background / Strategy / Outcome",
+      "questionIds": [
+        "E1-39",
+        "E1-62",
+        "E1-63"
+      ],
+      "change": "补术后感染背景和两项结果。"
+    },
+    {
+      "photo": "IMG_1633 Small.jpeg",
+      "focus": "Lean Sigma 领导、培训、文化、战略一致性",
+      "questionIds": [
+        "E1-40",
+        "E1-41",
+        "E1-42",
+        "E1-64",
+        "E1-65",
+        "E1-66",
+        "E1-67"
+      ],
+      "change": "补问责、协作、数据驱动决策、共同愿景等正文要点。"
+    },
+    {
+      "photo": "IMG_1639 Small.jpeg",
+      "focus": "医疗质量维度；黄色 safety / desired health outcomes",
+      "questionIds": [
+        "E1-01",
+        "E1-02",
+        "E1-03",
+        "E1-04",
+        "E1-05",
+        "E1-70",
+        "E1-71"
+      ],
+      "change": "保留六维度；补公平定义和循证治疗。"
+    },
+    {
+      "photo": "IMG_1642 Small.jpeg",
+      "focus": "安全文化四项加粗标题",
+      "questionIds": [
+        "E1-07",
+        "E1-08",
+        "E1-09",
+        "E1-77",
+        "E1-78"
+      ],
+      "change": "补领导承诺和员工参与的单项识别题。"
+    },
+    {
+      "photo": "IMG_1643 Small.jpeg",
+      "focus": "质量管理的五项作用",
+      "questionIds": [
+        "E1-06"
+      ],
+      "change": "原题已覆盖五项。"
+    },
+    {
+      "photo": "IMG_1644 Small.jpeg",
+      "focus": "What is PDCA：全称、反馈循环、来源",
+      "questionIds": [
+        "E1-11",
+        "E1-72",
+        "E1-73",
+        "E1-74"
+      ],
+      "change": "补完整定义与反馈目的；历史仅按课件记忆。"
+    },
+    {
+      "photo": "IMG_1645 Small.jpeg",
+      "focus": "PDCA 四步及各步任务",
+      "questionIds": [
+        "E1-11",
+        "E1-12",
+        "E1-13",
+        "E1-14",
+        "E1-15"
+      ],
+      "change": "原题覆盖；保留阶段顺序及各步骤短语。"
+    },
+    {
+      "photo": "IMG_1646 Small.jpeg",
+      "focus": "QFD 患者门户与 voice of the customer",
+      "questionIds": [
+        "E1-17",
+        "E1-18",
+        "E1-75"
+      ],
+      "change": "核实这是 QFD 而非 PDCA；补优先处理对结果影响最大的需求。"
+    },
+    {
+      "photo": "IMG_1648 Small.jpeg",
+      "focus": "PDCA 六项加粗作用",
+      "questionIds": [
+        "E1-16"
+      ],
+      "change": "六项均覆盖：error / shocks / problems / processes / Lean / testing。"
+    },
+    {
+      "photo": "IMG_1650 Small.jpeg",
+      "focus": "FTA 黄色定义、Components、Applications",
+      "questionIds": [
+        "E1-27",
+        "E1-28",
+        "E1-29",
+        "E1-50",
+        "E1-51",
+        "E1-52"
+      ],
+      "change": "核实缩写 FTA；补全称、完整定义及医疗应用。"
+    }
+  ],
+  "auditNotice": "2026-09-28：逐张核对17份照片（FMEA同页两张），以此前37页重点PDF及Lecture 3对应页交叉核对。黄色标记及加粗标题/正文分解为定义、关键词和案例题；这不表示老师只考这些内容。"
 }
