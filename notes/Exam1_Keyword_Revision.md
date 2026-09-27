@@ -1193,6 +1193,27 @@ Strengths（优势）；Data efficiency（数据效率）；Clinical fit（临�
 
 </details>
 
+### E1-80 · 采用障碍原题
+
+Encourage critical reflection on barriers to adoption such as resistance to change and resource constraints
+
+对采用新方法的障碍进行批判性反思，例如变革阻力和资源限制。
+
+作答：____________________________
+
+<details>
+<summary>查看参考答案</summary>
+
+Resistance to change may come from fear of the unknown. Use open communication and staff involvement to help staff accept changes. Resource constraints include limited funds, staff and time. Improve resource allocation and prioritisation, with AI support where useful. Set clear rules and use human review to check AI suggestions. AI also needs resources and cannot solve every problem.
+
+变革阻力可能来自对未知的担心，可通过开放沟通和员工参与帮助员工接受改变。资源限制包括资金、人手和时间不足，应改善资源配置和优先级安排，并适当使用 AI 辅助。通过明确规则和人工审核检查 AI 建议。AI 本身也需要资源，不能解决所有问题。
+
+**关键词：** Resistance to change；Open communication；Staff involvement；Resource constraints；Resource allocation；Prioritisation
+
+答题顺序：障碍 → 原因 → 应对措施 → 局限。关键词用于快速记忆；回答 critical reflection 时，用简短句子解释原因和措施，并指出措施的局限。
+
+</details>
+
 ## 案例分析练习
 
 ### E1-C01 · FMEA · 输血安全
