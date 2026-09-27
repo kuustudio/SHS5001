@@ -93,14 +93,14 @@ function say(word,useSystemVoice=false){
  t.onstart=()=>{if(activeSpeech!==t)return;clearTimeout(speechTimer);speechStatus('🔊 正在播放：'+text)};
  t.onend=()=>{if(activeSpeech!==t)return;clearTimeout(speechTimer);activeSpeech=null;speechStatus('🔈 播放结束，点击单词可重听')};
  t.onerror=e=>{if(['canceled','interrupted'].includes(e.error)){if(activeSpeech===t){clearTimeout(speechTimer);activeSpeech=null;speechStatus('🔈 点击单词可重听')}return}
- failed(e.error==='not-allowed'?'请直接点击顶部“开启声音”重试。':'语音未能播放，请点击顶部“系统语音重试”，并检查媒体音量。')};
+ failed(e.error==='not-allowed'?'请直接点击单词重试。':'语音未能播放，请关闭 iPhone 静音模式、检查媒体音量后，再点击单词。')};
  speechStatus('🔈 正在准备发音…');
- speechTimer=setTimeout(()=>{if(activeSpeech===t){failed('语音未启动，请点击顶部“系统语音重试”；同时检查静音模式、媒体音量和蓝牙输出。');speechEngine.cancel()}},6000);
+ speechTimer=setTimeout(()=>{if(activeSpeech===t){failed('语音未启动，请检查静音模式、媒体音量和蓝牙输出，再点击单词重试。');speechEngine.cancel()}},6000);
  try{
   // Stay in the original click handler: do not await voices or use a delayed speak().
   if(speechEngine.paused)speechEngine.resume();
   speechEngine.speak(t);
- }catch(e){failed('无法启动语音，请点击顶部“系统语音重试”。')}
+ }catch(e){failed('无法启动语音，请再次点击单词重试。')}
 }
 function vocabPage(){view='vocab';let allw=current.vocab.items;let due=allw.filter(v=>!state.mastered[key(v.id)]);shell(`<section class="hero"><div class="eyebrow">VOCABULARY · 术语与发音</div><h1>🔊 Vocabulary Lab / 单词记忆实验室</h1><p>按课件页码集中复习单词，点击即可听英式或美式读音，使用听写训练记忆。词汇释义、IPA（如有）和例句为补充学习材料。</p><div class="statrow"><div class="stat"><b>${mastered()}/${allw.length}</b><small>Remembered</small></div><div class="stat"><b>${due.length}</b><small>To review · 待记</small></div></div><button class="button primary" id="play-due">▶ 播放下一个待记单词</button></section><div class="subhead">All vocabulary / 所有词汇</div><div class="vocab-wrap">${allw.map(wordCard).join('')}</div>${dictionaryHTML()}`);$('#go-words').classList.add('active')}
 function reviewPage(){view='review';let q=current.course.questions,done=q.filter(x=>state.checks[key(x.id)]),needs=q.filter(x=>state.checks[key(x.id)]?.grade!=='full');shell(`<section class="hero"><div class="eyebrow">REVIEW · 课后复习</div><h1>Practice & Recall / 自由作答与校验</h1><p>已检查 ${done.length}/${q.length} · 待完成或待复习 ${needs.length}。可重复提交，查看参考答案。</p><div class="actions" style="margin-top:14px"><button class="button" id="only-missed" aria-pressed="false">仅显示待复习题 / Needs review</button><button class="button primary" id="show-all" aria-pressed="true">全部试题 / All</button></div></section><p id="review-filter-status" role="status" aria-live="polite"></p><p id="review-empty" class="empty hidden">当前课程没有待复习题，可点击“全部试题”继续练习。</p><div id="review-list" tabindex="-1" style="scroll-margin-top:100px">${q.map(renderQ).join('')}</div>`);$('#go-review').classList.add('active');setReviewFilter('all')}
@@ -309,11 +309,8 @@ document.addEventListener('input',e=>{if(e.target.matches('.exam-textarea'))resi
 
 try{let extras=JSON.parse(localStorage.getItem('sehs5001-extra-lectures-v2')||'[]');if(Array.isArray(extras))lectures.push(...extras.filter(l=>l.id&&l.course?.modules&&l.vocab?.items&&!lectures.some(b=>b.id===l.id)))}catch(e){}
 current=lectures.find(l=>l.id===state.selectedLecture)||lectures[0];
-const speechTest=document.createElement('button');speechTest.type='button';speechTest.className='button sm';speechTest.textContent='🔊 开启声音';speechTest.dataset.say='quality, effective';
 $('#speech-status').setAttribute('role','status');$('#speech-status').setAttribute('aria-live','polite');
-document.querySelector('.topbar .tools').prepend(speechTest);
-const systemSpeechTest=document.createElement('button');systemSpeechTest.type='button';systemSpeechTest.className='button sm';systemSpeechTest.textContent='系统语音重试';systemSpeechTest.addEventListener('click',()=>say(say.lastWord||'quality, effective',true));speechTest.after(systemSpeechTest);
-speechStatus('🔈 点击顶部“开启声音”试听；无声可用“系统语音重试”');
+speechStatus('🔈 点击单词可试听');
 if(!speechEngine||!window.SpeechSynthesisUtterance)$('#speech-status').textContent='⚠ 当前浏览器不支持语音播放，请使用 Safari';
 lectureHome();
 })();
