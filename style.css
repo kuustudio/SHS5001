@@ -20,3 +20,50 @@
  .topbar .crumb{min-height:44px;padding-right:124px;display:flex;align-items:center}
  .sidebar{padding-top:calc(12px + env(safe-area-inset-top,0px));padding-bottom:calc(16px + env(safe-area-inset-bottom,0px));overscroll-behavior:contain}
 }
+/* Reusable exam UI components, bundled locally for mobile and offline use. */
+.exam-ui{--exam-accent:#176b70;--exam-line:#dce6ec;--exam-muted:#576e80;min-width:0}
+.exam-ui .hero{background:linear-gradient(125deg,#edf8f5,#eef3ff);border:1px solid #d9e8e7;padding:28px;border-radius:24px}
+.exam-ui .card{background:#fff;border:1px solid var(--exam-line);border-radius:20px;padding:26px;box-shadow:0 6px 24px #213d5210;min-width:0;overflow-wrap:anywhere}
+.exam-ui .card+.card{margin-top:22px}
+.exam-ui .card>h2{margin-bottom:12px}.exam-ui .card>p{margin:12px 0;color:var(--exam-muted)}
+.exam-ui .button{min-height:44px;padding:11px 17px;border-radius:12px;font-size:14px;line-height:1.4;transition:background .15s,border-color .15s;touch-action:manipulation}
+.exam-ui .button.primary{background:var(--exam-accent);border-color:var(--exam-accent)}
+.exam-ui .button.primary:hover{background:#10595e}
+.exam-ui .actions{gap:10px;align-items:center}.exam-ui .small-note{color:var(--exam-muted);line-height:1.7}
+.exam-ui .exam-question{scroll-margin-top:130px}
+.exam-ui .exam-question>.eyebrow{letter-spacing:.04em;color:#416f85;font-size:12px;margin-bottom:18px}
+.exam-ui .exam-question h3{font-size:19px;line-height:1.6;margin:14px 0 18px}
+.exam-ui .exam-question h3 .zh{font-size:16px;font-weight:500;color:#576e80}
+.exam-scenario{padding:18px 20px;border-left:3px solid #45958d;border-radius:0 12px 12px 0;background:#f2f8f7;margin-bottom:22px;line-height:1.85}
+.exam-scenario>span{display:block;font-size:12px;font-weight:800;letter-spacing:.08em;color:#367a74;margin-bottom:8px}
+.exam-editor{margin:20px 0 16px;min-width:0}
+.exam-editor-head,.exam-editor-foot{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}
+.exam-editor-head{margin-bottom:9px;font-size:13px;color:var(--exam-muted)}
+.exam-editor-head label{font-size:15px;color:#244354;font-weight:750}
+.exam-ui textarea.exam-textarea{display:block;box-sizing:border-box;width:100%;min-width:0;max-width:100%;min-height:160px;max-height:65vh;resize:vertical;overflow-y:auto;border:1.5px solid #bbceda;border-radius:14px;padding:18px 20px;background:#f9fbfd;color:#182e43;font-size:17px;line-height:1.85;margin:0;outline-offset:3px;transition:border-color .15s,box-shadow .15s;scroll-margin-top:140px}
+.exam-ui textarea.exam-textarea.case-answer{min-height:230px}
+.exam-ui textarea.exam-textarea::placeholder{color:#778b9b;font-size:15px}
+.exam-ui textarea.exam-textarea:focus{background:#fff;border-color:#25817e;box-shadow:0 0 0 4px #27847e16;outline:2px solid transparent}
+.exam-editor-foot{margin-top:8px;color:var(--exam-muted);font-size:12px}
+.exam-ui .exam-editor-foot .button{min-height:40px;padding:7px 12px;background:#f4f8fa;font-size:12px}
+.exam-ui .exam-submit{padding:14px 0 2px;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:10px}
+.exam-ui .exam-submit .primary{min-height:48px}
+.exam-ui .exam-reference{border-top:1px solid #e6edf1;padding-top:16px;margin-top:20px}
+.exam-ui .exam-reference>summary{display:flex;justify-content:space-between;align-items:center;list-style:none;background:#f3f7fa;color:#325d76}
+.exam-ui .exam-reference>summary::-webkit-details-marker{display:none}
+.exam-ui .exam-reference>summary::after{content:'＋';font-size:20px}.exam-ui .exam-reference[open]>summary::after{content:'−'}
+.exam-ui .exam-reference[open]{padding-bottom:12px}.exam-ui .exam-reference p{margin:16px 0;line-height:1.85}
+.exam-ui .word-actions{gap:8px;margin:16px 0}.exam-ui .word-actions .button{font-size:13px;min-height:48px;text-align:left;background:#f0f7f5;border-color:#d5e7e1}
+.exam-ui .feedback{padding:17px;border-radius:14px;line-height:1.75}.exam-ui .feedback p{margin:6px 0}
+.exam-tabs,.exam-filters{padding:8px;background:#eaf0f5;border-radius:15px;margin-bottom:20px}
+.exam-ui>.small-note{margin:14px 0 22px}.exam-ui>h2{margin:24px 0 14px}
+@media(max-width:640px){
+ .exam-ui .hero{padding:22px 18px;border-radius:18px}.exam-ui h1{font-size:26px}
+ .exam-ui .card{padding:20px 16px;border-radius:17px}.exam-ui .exam-question h3{font-size:18px}
+ .exam-ui textarea.exam-textarea{font-size:17px;padding:15px;min-height:175px}.exam-ui textarea.exam-textarea.case-answer{min-height:240px}
+ .exam-ui .exam-submit{grid-template-columns:1fr 1fr}.exam-ui .exam-submit .button{padding:12px 8px;min-height:48px}
+ .exam-ui .exam-tabs,.exam-ui .exam-filters{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px}.exam-ui .exam-filters{grid-template-columns:repeat(4,minmax(0,1fr))}
+ .exam-ui .exam-filters .button{font-size:12px;padding:10px 3px}.exam-ui .exam-tabs .button{padding:11px 6px}
+ .exam-scenario{padding:14px;line-height:1.8}.exam-ui .card> .actions>.button{flex:1 1 140px}
+}
+@media(prefers-reduced-motion:reduce){.exam-ui .button,.exam-ui textarea.exam-textarea{transition:none}}
