@@ -238,6 +238,44 @@ document.addEventListener('input',e=>{
  const word=personalWords().find(w=>w.id===e.target.dataset.wordNote);if(word){word.zh=e.target.value;save()}
 });
 
+// First exam: keyword revision and one-way mock practice.
+const examBank=JSON.parse(document.getElementById('exam1-json').textContent);
+const examNav=document.createElement('button');examNav.type='button';examNav.className='nav-tool';examNav.id='go-exam1';examNav.textContent='🎯 第一次考试 · 关键词';$('#go-review').before(examNav);
+function examAssess(q,value){
+ const found=q.points.filter(p=>p.accept.some(a=>matches(value,a)));
+ let ordered=true;
+ if(q.ordered&&found.length===q.points.length){let last=-1;const input=normalize(value);for(const p of q.points){const pos=Math.min(...p.accept.filter(a=>matches(value,a)).map(a=>input.indexOf(normalize(a))));if(pos<=last)ordered=false;last=pos}}
+ return {found:found.map(p=>p.label),missing:q.points.filter(p=>!found.includes(p)).map(p=>p.label),ordered,full:found.length===q.points.length&&ordered};
+}
+function examShuffle(items){const result=[...items];for(let i=result.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[result[i],result[j]]=[result[j],result[i]]}return result}
+function examFrame(inner){view='exam1';shell(`<section class="hero"><div class="eyebrow">EXAM 1 · KEYWORD RECALL</div><h1>第一次考试 · 关键词专项</h1><p>2026-09-29 · 占10% · Lecture 1–3 · 闭卷 · 单向作答</p><p class="small-note">${esc(examBank.guidance)}</p></section>${inner}`);$('#go-exam1').classList.add('active');}
+function examHome(){
+ const run=state.exam1Run,unfinished=run&&!run.finished;
+ examFrame(`<div class="actions spaced">${unfinished?'<button class="button primary" data-exam="resume">继续未完成测试</button>':''}<button class="button" data-exam="study">关键词复习资料</button><button class="button primary" data-exam="20">${unfinished?'重开':'开始'}随机20题</button><button class="button" data-exam="all">${unfinished?'重开':'开始'}全部${examBank.questions.length}题</button>${run?.finished?'<button class="button" data-exam="results">上次结果</button><button class="button" data-exam="missed">只练漏答题</button>':''}</div><p class="small-note">测试不显示答案，进入下一题后本轮不能回看。完成后统一核对。未完成进度会保存；重开测试将替换本轮进度。题数为练习设置，不是正式考试题量。</p><article class="card"><h2>考试范围与来源</h2><p>${esc(examBank.scopeNote)}</p><p>${esc(examBank.supplement)}</p><p>来源：${esc(examBank.sourceFile)}；本页所有页码均指这份37页重点PDF。</p></article>`);
+}
+function examStudy(){examFrame(`<button class="button spaced" data-exam="home">← 返回考试专区</button><p class="small-note">重点短语可以点击发音；先理解中文，再遮住答案回忆英文。</p>${examBank.questions.map(q=>`<article class="card spaced"><div class="eyebrow">${esc(q.id)} · ${esc(q.group)} · 重点PDF ${q.pages.join(', ')}</div><h3>${bi(q.question)}</h3><div class="word-actions">${q.points.map(p=>`<button class="button sm" data-say="${esc(p.label)}">🔊 ${esc(p.label)}<small style="display:block">${esc(p.zh)}</small></button>`).join('')}</div>${q.note?'<p class="small-note">'+esc(q.note)+'</p>':''}</article>`).join('')}`)}
+function examStart(mode){
+ let pool=examBank.questions;
+ if(mode==='missed'){const run=state.exam1Run;pool=run?.finished?pool.filter(q=>run.ids.includes(q.id)&&!examAssess(q,run.answers[q.id]||'').full):[];if(!pool.length){notify('没有待重练题目');return}}
+ const ids=examShuffle(pool).slice(0,mode==='20'?20:pool.length).map(q=>q.id);
+ state.exam1Run={ids,index:0,answers:{},startedAt:Date.now(),finished:false};save();examQuestion();
+}
+function examQuestion(){
+ const run=state.exam1Run;if(!run)return examHome();if(run.finished)return examResults();
+ const q=examBank.questions.find(q=>q.id===run.ids[run.index]);if(!q)return examHome();
+ examFrame(`<article class="card spaced"><div class="eyebrow">${run.index+1} / ${run.ids.length} · ${esc(q.group)}</div><h2>${bi(q.question)}</h2><p>只填 ${q.points.length} 个关键词／短语${q.ordered?'，按正确顺序填写':''}，可用分号分隔。</p><textarea id="exam-input" aria-label="关键词答案" placeholder="输入关键词，无需长句">${esc(run.answers[q.id]||'')}</textarea><div class="actions"><button class="button primary" data-exam="next">${run.index+1===run.ids.length?'提交测试':'锁定本题，下一题 →'}</button><button class="button" data-exam="home">暂停并返回</button></div><p class="small-note">空白答案也可提交，将列为待复习。进入下一题后不可修改本题。</p></article>`);
+}
+function examNext(){const run=state.exam1Run;if(!run||run.finished||!$('#exam-input'))return;run.answers[run.ids[run.index]]=$('#exam-input').value;run.index++;if(run.index===run.ids.length){run.finished=true;run.finishedAt=Date.now()}save();examQuestion();window.scrollTo({top:0,behavior:'smooth'})}
+function examResults(){
+ const run=state.exam1Run;if(!run?.finished)return examHome();
+ const rows=run.ids.map(id=>{const q=examBank.questions.find(x=>x.id===id);return {q,result:examAssess(q,run.answers[id]||'')}});
+ const matched=rows.reduce((n,x)=>n+x.result.found.length,0),total=rows.reduce((n,x)=>n+x.q.points.length,0);
+ examFrame(`<article class="card spaced"><h2>关键词覆盖率 ${Math.round(matched/total*100)}%</h2><p>匹配 ${matched}/${total} 个关键词；${rows.filter(x=>x.result.full).length}/${rows.length} 题全部匹配且顺序正确。用时 ${Math.max(1,Math.round((run.finishedAt-run.startedAt)/60000))} 分钟（含暂停）。</p><p class="small-note">这是自动关键词自查，不是老师分数；词序错误单独标出，同义表达可能漏判。</p><div class="actions"><button class="button primary" data-exam="missed">只练漏答题</button><button class="button" data-exam="study">复习资料</button><button class="button" data-exam="home">返回</button></div></article>${rows.map(({q,result})=>`<article class="card spaced"><h3>${result.full?'✓':'↻'} ${bi(q.question)}</h3><p>你的答案：${esc(run.answers[q.id]||'（空白）')}</p><p><b>参考关键词：</b>${q.points.map(p=>esc(p.label)+'（'+esc(p.zh)+'）').join('；')}</p><p>${result.missing.length?'遗漏：'+result.missing.map(esc).join('；'):'关键词已匹配'}${result.ordered?'':'；注意：步骤顺序不正确'}</p>${q.note?'<p>'+esc(q.note)+'</p>':''}<small>重点PDF ${q.pages.join(', ')}</small></article>`).join('')}`);
+}
+examNav.addEventListener('click',examHome);
+document.addEventListener('click',e=>{const action=e.target.closest('[data-exam]')?.dataset.exam;if(!action)return;if(action==='home')examHome();else if(action==='study')examStudy();else if(action==='resume')examQuestion();else if(action==='next')examNext();else if(action==='results')examResults();else examStart(action)});
+document.addEventListener('input',e=>{if(e.target.id!=='exam-input')return;const run=state.exam1Run;if(run&&!run.finished){run.answers[run.ids[run.index]]=e.target.value;save()}});
+
 try{let extras=JSON.parse(localStorage.getItem('sehs5001-extra-lectures-v2')||'[]');if(Array.isArray(extras))lectures.push(...extras.filter(l=>l.id&&l.course?.modules&&l.vocab?.items&&!lectures.some(b=>b.id===l.id)))}catch(e){}
 current=lectures.find(l=>l.id===state.selectedLecture)||lectures[0];
 const speechTest=document.createElement('button');speechTest.type='button';speechTest.className='button sm';speechTest.textContent='🔊 开启声音';speechTest.dataset.say='quality, effective';
