@@ -62,7 +62,40 @@ function evaluate(q,value){let found=q.rubric.filter(r=>r.accept.some(a=>matches
 function feedback(q,c){return `<div class="feedback ${c.grade==='full'?'good':c.grade}"><b>${c.grade==='full'?'✓ 匹配全部预设知识点 / Matched all rubric concepts':c.grade==='partial'?'◐ 部分匹配，请补全 / Partial match':'○ 未匹配预设词，可查看参考答案 / Compare reference'}</b><p>${c.found.length}/${q.rubric.length} key points · ${c.missing.length?'待补充 / Missing: '+c.missing.map(esc).join('、'):''}</p><small>关键词核对不等于人工评分；正确同义表达可能误判。<br>Keyword matching is not semantic grading; valid paraphrases may be missed.</small></div>`}
 function renderQ(q){let s=state.answers[key(q.id)]||'',c=state.checks[key(q.id)];return `<div class="qbox" id="question-${esc(q.id)}"><div class="eyebrow">${esc(q.id)} · PPT ${esc(q.slide)}</div><div class="quiz-q"><div class="grid"><div class="en"><h4>${esc(q.question.en)}</h4></div><div class="zh"><h4>${esc(q.question.zh)}</h4></div></div></div><textarea data-answer="${esc(q.id)}" aria-label="Answer ${esc(q.id)}" placeholder="Write your answer here / 在这里输入中英文答案">${esc(s)}</textarea><div class="actions"><button class="button primary" data-check="${esc(q.id)}">校验答案 / Check</button><button class="button" data-retry="${esc(q.id)}">重新练习 / Retry</button><button class="button" data-answer-reveal="${esc(q.id)}">显示答案 / Show answer</button></div><div id="feedback-${esc(q.id)}" role="status" aria-live="polite">${c?feedback(q,c):''}</div><div class="answer hidden" id="answer-${esc(q.id)}"><b>REFERENCE / 参考答案</b><div class="grid"><div class="en">${esc(q.answer.en)}</div><div class="zh">${esc(q.answer.zh)}</div></div><small>${esc(q.source)}</small></div></div>`}
 function makeInlineWords(panel,c){let holder=panel.querySelector('.lesson-content');if(!holder)return;let list=vocFor(c).filter(w=>!/^[A-Z]{3,}$/.test(w.word)).sort((a,b)=>b.word.length-a.word.length);let seen=new Set(),nodes=[];const walker=document.createTreeWalker(holder,NodeFilter.SHOW_TEXT,{acceptNode(n){if(!n.nodeValue.trim()||n.parentElement.closest('button,.tag,script,style'))return NodeFilter.FILTER_REJECT;return NodeFilter.FILTER_ACCEPT}});while(walker.nextNode())nodes.push(walker.currentNode);for(let n of nodes){let s=n.nodeValue;for(let w of list){if(seen.has(w.id))continue;let pattern=new RegExp('(?<![a-z])'+w.word.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')+'(?![a-z])','i'),m=s.match(pattern);if(!m)continue;let frag=document.createDocumentFragment();frag.appendChild(document.createTextNode(s.slice(0,m.index)));let b=document.createElement('button');b.className='inlineword';b.dataset.say=w.word;b.title=w.zh+' · '+w.ipa;b.textContent=m[0]+' 🔊';frag.appendChild(b);frag.appendChild(document.createTextNode(s.slice(m.index+m[0].length)));n.replaceWith(frag);seen.add(w.id);break}}}
-function say(word){if(!('speechSynthesis'in window)){notify('此浏览器没有语音合成功能 / Speech unavailable');return}speechSynthesis.cancel();let t=new SpeechSynthesisUtterance(word);t.lang=state.locale;t.rate=.83;t.pitch=1;let voices=speechSynthesis.getVoices();let v=voices.find(x=>x.lang.toLowerCase()===state.locale.toLowerCase())||voices.find(x=>x.lang.toLowerCase().startsWith('en-'));if(v)t.voice=v;t.onerror=e=>{if(!['canceled','interrupted'].includes(e.error))notify('播放失败。检查浏览器音量或切换英式/美式语音。')};speechSynthesis.speak(t)}
+// Keep utterances alive until completion and load voices without delaying a tap.
+const speechEngine=window.speechSynthesis;
+let speechVoices=[],activeSpeech=null,speechTimer;
+function refreshSpeechVoices(){try{speechVoices=speechEngine?.getVoices()||[]}catch(e){speechVoices=[]}}
+refreshSpeechVoices();
+speechEngine?.addEventListener('voiceschanged',refreshSpeechVoices);
+function speechStatus(message){const el=$('#speech-status');if(el)el.textContent=message}
+function say(word){
+ const text=String(word||'').trim();if(!text)return;
+ if(!speechEngine||!window.SpeechSynthesisUtterance){notify('此浏览器没有语音功能，请使用 Safari 打开网站。');return}
+ clearTimeout(speechTimer);
+ // Invalidate old callbacks before cancel() can dispatch an interrupted event.
+ activeSpeech=null;
+ if(speechEngine.speaking||speechEngine.pending)speechEngine.cancel();
+ refreshSpeechVoices();
+ const t=new SpeechSynthesisUtterance(text);activeSpeech=t;
+ t.lang=state.locale;t.rate=.83;t.pitch=1;t.volume=1;
+ const same=speechVoices.filter(v=>v.lang.replace('_','-').toLowerCase()===state.locale.toLowerCase());
+ const english=speechVoices.filter(v=>/^en(?:-|_)/i.test(v.lang));
+ const v=same.find(v=>v.localService)||same[0]||english.find(v=>v.localService)||english[0];
+ if(v){t.voice=v;t.lang=v.lang}
+ const failed=message=>{if(activeSpeech!==t)return;clearTimeout(speechTimer);activeSpeech=null;speechStatus('⚠ '+message);notify(message)};
+ t.onstart=()=>{if(activeSpeech!==t)return;clearTimeout(speechTimer);speechStatus('🔊 正在播放：'+text)};
+ t.onend=()=>{if(activeSpeech!==t)return;clearTimeout(speechTimer);activeSpeech=null;speechStatus('🔈 播放结束，点击单词可重听')};
+ t.onerror=e=>{if(['canceled','interrupted'].includes(e.error)){if(activeSpeech===t){clearTimeout(speechTimer);activeSpeech=null;speechStatus('🔈 点击单词可重听')}return}
+ failed(e.error==='not-allowed'?'请直接点击“测试发音”或单词重试；内置浏览器可改用 Safari。':'语音未能播放，请切换 UK/US 后点击重试，并检查媒体音量。')};
+ speechStatus('🔈 正在准备发音…');
+ speechTimer=setTimeout(()=>{if(activeSpeech===t){failed('语音未启动，请再次点击单词；仍无声时用 Safari 打开并检查媒体音量。');speechEngine.cancel()}},6000);
+ try{
+  // Stay in the original click handler: do not await voices or use a delayed speak().
+  if(speechEngine.paused)speechEngine.resume();
+  speechEngine.speak(t);
+ }catch(e){failed('无法启动语音，请用 Safari 打开后点击单词重试。')}
+}
 function vocabPage(){view='vocab';let allw=current.vocab.items;let due=allw.filter(v=>!state.mastered[key(v.id)]);shell(`<section class="hero"><div class="eyebrow">VOCABULARY · 术语与发音</div><h1>🔊 Vocabulary Lab / 单词记忆实验室</h1><p>按课件页码集中复习单词，点击即可听英式或美式读音，使用听写训练记忆。词汇释义、IPA（如有）和例句为补充学习材料。</p><div class="statrow"><div class="stat"><b>${mastered()}/${allw.length}</b><small>Remembered</small></div><div class="stat"><b>${due.length}</b><small>To review · 待记</small></div></div><button class="button primary" id="play-due">▶ 播放下一个待记单词</button></section><div class="subhead">All vocabulary / 所有词汇</div><div class="vocab-wrap">${allw.map(wordCard).join('')}</div>${dictionaryHTML()}`);$('#go-words').classList.add('active')}
 function reviewPage(){view='review';let q=current.course.questions,done=q.filter(x=>state.checks[key(x.id)]),needs=q.filter(x=>state.checks[key(x.id)]?.grade!=='full');shell(`<section class="hero"><div class="eyebrow">REVIEW · 课后复习</div><h1>Practice & Recall / 自由作答与校验</h1><p>已检查 ${done.length}/${q.length} · 待完成或待复习 ${needs.length}。可重复提交，查看参考答案。</p><div class="actions" style="margin-top:14px"><button class="button primary" id="only-missed">仅显示待复习题 / Needs review</button><button class="button" id="show-all">全部试题 / All</button></div></section><div id="review-list">${q.map(renderQ).join('')}</div>`);$('#go-review').classList.add('active')}
 function progressPage(){view='progress';shell(`<section class="hero"><div class="eyebrow">LEARNING RECORD</div><h1>📊 Progress / 学习进度</h1><div class="statrow"><div class="stat"><b>${pct()}%</b><small>Lecture completion</small></div><div class="stat"><b>${mastered()}/${current.vocab.items.length}</b><small>Words remembered</small></div><div class="stat"><b>${current.course.questions.filter(q=>state.checks[key(q.id)]).length}/${current.course.questions.length}</b><small>Answers checked</small></div></div><div class="progress"><i style="width:${pct()}%"></i></div></section><div class="spaced"><h2>Chapter progress / 小节完成情况</h2>${modules().map(m=>`<div class="review-item"><h3>${esc(m.title.en)} / ${esc(m.title.zh)}</h3><p class="muted">${m.sections.filter((s,i)=>state.completed[key(`${m.id}-${String(i+1).padStart(2,'0')}`)]).length}/${m.sections.length} chapters completed</p><button class="button" data-go-module="${esc(m.id)}">继续学习 / Continue →</button></div>`).join('')}</div><p class="small-note">学习进度仅保存在当前浏览器。建议定期导出JSON备份，以免清除浏览器数据后丢失。<br>Data stays in this browser; export backups regularly.</p>`);$('#go-progress').classList.add('active')}
@@ -201,7 +234,10 @@ document.addEventListener('input',e=>{
 
 try{let extras=JSON.parse(localStorage.getItem('sehs5001-extra-lectures-v2')||'[]');if(Array.isArray(extras))lectures.push(...extras.filter(l=>l.id&&l.course?.modules&&l.vocab?.items&&!lectures.some(b=>b.id===l.id)))}catch(e){}
 current=lectures.find(l=>l.id===state.selectedLecture)||lectures[0];
-if(!('speechSynthesis'in window))$('#speech-status').textContent='⚠ 当前浏览器不支持语音播放';
+const speechTest=document.createElement('button');speechTest.type='button';speechTest.className='button sm';speechTest.textContent='🔊 测试发音';speechTest.dataset.say='quality, effective';
+$('#speech-status').setAttribute('role','status');$('#speech-status').setAttribute('aria-live','polite');
+$('#speech-status').parentElement.appendChild(speechTest);
+if(!speechEngine||!window.SpeechSynthesisUtterance)$('#speech-status').textContent='⚠ 当前浏览器不支持语音播放，请使用 Safari';
 lectureHome();
 })();
 
