@@ -2,6 +2,7 @@
 from pathlib import Path
 p=Path(__file__).resolve().parent
 html=(p/'index.html').read_text()
+html=html.replace('__EXAM1__',(p/'data/exam1.json').read_text().replace('</script','<\\/script'))
 html=html.replace('__COURSES__',(p/'data/lecture1.json').read_text().replace('</script','<\\/script'))
 html=html.replace('__VOCAB__',(p/'data/vocabulary.json').read_text().replace('</script','<\\/script'))
 html=html.replace('__EXTRA_COURSES__','['+','.join((p/name).read_text().replace('</script','<\\/script') for name in ['data/lecture2.json','data/lecture3.json'])+']')
