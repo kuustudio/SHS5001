@@ -73,7 +73,7 @@ Quality Circles 在目录中出现，但本附件未提供其详细页，可回�
 | E1-45 / 20 | 个人面对变革的三种担忧？ | Fear of the unknown; Loss of control; Job security | 害怕未知；失去控制；工作保障 |
 | E1-46 / 21 | 资源限制的三个反思角度？ | Financial and human capital; Opportunity costs; Infrastructure and technology | 资金与人力资本；机会成本；基础设施与技术 |
 | E1-47 / 21 | 资金与人力资本包含哪三种资源？ | Funds; Personnel; Time | 资金；人员；时间 |
-| E1-49 / 21 | 数字学习例子需要哪三项技术支持条件？ | Devices; Connectivity; Technical support | 设备；网络连接；技术支持 |
+| E1-48 / 21 | 数字学习例子需要哪三项技术支持条件？ | Devices; Connectivity; Technical support | 设备；网络连接；技术支持 |
 
 ## 易混淆与补充说明
 
@@ -102,3 +102,20 @@ Quality Circles 在目录中出现，但本附件未提供其详细页，可回�
 **理解：** 不只说“员工不愿改变”，还要考虑原因；不只说“缺钱”，也要考虑人员、时间和项目取舍。
 
 来源：IMG_1634(3).jpg，课堂PPT第49页；原因与应对结合考试重点PDF第20–21页整理。此答案为学习整理，不是老师给出的逐字标准答案。
+
+## 采用障碍专项：如何回答 critical reflection
+
+网站入口：第一次考试 → 采用障碍 → 查看专项资料与答案 / 开始采用障碍专项。固定覆盖 E1-43～E1-49 共7题，不依赖随机抽题。
+
+课件原文：Encourage critical reflection on barriers to adoption such as resistance to change and resource constraints.
+
+答题用“障碍 → 原因 → 应对 → 局限”；若仅要求列举，写关键词即可。
+
+| 障碍 | 原因 | 应对 | 局限 |
+|---|---|---|---|
+| Resistance to change | Fear of the unknown; Loss of control | Open communication; Staff involvement | 沟通有助于理解、参与增强主人翁意识，但仍需解决实际工作量和培训不足。 |
+| Resource constraints | Limited funds, staff and time | Resource allocation; Prioritisation | 优先实施可行且影响大的项目，可分阶段试点；需考虑 opportunity costs，避免挤占其他必要服务。 |
+
+参考英文（学习整理，非老师逐字答案）：
+
+Resistance to change may arise from fear of the unknown or loss of control. Open communication and staff involvement can build understanding and ownership, but practical concerns such as workload must also be addressed. Resource constraints include limited funds, staff and time. Resource allocation and prioritisation can support feasible improvements, but opportunity costs must be considered.
