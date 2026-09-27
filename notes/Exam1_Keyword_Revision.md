@@ -73,7 +73,7 @@ Quality Circles 在目录中出现，但本附件未提供其详细页，可回�
 | E1-45 / 20 | 个人面对变革的三种担忧？ | Fear of the unknown; Loss of control; Job security | 害怕未知；失去控制；工作保障 |
 | E1-46 / 21 | 资源限制的三个反思角度？ | Financial and human capital; Opportunity costs; Infrastructure and technology | 资金与人力资本；机会成本；基础设施与技术 |
 | E1-47 / 21 | 资金与人力资本包含哪三种资源？ | Funds; Personnel; Time | 资金；人员；时间 |
-| E1-48 / 21 | 数字学习例子需要哪三项技术支持条件？ | Devices; Connectivity; Technical support | 设备；网络连接；技术支持 |
+| E1-49 / 21 | 数字学习例子需要哪三项技术支持条件？ | Devices; Connectivity; Technical support | 设备；网络连接；技术支持 |
 
 ## 易混淆与补充说明
 
@@ -87,3 +87,18 @@ Quality Circles 在目录中出现，但本附件未提供其详细页，可回�
 ## 使用网站测试
 
 在菜单选择“第一次考试”：先读关键词资料，再做随机20题或全部题目的单向模拟。点击下一题会锁定本题；全部提交后查看关键词覆盖率、漏答关键词和参考短语，也可只重练错题。练习题数量和覆盖率不代表正式考试题量或分数。
+
+## E1-49：采用障碍的综合短答
+
+题目：Name two barriers to adoption and give two responses for each.
+
+| 障碍 | 应对关键词 |
+|---|---|
+| Resistance to change（变革阻力） | Open communication；Staff involvement |
+| Resource constraints（资源限制） | Resource allocation；Prioritisation |
+
+**简短英文答案：** Resistance to change may come from fear of the unknown or poor communication. Use open communication and staff involvement. Resource constraints include limited funds, staff and time. Use resource allocation and prioritisation.
+
+**理解：** 不只说“员工不愿改变”，还要考虑原因；不只说“缺钱”，也要考虑人员、时间和项目取舍。
+
+来源：IMG_1634(3).jpg，课堂PPT第49页；原因与应对结合考试重点PDF第20–21页整理。此答案为学习整理，不是老师给出的逐字标准答案。
