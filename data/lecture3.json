@@ -8,8 +8,8 @@
   },
   "course": {
     "sourceNotice": {
-      "en": "Lecture 3, 22 September 2026. Based on the 51-page student slide deck and classroom transcript. Incomplete slide sections are supplemented from the transcript and labelled. Case percentages are unverified teaching examples.",
-      "zh": "Lecture 3（2026年9月22日）。根据51页学生版课件与课堂转录整理，留空或不清晰处按课堂讲述补充并标注。案例百分比仅作课件示例记录，未核实为研究结论。"
+      "en": "Based on the 51-page student PDF, classroom transcript and 14 classroom photos. Classroom PPT numbering (52 slides) differs from the PDF; photo sources show both where matched. Case percentages remain teaching examples, not verified research findings.",
+      "zh": "依据51页学生版PDF、课堂转录及14张课堂照片补全。课堂版PPT共52页，与学生版页码不同；照片补全部分分别标注两套页码。案例百分比仍属教学示例，非已核实研究结论。"
     },
     "modules": [
       {
@@ -65,7 +65,14 @@
             ],
             "title": "Medical imaging example",
             "titleZh": "医学影像设备的稳健设计",
-            "html": "<div class=\"summary\"><div class=\"tag\">核心重点 / Key points</div><div class=\"grid\"><div class=\"en\"><b>The student slide introduces a medical imaging device but leaves the example incomplete.</b></div><div class=\"zh\"><b>学生版课件引出医学影像设备，但例子文字未写完整。</b></div></div></div><article class=\"card\"><div class=\"grid\"><div class=\"en\">Classroom explanation: consider exposure settings and contrast alongside patient movement and machine calibration.</div><div class=\"zh\">课堂补充：同时考虑曝光设置、对比度、患者移动和机器校准。</div></div></article><article class=\"card\"><div class=\"grid\"><div class=\"en\">The design goal is reliable image quality despite variation in operating conditions.</div><div class=\"zh\">设计目标是在操作条件变化时仍保持可靠图像质量。</div></div></article><div class=\"note\"><b>老师课堂补充 / Classroom commentary</b><p>第10页留空部分依据老师讲述补充。老师提出把移动、校准和设置变化在设计阶段一起考虑。This completes the unfinished example using the transcript.</p></div><div class=\"small-note\"><b>辨析与学习提示 / Study note</b><p>可联系你的 DICOM 项目理解“图像质量是否稳定”；这是教学案例，不是设备参数或临床设置建议。</p></div><div class=\"source\">Lecture 3-Quality Management Methods II-student(1).pdf · PDF pages 10；Lesson3.docx 课堂转录（整理意译）</div>"
+            "html": "<div class=\"summary\"><div class=\"tag\">课堂照片补全 / Verified classroom supplement</div><h4>Robust design：医学影像完整案例</h4></div><article class=\"card\"><div class=\"grid\"><div class=\"en\">Robust design creates products and processes that perform consistently under varying conditions.</div><div class=\"zh\">稳健设计使产品和流程在变化的条件下仍保持一致表现。</div></div></article><article class=\"card\"><div class=\"grid\"><div class=\"en\">For a new medical imaging device, Taguchi methods identify image-quality settings that minimize the effects of patient movement and machine calibration issues.</div><div class=\"zh\">新医学影像设备可用田口方法寻找图像质量的最佳设置，尽量减少患者移动及机器校准问题的影响。</div></div></article><article class=\"card\"><div class=\"grid\"><div class=\"en\">Q&amp;A: imagine a design matrix testing exposure time and contrast against variations such as patient movement. Find settings that maintain high-quality images despite these variations.</div><div class=\"zh\">课堂问答：设想一个设计矩阵，将曝光时间、对比度等设置与患者移动等变化组合测试，寻找在这些变化下仍能产生高质量图像的设置。</div></div></article><div class=\"source\">课堂照片 IMG_1623(2).jpg · 课堂版 PPT 10 · 学生版 PDF 10</div>",
+            "photoSources": [
+              {
+                "file": "IMG_1623(2).jpg",
+                "classroomSlide": 10,
+                "studentPdfPage": 10
+              }
+            ]
           },
           {
             "slide": 11,
@@ -85,7 +92,19 @@
             ],
             "title": "Strengths, limits and software",
             "titleZh": "优势、限制与分析工具",
-            "html": "<div class=\"summary\"><div class=\"tag\">核心重点 / Key points</div><div class=\"grid\"><div class=\"en\"><b>Strengths: reduced process variation, greater reliability and efficient use of experimental runs.</b></div><div class=\"zh\"><b>优势：减少流程变异、提高可靠性、较有效率地安排试验次数。</b></div></div></div><article class=\"card\"><div class=\"grid\"><div class=\"en\">Limits: complex interactions, nonlinear healthcare processes, statistical expertise, training and cultural resistance.</div><div class=\"zh\">限制：复杂交互作用、医疗流程的非线性、统计能力、培训和文化阻力。</div></div></article><article class=\"card\"><div class=\"grid\"><div class=\"en\">The software slide lists Minitab, JMP, Design-Expert and R as examples.</div><div class=\"zh\">工具页列出 Minitab、JMP、Design-Expert、R 作为例子。</div></div></article><article class=\"card\"><div class=\"grid\"><div class=\"en\">Clinical knowledge and statistical knowledge must be combined to interpret results meaningfully.</div><div class=\"zh\">解释结果需要结合临床知识与统计知识。</div></div></article><div class=\"note\"><b>老师课堂补充 / Classroom commentary</b><p>老师说软件名称用于举例，不要求全部背诵；也提醒只会计算、不了解临床背景并不够。Software was illustrative; clinical understanding is needed alongside analysis.</p></div><div class=\"small-note\"><b>辨析与学习提示 / Study note</b><p>第14页部分文字显示不清，结合可提取文字与课堂讲述整理。不将课件关于“线性”的简述推广为所有田口设计都只能处理线性关系。</p></div><div class=\"source\">Lecture 3-Quality Management Methods II-student(1).pdf · PDF pages 12, 14；Lesson3.docx 课堂转录（整理意译）</div>"
+            "html": "<div class=\"summary\"><div class=\"tag\">核心重点 / Key points</div><div class=\"grid\"><div class=\"en\"><b>Strengths: reduced process variation, greater reliability and efficient use of experimental runs.</b></div><div class=\"zh\"><b>优势：减少流程变异、提高可靠性、较有效率地安排试验次数。</b></div></div></div><article class=\"card\"><div class=\"grid\"><div class=\"en\">Limits: complex interactions, nonlinear healthcare processes, statistical expertise, training and cultural resistance.</div><div class=\"zh\">限制：复杂交互作用、医疗流程的非线性、统计能力、培训和文化阻力。</div></div></article><article class=\"card\"><div class=\"grid\"><div class=\"en\">The software slide lists Minitab, JMP, Design-Expert and R as examples.</div><div class=\"zh\">工具页列出 Minitab、JMP、Design-Expert、R 作为例子。</div></div></article><article class=\"card\"><div class=\"grid\"><div class=\"en\">Clinical knowledge and statistical knowledge must be combined to interpret results meaningfully.</div><div class=\"zh\">解释结果需要结合临床知识与统计知识。</div></div></article><div class=\"note\"><b>老师课堂补充 / Classroom commentary</b><p>老师说软件名称用于举例，不要求全部背诵；也提醒只会计算、不了解临床背景并不够。Software was illustrative; clinical understanding is needed alongside analysis.</p></div><div class=\"small-note\"><b>辨析与学习提示 / Study note</b><p>学生版 PDF 第14页内容已按课堂版 PPT 第15页照片核对补全。不将课件关于“线性”的简述推广为所有田口设计都只能处理线性关系。</p></div><div class=\"source\">Lecture 3-Quality Management Methods II-student(1).pdf · PDF pages 12, 14；Lesson3.docx 课堂转录（整理意译）</div><div class=\"summary\"><div class=\"tag\">课堂照片补全 / Verified classroom supplement</div><h4>Learning curve：学习曲线（课堂独立补充）</h4></div><article class=\"card\"><div class=\"grid\"><div class=\"en\">A learning curve graphically represents the relationship between proficiency in a task and the amount of experience a person has.</div><div class=\"zh\">学习曲线以图形表示任务熟练程度（proficiency）与经验量（experience）之间的关系。</div></div></article><article class=\"card\"><div class=\"grid\"><div class=\"en\">Study connection: staff need experience and training when adopting a new method. This connection is a learning explanation, not extra text from the photographed document.</div><div class=\"zh\">学习联系：采用新方法时，员工需要培训和经验积累。这一联系是辅助解释，不是照片文档中的额外原文。</div></div></article><div class=\"source\">课堂照片 IMG_1624(2).jpg · 老师单独展示的 Word 文档，无 PPT 页码</div><div class=\"summary\"><div class=\"tag\">课堂照片补全 / Verified classroom supplement</div><h4>Taguchi：五个评价维度</h4></div><article class=\"card\"><div class=\"grid\"><div class=\"en\">Strengths: reduce process variability and improve reliability under real clinical conditions with multiple sources of uncertainty.</div><div class=\"zh\">优势：降低流程变异，在存在多种不确定因素的真实临床环境中提高可靠性。</div></div></article><article class=\"card\"><div class=\"grid\"><div class=\"en\">Data efficiency: orthogonal arrays reduce experimental runs, saving time and resources where trials are costly and ethically constrained.</div><div class=\"zh\">数据效率：正交表减少试验次数、节约时间和资源；医疗试验成本高且受到伦理约束，因此这一点尤其相关。</div></div></article><article class=\"card\"><div class=\"grid\"><div class=\"en\">Clinical fit: optimize treatment protocols such as drug dosing; consistency supports patient outcomes and precision in diagnostic and therapeutic processes.</div><div class=\"zh\">临床适用性：优化给药等治疗规程，以一致性支持患者结局，并提高诊断和治疗流程的精确性。</div></div></article><article class=\"card\"><div class=\"grid\"><div class=\"en\">Complexity barrier: the slide contrasts complex, nonlinear healthcare systems with simplified linear assumptions; interactions can be difficult to isolate and control.</div><div class=\"zh\">复杂性障碍：课件将复杂、非线性的医疗系统与简化的线性假设作对照；变量间交互作用可能难以分离和控制。</div></div></article><article class=\"card\"><div class=\"grid\"><div class=\"en\">Adoption challenges: clinical teams may lack statistical expertise; cultural resistance and limited training hinder routine use.</div><div class=\"zh\">采用挑战：临床团队可能缺乏统计专业能力，文化阻力及培训不足会妨碍日常应用。</div></div></article><div class=\"source\">课堂照片 IMG_1625(2).jpg · 课堂版 PPT 15 · 学生版 PDF 14</div>",
+            "photoSources": [
+              {
+                "file": "IMG_1624(2).jpg",
+                "classroomSlide": null,
+                "studentPdfPage": null
+              },
+              {
+                "file": "IMG_1625(2).jpg",
+                "classroomSlide": 15,
+                "studentPdfPage": 14
+              }
+            ]
           }
         ]
       },
@@ -120,7 +139,14 @@
             ],
             "title": "FTA healthcare cases",
             "titleZh": "用药错误与麻醉设备案例",
-            "html": "<div class=\"summary\"><div class=\"tag\">核心重点 / Key points</div><div class=\"grid\"><div class=\"en\"><b>For medication errors, build a fault tree to identify critical pathways and select preventive measures.</b></div><div class=\"zh\"><b>针对用药错误，建立故障树识别关键路径，再选择预防措施。</b></div></div></div><article class=\"card\"><div class=\"grid\"><div class=\"en\">The anesthesia example traces gas leaks, incorrect settings, valve faults and missed pre-use checks associated with hypoxia.</div><div class=\"zh\">麻醉例子追查与缺氧相关的气体泄漏、设置错误、阀门故障及漏做使用前检查。</div></div></article><article class=\"card\"><div class=\"grid\"><div class=\"en\">Responses include preventive maintenance, pre-use checks and staff training.</div><div class=\"zh\">应对包括预防性维护、使用前检查和员工培训。</div></div></article><div class=\"small-note\"><b>辨析与学习提示 / Study note</b><p>这是风险分析学习，不是麻醉设备故障排查操作指引。</p></div><div class=\"source\">Lecture 3-Quality Management Methods II-student(1).pdf · PDF pages 17, 20</div>"
+            "html": "<div class=\"summary\"><div class=\"tag\">核心重点 / Key points</div><div class=\"grid\"><div class=\"en\"><b>For medication errors, build a fault tree to identify critical pathways and select preventive measures.</b></div><div class=\"zh\"><b>针对用药错误，建立故障树识别关键路径，再选择预防措施。</b></div></div></div><article class=\"card\"><div class=\"grid\"><div class=\"en\">The anesthesia example traces gas leaks, incorrect settings, valve faults and missed pre-use checks associated with hypoxia.</div><div class=\"zh\">麻醉例子追查与缺氧相关的气体泄漏、设置错误、阀门故障及漏做使用前检查。</div></div></article><article class=\"card\"><div class=\"grid\"><div class=\"en\">Responses include preventive maintenance, pre-use checks and staff training.</div><div class=\"zh\">应对包括预防性维护、使用前检查和员工培训。</div></div></article><div class=\"small-note\"><b>辨析与学习提示 / Study note</b><p>这是风险分析学习，不是麻醉设备故障排查操作指引。</p></div><div class=\"source\">Lecture 3-Quality Management Methods II-student(1).pdf · PDF pages 17, 20</div><div class=\"summary\"><div class=\"tag\">课堂照片补全 / Verified classroom supplement</div><h4>FTA：用药错误案例</h4></div><article class=\"card\"><div class=\"grid\"><div class=\"en\">Background: a hospital faced frequent medication errors. Analysis: create a fault tree to identify root causes.</div><div class=\"zh\">背景：医院频繁发生用药错误。分析：建立故障树以识别根本原因。</div></div></article><article class=\"card\"><div class=\"grid\"><div class=\"en\">Outcome: implement preventive measures along identified critical pathways to reduce error rates. The photo gives no numerical reduction.</div><div class=\"zh\">结果：针对识别出的关键路径采取预防措施，降低错误率。该照片未给出下降百分比。</div></div></article><div class=\"source\">课堂照片 IMG_1626(2).jpg · 课堂版 PPT 18 · 学生版 PDF 17</div>",
+            "photoSources": [
+              {
+                "file": "IMG_1626(2).jpg",
+                "classroomSlide": 18,
+                "studentPdfPage": 17
+              }
+            ]
           },
           {
             "slide": 21,
@@ -140,7 +166,14 @@
             ],
             "title": "Medication and transfusion FMEA",
             "titleZh": "用药与输血安全案例",
-            "html": "<div class=\"summary\"><div class=\"tag\">核心重点 / Key points</div><div class=\"grid\"><div class=\"en\"><b>The medication case examines prescribing, dispensing and administration, including wrong dose and wrong patient.</b></div><div class=\"zh\"><b>用药案例覆盖处方、配药和给药，识别错误剂量、错误患者等模式。</b></div></div></div><article class=\"card\"><div class=\"grid\"><div class=\"en\">The slides describe barcode scanning and double-check procedures for medication and transfusion safety.</div><div class=\"zh\">课件描述条码扫描与双重核对，用于用药和输血安全。</div></div></article><article class=\"card\"><div class=\"grid\"><div class=\"en\">The medication case reports a 58% error-rate reduction over six months; no study citation is supplied.</div><div class=\"zh\">用药案例报告六个月内错误率降低58%；材料没有附研究出处。</div></div></article><div class=\"small-note\"><b>辨析与学习提示 / Study note</b><p>58%是课件示例数据，不是已核实研究结论或普遍效果。技术仍需配合正确流程与员工遵循。</p></div><div class=\"source\">Lecture 3-Quality Management Methods II-student(1).pdf · PDF pages 22, 23</div>"
+            "html": "<div class=\"summary\"><div class=\"tag\">核心重点 / Key points</div><div class=\"grid\"><div class=\"en\"><b>The medication case examines prescribing, dispensing and administration, including wrong dose and wrong patient.</b></div><div class=\"zh\"><b>用药案例覆盖处方、配药和给药，识别错误剂量、错误患者等模式。</b></div></div></div><article class=\"card\"><div class=\"grid\"><div class=\"en\">The slides describe barcode scanning and double-check procedures for medication and transfusion safety.</div><div class=\"zh\">课件描述条码扫描与双重核对，用于用药和输血安全。</div></div></article><article class=\"card\"><div class=\"grid\"><div class=\"en\">The medication case reports a 58% error-rate reduction over six months; no study citation is supplied.</div><div class=\"zh\">用药案例报告六个月内错误率降低58%；材料没有附研究出处。</div></div></article><div class=\"small-note\"><b>辨析与学习提示 / Study note</b><p>58%是课件示例数据，不是已核实研究结论或普遍效果。技术仍需配合正确流程与员工遵循。</p></div><div class=\"source\">Lecture 3-Quality Management Methods II-student(1).pdf · PDF pages 22, 23</div><div class=\"summary\"><div class=\"tag\">课堂照片补全 / Verified classroom supplement</div><h4>FMEA：输血安全案例</h4></div><article class=\"card\"><div class=\"grid\"><div class=\"en\">Background: a high risk of administering an incorrect blood type. Process: assess potential failures throughout the transfusion process using FMEA.</div><div class=\"zh\">背景：存在输错血型的高风险。过程：用 FMEA 评估整个输血过程中的潜在失效。</div></div></article><article class=\"card\"><div class=\"grid\"><div class=\"en\">Corrective actions: introduce double-check systems and barcode scanning to improve safety.</div><div class=\"zh\">纠正措施：采用双重核对系统（double-check systems）及条码扫描（barcode scanning）改善安全。</div></div></article><div class=\"source\">课堂照片 IMG_1627(2).jpg · 课堂版 PPT 24 · 学生版 PDF 23</div>",
+            "photoSources": [
+              {
+                "file": "IMG_1627(2).jpg",
+                "classroomSlide": 24,
+                "studentPdfPage": 23
+              }
+            ]
           },
           {
             "slide": 18,
@@ -184,7 +217,19 @@
             ],
             "title": "Kaizen cases",
             "titleZh": "急症室与出院流程改善",
-            "html": "<div class=\"summary\"><div class=\"tag\">核心重点 / Key points</div><div class=\"grid\"><div class=\"en\"><b>A&amp;E example: map the patient journey, identify bottlenecks, test small fixes, measure results and repeat.</b></div><div class=\"zh\"><b>急症室例子：描绘患者流程、找瓶颈、尝试小改变、测量结果、再迭代。</b></div></div></div><article class=\"card\"><div class=\"grid\"><div class=\"en\">The slides mention lab-order preparation and better communication between triage and laboratory staff.</div><div class=\"zh\">课件举例包括检验申请准备、分流与检验人员之间的沟通改善。</div></div></article><article class=\"card\"><div class=\"grid\"><div class=\"en\">Discharge example: identify daily bottlenecks and streamline paperwork to improve patient flow.</div><div class=\"zh\">出院例子：每日识别瓶颈、简化文书，改善患者流转。</div></div></article><div class=\"note\"><b>老师课堂补充 / Classroom commentary</b><p>老师强调一线人员最熟悉步骤和问题，应先听取他们的意见，而不是管理者单独设计所有改变。Frontline knowledge should inform changes.</p></div><div class=\"source\">Lecture 3-Quality Management Methods II-student(1).pdf · PDF pages 27, 29；Lesson3.docx 课堂转录（整理意译）</div>"
+            "html": "<div class=\"summary\"><div class=\"tag\">核心重点 / Key points</div><div class=\"grid\"><div class=\"en\"><b>A&amp;E example: map the patient journey, identify bottlenecks, test small fixes, measure results and repeat.</b></div><div class=\"zh\"><b>急症室例子：描绘患者流程、找瓶颈、尝试小改变、测量结果、再迭代。</b></div></div></div><article class=\"card\"><div class=\"grid\"><div class=\"en\">The slides mention lab-order preparation and better communication between triage and laboratory staff.</div><div class=\"zh\">课件举例包括检验申请准备、分流与检验人员之间的沟通改善。</div></div></article><article class=\"card\"><div class=\"grid\"><div class=\"en\">Discharge example: identify daily bottlenecks and streamline paperwork to improve patient flow.</div><div class=\"zh\">出院例子：每日识别瓶颈、简化文书，改善患者流转。</div></div></article><div class=\"note\"><b>老师课堂补充 / Classroom commentary</b><p>老师强调一线人员最熟悉步骤和问题，应先听取他们的意见，而不是管理者单独设计所有改变。Frontline knowledge should inform changes.</p></div><div class=\"source\">Lecture 3-Quality Management Methods II-student(1).pdf · PDF pages 27, 29；Lesson3.docx 课堂转录（整理意译）</div><div class=\"summary\"><div class=\"tag\">课堂照片补全 / Verified classroom supplement</div><h4>Kaizen：急诊等候时间的四步改善</h4></div><article class=\"card\"><div class=\"grid\"><div class=\"en\">1. Map the patient journey. 2. Identify bottlenecks, such as delayed laboratory results.</div><div class=\"zh\">1. 绘制患者就医流程。2. 识别瓶颈，例如化验结果延迟。</div></div></article><article class=\"card\"><div class=\"grid\"><div class=\"en\">3. Make small fixes: pre-print common laboratory orders and improve communication between triage and laboratory staff. 4. Measure results and iterate.</div><div class=\"zh\">3. 小步改善：预印常用化验申请单，改善分流人员与化验室人员之间的沟通。4. 衡量结果并持续迭代。</div></div></article><div class=\"source\">课堂照片 IMG_1628(2).jpg · 课堂版 PPT 28 · 学生版 PDF 27</div><div class=\"summary\"><div class=\"tag\">课堂照片补全 / Verified classroom supplement</div><h4>Kaizen：员工参与与出院流程</h4></div><article class=\"card\"><div class=\"grid\"><div class=\"en\">Kaizen means continuous, incremental improvement involving all employees. The slide asks how it supports an improvement culture and why employee involvement matters.</div><div class=\"zh\">Kaizen 是全员参与、持续且渐进的改善。课堂提问关注：如何建立持续改善文化，以及员工参与为何重要。</div></div></article><article class=\"card\"><div class=\"grid\"><div class=\"en\">Discharge case: inefficient processes caused delays. Daily identification of bottlenecks and streamlined paperwork reduced discharge time and improved patient flow.</div><div class=\"zh\">出院案例：低效流程造成延误。每天识别瓶颈并简化文书工作，缩短出院时间并改善患者流转。</div></div></article><div class=\"source\">课堂照片 IMG_1629(2).jpg · 课堂版 PPT 30 · 学生版 PDF 29</div>",
+            "photoSources": [
+              {
+                "file": "IMG_1628(2).jpg",
+                "classroomSlide": 28,
+                "studentPdfPage": 27
+              },
+              {
+                "file": "IMG_1629(2).jpg",
+                "classroomSlide": 30,
+                "studentPdfPage": 29
+              }
+            ]
           },
           {
             "slide": 30,
@@ -236,7 +281,14 @@
             ],
             "title": "Lean management",
             "titleZh": "Lean：减少不增值步骤",
-            "html": "<div class=\"summary\"><div class=\"tag\">核心重点 / Key points</div><div class=\"grid\"><div class=\"en\"><b>Lean eliminates waste and maximizes value by improving flow and removing non-value-added activities.</b></div><div class=\"zh\"><b>Lean 通过改善流转、减少不增值活动来消除浪费并提升价值。</b></div></div></div><article class=\"card\"><div class=\"grid\"><div class=\"en\">In the A&amp;E example, the team maps value streams, streamlines triage and improves bed turnover.</div><div class=\"zh\">急症室例子使用价值流分析、简化分流流程并改善床位周转。</div></div></article><article class=\"card\"><div class=\"grid\"><div class=\"en\">Visual management and daily huddles help sustain the changes.</div><div class=\"zh\">可视化管理和每日短会有助于维持改进。</div></div></article><article class=\"card\"><div class=\"grid\"><div class=\"en\">The example reports a 40% fall in triage assessment time; it supplies no study citation.</div><div class=\"zh\">例子报告分流评估时间下降40%；材料没有附研究出处。</div></div></article><div class=\"small-note\"><b>辨析与学习提示 / Study note</b><p>减少浪费不等于删除必要的安全检查。40%仅作为课件示例结果，不作为通用效果。</p></div><div class=\"source\">Lecture 3-Quality Management Methods II-student(1).pdf · PDF pages 36, 37</div>"
+            "html": "<div class=\"summary\"><div class=\"tag\">核心重点 / Key points</div><div class=\"grid\"><div class=\"en\"><b>Lean eliminates waste and maximizes value by improving flow and removing non-value-added activities.</b></div><div class=\"zh\"><b>Lean 通过改善流转、减少不增值活动来消除浪费并提升价值。</b></div></div></div><article class=\"card\"><div class=\"grid\"><div class=\"en\">In the A&amp;E example, the team maps value streams, streamlines triage and improves bed turnover.</div><div class=\"zh\">急症室例子使用价值流分析、简化分流流程并改善床位周转。</div></div></article><article class=\"card\"><div class=\"grid\"><div class=\"en\">Visual management and daily huddles help sustain the changes.</div><div class=\"zh\">可视化管理和每日短会有助于维持改进。</div></div></article><article class=\"card\"><div class=\"grid\"><div class=\"en\">The example reports a 40% fall in triage assessment time; it supplies no study citation.</div><div class=\"zh\">例子报告分流评估时间下降40%；材料没有附研究出处。</div></div></article><div class=\"small-note\"><b>辨析与学习提示 / Study note</b><p>减少浪费不等于删除必要的安全检查。40%仅作为课件示例结果，不作为通用效果。</p></div><div class=\"source\">Lecture 3-Quality Management Methods II-student(1).pdf · PDF pages 36, 37</div><div class=\"summary\"><div class=\"tag\">课堂照片补全 / Verified classroom supplement</div><h4>Lean：急诊分流案例的完整过程</h4></div><article class=\"card\"><div class=\"grid\"><div class=\"en\">Problem: overcrowding, delayed triage, dissatisfaction and safety risks; high volume and inefficient workflows strained staff and resources.</div><div class=\"zh\">问题：急诊拥挤、分流延迟、患者不满和安全风险；大量患者及低效工作流程加重人手和资源压力。</div></div></article><article class=\"card\"><div class=\"grid\"><div class=\"en\">Implementation: map value streams, identify non-value-added activities, streamline triage, reduce waiting and improve bed turnover through standardized workflows.</div><div class=\"zh\">实施：绘制价值流、识别不增值活动、精简分流程序，并通过标准化工作流程减少等待、提高床位周转。</div></div></article><article class=\"card\"><div class=\"grid\"><div class=\"en\">Reported results: triage assessment time fell by 40%; patient flow became more predictable and overcrowding decreased, improving staff productivity and patient experience.</div><div class=\"zh\">课件报告结果：分流评估时间减少40%，患者流转更可预测、拥挤减少，员工生产率和患者体验改善。</div></div></article><article class=\"card\"><div class=\"grid\"><div class=\"en\">Sustainment: visual management and daily huddles maintained improvements. The 40% is a teaching-case figure without an identifiable study citation in the photo.</div><div class=\"zh\">维持成效：使用可视化管理和每日短会。40%是教学案例数字，照片没有提供可识别的研究出处。</div></div></article><div class=\"source\">课堂照片 IMG_1630(2).jpg · 课堂版 PPT 37 · 学生版 PDF 36</div>",
+            "photoSources": [
+              {
+                "file": "IMG_1630(2).jpg",
+                "classroomSlide": 37,
+                "studentPdfPage": 36
+              }
+            ]
           },
           {
             "slide": 37,
@@ -245,7 +297,14 @@
             ],
             "title": "Six Sigma versus Lean",
             "titleZh": "变异与流程浪费的区别",
-            "html": "<div class=\"summary\"><div class=\"tag\">核心重点 / Key points</div><div class=\"grid\"><div class=\"en\"><b>Six Sigma focuses on defects and variability using data analysis and statistical control.</b></div><div class=\"zh\"><b>Six Sigma 重点是缺陷与变异，运用数据分析和统计控制。</b></div></div></div><article class=\"card\"><div class=\"grid\"><div class=\"en\">Lean focuses on flow, waiting, resource efficiency and removing non-value-added work.</div><div class=\"zh\">Lean 重点是流转、等待、资源效率和不增值工作。</div></div></article><article class=\"card\"><div class=\"grid\"><div class=\"en\">They overlap and can be combined; a delay problem may require both flow analysis and variation analysis.</div><div class=\"zh\">两者有交集，可以组合使用；延误问题可能同时需要流程分析与变异分析。</div></div></article><div class=\"small-note\"><b>辨析与学习提示 / Study note</b><p>这是一道辨析题；请自查两种方法是否写反，关键词核对不能替代理解。</p></div><div class=\"source\">Lecture 3-Quality Management Methods II-student(1).pdf · PDF pages 37</div>"
+            "html": "<div class=\"summary\"><div class=\"tag\">核心重点 / Key points</div><div class=\"grid\"><div class=\"en\"><b>Six Sigma focuses on defects and variability using data analysis and statistical control.</b></div><div class=\"zh\"><b>Six Sigma 重点是缺陷与变异，运用数据分析和统计控制。</b></div></div></div><article class=\"card\"><div class=\"grid\"><div class=\"en\">Lean focuses on flow, waiting, resource efficiency and removing non-value-added work.</div><div class=\"zh\">Lean 重点是流转、等待、资源效率和不增值工作。</div></div></article><article class=\"card\"><div class=\"grid\"><div class=\"en\">They overlap and can be combined; a delay problem may require both flow analysis and variation analysis.</div><div class=\"zh\">两者有交集，可以组合使用；延误问题可能同时需要流程分析与变异分析。</div></div></article><div class=\"small-note\"><b>辨析与学习提示 / Study note</b><p>这是一道辨析题；请自查两种方法是否写反，关键词核对不能替代理解。</p></div><div class=\"source\">Lecture 3-Quality Management Methods II-student(1).pdf · PDF pages 37</div><div class=\"summary\"><div class=\"tag\">课堂照片补全 / Verified classroom supplement</div><h4>Six Sigma 与 Lean：重点区别与互补</h4></div><article class=\"card\"><div class=\"grid\"><div class=\"en\">Six Sigma: data-driven reduction of defects and process variation, using methods such as DMAIC; examples include laboratory-result errors and medication dosing.</div><div class=\"zh\">六西格玛：以数据驱动的方法（如 DMAIC）减少缺陷与流程变异，例如化验结果错误或给药问题。</div></div></article><article class=\"card\"><div class=\"grid\"><div class=\"en\">Lean: remove workflow waste and non-value-added steps to improve patient flow and resource efficiency; examples include emergency triage and surgical scheduling.</div><div class=\"zh\">精益：消除工作流程浪费及不增值步骤，改善患者流转和资源效率，例如急诊分流与手术排程。</div></div></article><article class=\"card\"><div class=\"grid\"><div class=\"en\">Core difference: statistical control of variation versus optimization of value delivery. Together, they address quality and efficiency.</div><div class=\"zh\">核心区别：统计控制变异，对比优化价值交付。两者结合可同时处理质量与效率。</div></div></article><div class=\"source\">课堂照片 IMG_1631(2).jpg · 课堂版 PPT 38 · 学生版 PDF 37</div>",
+            "photoSources": [
+              {
+                "file": "IMG_1631(2).jpg",
+                "classroomSlide": 38,
+                "studentPdfPage": 37
+              }
+            ]
           }
         ]
       },
@@ -268,7 +327,14 @@
             ],
             "title": "Lean Sigma and surgical infections",
             "titleZh": "Lean Sigma 与手术部位感染案例",
-            "html": "<div class=\"summary\"><div class=\"tag\">核心重点 / Key points</div><div class=\"grid\"><div class=\"en\"><b>Lean Sigma combines Lean’s flow and waste focus with Six Sigma’s defect and variation focus.</b></div><div class=\"zh\"><b>Lean Sigma 结合 Lean 对流转和浪费的关注，以及 Six Sigma 对缺陷和变异的关注。</b></div></div></div><article class=\"card\"><div class=\"grid\"><div class=\"en\">The surgical-site infection case streamlines surgical processes and examines sources of variation associated with infection rates.</div><div class=\"zh\">手术部位感染案例一方面梳理手术流程，另一方面分析与感染率相关的变异来源。</div></div></article><article class=\"card\"><div class=\"grid\"><div class=\"en\">The teaching case reports improved outcomes but does not provide a source study or detailed protocol.</div><div class=\"zh\">教学案例描述结果改善，但未提供研究来源或具体临床操作方案。</div></div></article><div class=\"source\">Lecture 3-Quality Management Methods II-student(1).pdf · PDF pages 39, 40</div>"
+            "html": "<div class=\"summary\"><div class=\"tag\">核心重点 / Key points</div><div class=\"grid\"><div class=\"en\"><b>Lean Sigma combines Lean’s flow and waste focus with Six Sigma’s defect and variation focus.</b></div><div class=\"zh\"><b>Lean Sigma 结合 Lean 对流转和浪费的关注，以及 Six Sigma 对缺陷和变异的关注。</b></div></div></div><article class=\"card\"><div class=\"grid\"><div class=\"en\">The surgical-site infection case streamlines surgical processes and examines sources of variation associated with infection rates.</div><div class=\"zh\">手术部位感染案例一方面梳理手术流程，另一方面分析与感染率相关的变异来源。</div></div></article><article class=\"card\"><div class=\"grid\"><div class=\"en\">The teaching case reports improved outcomes but does not provide a source study or detailed protocol.</div><div class=\"zh\">教学案例描述结果改善，但未提供研究来源或具体临床操作方案。</div></div></article><div class=\"source\">Lecture 3-Quality Management Methods II-student(1).pdf · PDF pages 39, 40</div><div class=\"summary\"><div class=\"tag\">课堂照片补全 / Verified classroom supplement</div><h4>Lean Sigma：手术部位感染案例</h4></div><article class=\"card\"><div class=\"grid\"><div class=\"en\">Background: high post-surgery infection rates. Lean streamlines the surgical process; Six Sigma identifies and reduces sources of variation in infection rates.</div><div class=\"zh\">背景：术后感染率较高。Lean 精简手术流程；Six Sigma 识别并减少感染率变异的来源。</div></div></article><article class=\"card\"><div class=\"grid\"><div class=\"en\">Outcome: reduced infection rates and improved patient outcomes. This photographed case does not specify a percentage.</div><div class=\"zh\">结果：降低感染率并改善患者结局。此照片案例没有给出具体百分比。</div></div></article><div class=\"source\">课堂照片 IMG_1632(2).jpg · 课堂版 PPT 41 · 学生版 PDF 40</div>",
+            "photoSources": [
+              {
+                "file": "IMG_1632(2).jpg",
+                "classroomSlide": 41,
+                "studentPdfPage": 40
+              }
+            ]
           },
           {
             "slide": 41,
@@ -277,7 +343,14 @@
             ],
             "title": "Conditions for Lean Sigma",
             "titleZh": "实施所需的四方面支持",
-            "html": "<div class=\"summary\"><div class=\"tag\">核心重点 / Key points</div><div class=\"grid\"><div class=\"en\"><b>Leadership, training, culture and organizational alignment support Lean Sigma implementation.</b></div><div class=\"zh\"><b>领导、培训、文化及组织目标一致性支持 Lean Sigma 实施。</b></div></div></div><article class=\"card\"><div class=\"grid\"><div class=\"en\">Leaders set goals and resources; staff learn DMAIC and value stream mapping; teams share accountability and collaborate.</div><div class=\"zh\">领导设定目标与资源；员工学习 DMAIC 和价值流分析；团队共同承担责任并协作。</div></div></article><article class=\"card\"><div class=\"grid\"><div class=\"en\">Shared vision helps integrate improvement into everyday work.</div><div class=\"zh\">共同愿景有助于把改善融入日常工作。</div></div></article><div class=\"note\"><b>老师课堂补充 / Classroom commentary</b><p>老师解释 accountability 不应理解为把所有责任推给一线，而应联系共同目标和责任。Accountability was linked to shared responsibility rather than blame shifting.</p></div><div class=\"source\">Lecture 3-Quality Management Methods II-student(1).pdf · PDF pages 41；Lesson3.docx 课堂转录（整理意译）</div>"
+            "html": "<div class=\"summary\"><div class=\"tag\">核心重点 / Key points</div><div class=\"grid\"><div class=\"en\"><b>Leadership, training, culture and organizational alignment support Lean Sigma implementation.</b></div><div class=\"zh\"><b>领导、培训、文化及组织目标一致性支持 Lean Sigma 实施。</b></div></div></div><article class=\"card\"><div class=\"grid\"><div class=\"en\">Leaders set goals and resources; staff learn DMAIC and value stream mapping; teams share accountability and collaborate.</div><div class=\"zh\">领导设定目标与资源；员工学习 DMAIC 和价值流分析；团队共同承担责任并协作。</div></div></article><article class=\"card\"><div class=\"grid\"><div class=\"en\">Shared vision helps integrate improvement into everyday work.</div><div class=\"zh\">共同愿景有助于把改善融入日常工作。</div></div></article><div class=\"note\"><b>老师课堂补充 / Classroom commentary</b><p>老师解释 accountability 不应理解为把所有责任推给一线，而应联系共同目标和责任。Accountability was linked to shared responsibility rather than blame shifting.</p></div><div class=\"source\">Lecture 3-Quality Management Methods II-student(1).pdf · PDF pages 41；Lesson3.docx 课堂转录（整理意译）</div><div class=\"summary\"><div class=\"tag\">课堂照片补全 / Verified classroom supplement</div><h4>Lean Sigma：成功实施的四项条件</h4></div><article class=\"card\"><div class=\"grid\"><div class=\"en\">Leadership: set clear goals, supply resources, champion change and model commitment to continuous improvement.</div><div class=\"zh\">领导：设定明确目标、提供资源、倡导变革，并以身作则坚持持续改善。</div></div></article><article class=\"card\"><div class=\"grid\"><div class=\"en\">Training: structured learning in DMAIC and value stream mapping builds competence and supports consistent use across departments.</div><div class=\"zh\">培训：系统学习 DMAIC 和价值流图，发展能力并支持各部门一致应用。</div></div></article><article class=\"card\"><div class=\"grid\"><div class=\"en\">Culture: accountability, collaboration and data-driven decisions support ownership and sustained engagement.</div><div class=\"zh\">文化：责任意识、协作及数据驱动决策有助于建立主人翁意识并维持参与。</div></div></article><article class=\"card\"><div class=\"grid\"><div class=\"en\">Alignment: organizational values and a shared vision must align with Lean Sigma principles so improvements become part of daily operations.</div><div class=\"zh\">一致性：组织价值观、共同愿景须与 Lean Sigma 原则一致，使改善融入日常运作。</div></div></article><div class=\"source\">课堂照片 IMG_1633(2).jpg · 课堂版 PPT 42 · 学生版 PDF 41</div>",
+            "photoSources": [
+              {
+                "file": "IMG_1633(2).jpg",
+                "classroomSlide": 42,
+                "studentPdfPage": 41
+              }
+            ]
           },
           {
             "slide": 42,
@@ -329,7 +402,19 @@
             ],
             "title": "Resistance to change",
             "titleZh": "采用障碍一：变革阻力",
-            "html": "<div class=\"summary\"><div class=\"tag\">老师课堂明确强调 / Lecturer emphasis</div><div class=\"grid\"><div class=\"en\"><b>Resistance may reflect fear of the unknown, loss of control, job-security concerns, communication gaps or lack of involvement.</b></div><div class=\"zh\"><b>阻力可能来自对未知的担心、失去控制感、工作保障顾虑、沟通不足或缺少参与。</b></div></div></div><article class=\"card\"><div class=\"grid\"><div class=\"en\">Critical reflection asks why resistance occurs and whether managers have explained the purpose, benefits and expectations.</div><div class=\"zh\">批判性反思是追问阻力为什么出现，以及管理者是否解释了目的、好处和预期。</div></div></article><article class=\"card\"><div class=\"grid\"><div class=\"en\">Involve affected staff in planning and decisions to support understanding and ownership.</div><div class=\"zh\">让受影响员工参与规划和决策，有助于理解及形成主人翁意识。</div></div></article><div class=\"note\"><b>老师课堂补充 / Classroom commentary</b><p>老师以员工担心 AI 影响工作保障为例，强调说明目的、听取意见和员工参与。The AI example illustrated job-security concerns.</p></div><div class=\"small-note\"><b>辨析与学习提示 / Study note</b><p>“Encourage critical reflection on barriers to adoption”＝鼓励深入分析新方法为何难以落实，并提出有依据的应对；不只是列出障碍名称。</p></div><div class=\"source\">Lecture 3-Quality Management Methods II-student(1).pdf · PDF pages 47, 48, 49；Lesson3.docx 课堂转录（整理意译）</div>"
+            "html": "<div class=\"summary\"><div class=\"tag\">老师课堂明确强调 / Lecturer emphasis</div><div class=\"grid\"><div class=\"en\"><b>Resistance may reflect fear of the unknown, loss of control, job-security concerns, communication gaps or lack of involvement.</b></div><div class=\"zh\"><b>阻力可能来自对未知的担心、失去控制感、工作保障顾虑、沟通不足或缺少参与。</b></div></div></div><article class=\"card\"><div class=\"grid\"><div class=\"en\">Critical reflection asks why resistance occurs and whether managers have explained the purpose, benefits and expectations.</div><div class=\"zh\">批判性反思是追问阻力为什么出现，以及管理者是否解释了目的、好处和预期。</div></div></article><article class=\"card\"><div class=\"grid\"><div class=\"en\">Involve affected staff in planning and decisions to support understanding and ownership.</div><div class=\"zh\">让受影响员工参与规划和决策，有助于理解及形成主人翁意识。</div></div></article><div class=\"note\"><b>老师课堂补充 / Classroom commentary</b><p>老师以员工担心 AI 影响工作保障为例，强调说明目的、听取意见和员工参与。The AI example illustrated job-security concerns.</p></div><div class=\"small-note\"><b>辨析与学习提示 / Study note</b><p>“Encourage critical reflection on barriers to adoption”＝鼓励深入分析新方法为何难以落实，并提出有依据的应对；不只是列出障碍名称。</p></div><div class=\"source\">Lecture 3-Quality Management Methods II-student(1).pdf · PDF pages 47, 48, 49；Lesson3.docx 课堂转录（整理意译）</div><div class=\"summary\"><div class=\"tag\">课堂照片补全 / Verified classroom supplement</div><h4>Critical reflection：为何难以采用新方法</h4></div><article class=\"card\"><div class=\"grid\"><div class=\"en\">Critically examine barriers to adopting new initiatives, technologies or practices, especially resistance to change and resource constraints, to develop effective responses.</div><div class=\"zh\">深入反思新计划、技术或实践的采用障碍，尤其是变革阻力和资源限制，以形成有效应对策略。</div></div></article><div class=\"source\">课堂照片 IMG_1634(2).jpg · 课堂版 PPT 49 · 学生版 PDF 48</div><div class=\"summary\"><div class=\"tag\">课堂照片补全 / Verified classroom supplement</div><h4>Resistance to change：三个反思角度</h4></div><article class=\"card\"><div class=\"grid\"><div class=\"en\">Personal and cultural factors: fear of the unknown, loss of control and perceived threats to job security. Ask whether organizational culture supports or hinders adaptability.</div><div class=\"zh\">个人与文化因素：害怕未知、失去控制感、认为工作保障受到威胁。反思组织文化是在支持还是妨碍适应。</div></div></article><article class=\"card\"><div class=\"grid\"><div class=\"en\">Communication gaps: do stakeholders understand the purpose and process? Has leadership clearly explained the vision, benefits and expectations?</div><div class=\"zh\">沟通缺口：利益相关者是否理解变革目的及过程？领导是否清楚说明愿景、好处和预期？</div></div></article><article class=\"card\"><div class=\"grid\"><div class=\"en\">Involvement and ownership: were affected people included in planning? Lack of involvement can cause disengagement; participatory decisions may reduce resistance.</div><div class=\"zh\">参与与主人翁意识：受影响的人是否参与规划？缺乏参与可能导致疏离；参与式决策可能减少阻力。</div></div></article><div class=\"source\">课堂照片 IMG_1635(2).jpg · 课堂版 PPT 50 · 学生版 PDF 49</div>",
+            "photoSources": [
+              {
+                "file": "IMG_1634(2).jpg",
+                "classroomSlide": 49,
+                "studentPdfPage": 48
+              },
+              {
+                "file": "IMG_1635(2).jpg",
+                "classroomSlide": 50,
+                "studentPdfPage": 49
+              }
+            ]
           },
           {
             "slide": 50,
@@ -338,7 +423,14 @@
             ],
             "title": "Resource constraints",
             "titleZh": "采用障碍二：资源限制",
-            "html": "<div class=\"summary\"><div class=\"tag\">老师课堂明确强调 / Lecturer emphasis</div><div class=\"grid\"><div class=\"en\"><b>Consider funds, personnel, time, infrastructure, technology and technical support before implementation.</b></div><div class=\"zh\"><b>实施前考虑资金、人手、时间、基础设施、技术与支持能力。</b></div></div></div><article class=\"card\"><div class=\"grid\"><div class=\"en\">Opportunity cost is what must be given up or delayed when resources are committed to a new initiative.</div><div class=\"zh\">机会成本是把资源投入新计划时，需要放弃或推迟的其他选择。</div></div></article><article class=\"card\"><div class=\"grid\"><div class=\"en\">Assess capacity realistically, make trade-offs transparent and prioritize projects with staff input.</div><div class=\"zh\">现实评估能力、清晰说明取舍，并结合员工意见排列项目优先级。</div></div></article><div class=\"note\"><b>老师课堂补充 / Classroom commentary</b><p>老师结尾反复提醒管理者同时考虑 resistance to change 与 resource constraints。Both barriers were repeatedly emphasized at the end.</p></div><div class=\"source\">Lecture 3-Quality Management Methods II-student(1).pdf · PDF pages 50；Lesson3.docx 课堂转录（整理意译）</div>"
+            "html": "<div class=\"summary\"><div class=\"tag\">老师课堂明确强调 / Lecturer emphasis</div><div class=\"grid\"><div class=\"en\"><b>Consider funds, personnel, time, infrastructure, technology and technical support before implementation.</b></div><div class=\"zh\"><b>实施前考虑资金、人手、时间、基础设施、技术与支持能力。</b></div></div></div><article class=\"card\"><div class=\"grid\"><div class=\"en\">Opportunity cost is what must be given up or delayed when resources are committed to a new initiative.</div><div class=\"zh\">机会成本是把资源投入新计划时，需要放弃或推迟的其他选择。</div></div></article><article class=\"card\"><div class=\"grid\"><div class=\"en\">Assess capacity realistically, make trade-offs transparent and prioritize projects with staff input.</div><div class=\"zh\">现实评估能力、清晰说明取舍，并结合员工意见排列项目优先级。</div></div></article><div class=\"note\"><b>老师课堂补充 / Classroom commentary</b><p>老师结尾反复提醒管理者同时考虑 resistance to change 与 resource constraints。Both barriers were repeatedly emphasized at the end.</p></div><div class=\"source\">Lecture 3-Quality Management Methods II-student(1).pdf · PDF pages 50；Lesson3.docx 课堂转录（整理意译）</div><div class=\"summary\"><div class=\"tag\">课堂照片补全 / Verified classroom supplement</div><h4>Resource constraints：三个反思角度</h4></div><article class=\"card\"><div class=\"grid\"><div class=\"en\">Financial and human capital: assess whether funds, personnel and time are sufficient, and whether capacity was realistically assessed before commitment.</div><div class=\"zh\">资金与人力资本：检查资金、人手、时间是否充足，以及作出承诺前是否现实评估了执行能力。</div></div></article><article class=\"card\"><div class=\"grid\"><div class=\"en\">Opportunity costs: identify existing priorities that must be deprioritized to accommodate change; ask whether leadership has made trade-offs transparent.</div><div class=\"zh\">机会成本：明确为新变化需要降低哪些现有任务的优先级；反思领导是否清楚公开了取舍。</div></div></article><article class=\"card\"><div class=\"grid\"><div class=\"en\">Infrastructure and technology: check tools and systems. The slide uses digital learning as an example requiring devices, connectivity and technical support; without these, even well-designed reforms can fail.</div><div class=\"zh\">基础设施与技术：检查工具和系统。课件以数字学习为例，说明需要设备、网络连接及技术支持；缺少这些，即使设计良好的改革也可能失败。</div></div></article><div class=\"source\">课堂照片 IMG_1636(1).jpg · 课堂版 PPT 51 · 学生版 PDF 50</div>",
+            "photoSources": [
+              {
+                "file": "IMG_1636(1).jpg",
+                "classroomSlide": 51,
+                "studentPdfPage": 50
+              }
+            ]
           }
         ]
       }
@@ -1214,7 +1306,112 @@
         "type": "short_answer"
       }
     ],
-    "sourceFooter": "资料依据：Lecture 3-Quality Management Methods II-student(1).pdf（PDF第1–51页）；Lesson3.docx（2026-09-22课堂转录）。练习为新增学习辅助，非教师原题；转录不清之处不作确定考题预测。"
+    "sourceFooter": "资料依据：Lecture 3 学生版PDF（51页）、Lesson3.docx、IMG_1623–IMG_1636 共14张课堂照片。照片中的课堂版PPT共52页；IMG_1624为课堂独立Word补充。练习为学习辅助，非教师原题。",
+    "photoSupplement": {
+      "reviewedPhotos": 14,
+      "studentPdfPages": 51,
+      "classroomPptSlides": 52,
+      "mapping": [
+        {
+          "file": "IMG_1623(2).jpg",
+          "classroomSlide": 10,
+          "studentPdfPage": 10,
+          "chapterId": "L3-02-02",
+          "topic": "Robust design：医学影像完整案例"
+        },
+        {
+          "file": "IMG_1624(2).jpg",
+          "classroomSlide": null,
+          "studentPdfPage": null,
+          "chapterId": "L3-02-04",
+          "topic": "Learning curve：学习曲线（课堂独立补充）"
+        },
+        {
+          "file": "IMG_1625(2).jpg",
+          "classroomSlide": 15,
+          "studentPdfPage": 14,
+          "chapterId": "L3-02-04",
+          "topic": "Taguchi：五个评价维度"
+        },
+        {
+          "file": "IMG_1626(2).jpg",
+          "classroomSlide": 18,
+          "studentPdfPage": 17,
+          "chapterId": "L3-03-02",
+          "topic": "FTA：用药错误案例"
+        },
+        {
+          "file": "IMG_1627(2).jpg",
+          "classroomSlide": 24,
+          "studentPdfPage": 23,
+          "chapterId": "L3-03-04",
+          "topic": "FMEA：输血安全案例"
+        },
+        {
+          "file": "IMG_1628(2).jpg",
+          "classroomSlide": 28,
+          "studentPdfPage": 27,
+          "chapterId": "L3-04-02",
+          "topic": "Kaizen：急诊等候时间的四步改善"
+        },
+        {
+          "file": "IMG_1629(2).jpg",
+          "classroomSlide": 30,
+          "studentPdfPage": 29,
+          "chapterId": "L3-04-02",
+          "topic": "Kaizen：员工参与与出院流程"
+        },
+        {
+          "file": "IMG_1630(2).jpg",
+          "classroomSlide": 37,
+          "studentPdfPage": 36,
+          "chapterId": "L3-05-02",
+          "topic": "Lean：急诊分流案例的完整过程"
+        },
+        {
+          "file": "IMG_1631(2).jpg",
+          "classroomSlide": 38,
+          "studentPdfPage": 37,
+          "chapterId": "L3-05-03",
+          "topic": "Six Sigma 与 Lean：重点区别与互补"
+        },
+        {
+          "file": "IMG_1632(2).jpg",
+          "classroomSlide": 41,
+          "studentPdfPage": 40,
+          "chapterId": "L3-06-01",
+          "topic": "Lean Sigma：手术部位感染案例"
+        },
+        {
+          "file": "IMG_1633(2).jpg",
+          "classroomSlide": 42,
+          "studentPdfPage": 41,
+          "chapterId": "L3-06-02",
+          "topic": "Lean Sigma：成功实施的四项条件"
+        },
+        {
+          "file": "IMG_1634(2).jpg",
+          "classroomSlide": 49,
+          "studentPdfPage": 48,
+          "chapterId": "L3-07-03",
+          "topic": "Critical reflection：为何难以采用新方法"
+        },
+        {
+          "file": "IMG_1635(2).jpg",
+          "classroomSlide": 50,
+          "studentPdfPage": 49,
+          "chapterId": "L3-07-03",
+          "topic": "Resistance to change：三个反思角度"
+        },
+        {
+          "file": "IMG_1636(1).jpg",
+          "classroomSlide": 51,
+          "studentPdfPage": 50,
+          "chapterId": "L3-07-04",
+          "topic": "Resource constraints：三个反思角度"
+        }
+      ]
+    }
   },
   "vocab": {
     "items": [
