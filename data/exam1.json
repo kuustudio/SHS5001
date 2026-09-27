@@ -1777,6 +1777,83 @@
         }
       ],
       "note": ""
+    },
+    {
+      "id": "E1-49",
+      "group": "Lecture 3 · 进阶方法",
+      "pages": [
+        19,
+        20,
+        21,
+        37
+      ],
+      "question": {
+        "en": "Name two barriers to adoption and give two responses for each.",
+        "zh": "列出采用新方法的两大障碍，并分别提出两项应对措施。"
+      },
+      "points": [
+        {
+          "label": "Resistance to change",
+          "zh": "变革阻力",
+          "accept": [
+            "Resistance to change",
+            "变革阻力",
+            "抵制变革"
+          ]
+        },
+        {
+          "label": "Open communication",
+          "zh": "开放沟通",
+          "accept": [
+            "Open communication",
+            "开放沟通",
+            "clear communication",
+            "清晰沟通"
+          ]
+        },
+        {
+          "label": "Staff involvement",
+          "zh": "员工参与",
+          "accept": [
+            "Staff involvement",
+            "员工参与",
+            "staff engagement",
+            "employee involvement",
+            "participatory decision making"
+          ]
+        },
+        {
+          "label": "Resource constraints",
+          "zh": "资源限制",
+          "accept": [
+            "Resource constraints",
+            "资源限制"
+          ]
+        },
+        {
+          "label": "Resource allocation",
+          "zh": "资源配置",
+          "accept": [
+            "Resource allocation",
+            "资源配置",
+            "allocate resources",
+            "合理分配资源"
+          ]
+        },
+        {
+          "label": "Prioritisation",
+          "zh": "优先级安排",
+          "accept": [
+            "Prioritisation",
+            "prioritization",
+            "prioritise",
+            "prioritize",
+            "优先级安排",
+            "排列优先级"
+          ]
+        }
+      ],
+      "note": "参考短答（学习整理，非照片逐字答案）：Resistance to change may come from fear of the unknown or poor communication. Use open communication and staff involvement. Resource constraints include limited funds, staff and time. Use resource allocation and prioritisation. 中文：变革阻力可能来自对未知的担心或沟通不足，可通过开放沟通和员工参与应对；资源限制包括资金、人手及时间不足，应合理配置资源并安排优先级。自查：前两项措施对应变革阻力，后两项对应资源限制；自动匹配不能判断论证是否充分。来源：IMG_1634(3).jpg（课堂PPT第49页）；具体原因与应对结合考试重点PDF第20–21页整理。"
     }
   ],
   "scopeNote": "已核对37页，重复照片合并；第2、34页为Lecture 3目录，第22页为考试通知。通知范围为Lecture 1–3，照片重点不代表排除其他课件内容。",
