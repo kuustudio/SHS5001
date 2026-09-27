@@ -9,6 +9,9 @@ const open=bank.questions.find(q=>q.points.length===1&&q.points[0].label==='Open
 const pdca=bank.questions.find(q=>q.ordered);assert.ok(!ctx.examAssess(pdca,'Act Check Do Plan').full);assert.ok(!ctx.examAssess(pdca,'Plan Do Study Act').full);
 let rendered=0;ctx.examQuestion=()=>rendered++;ctx.examHome=()=>{};
 vm.runInContext(source.slice(source.indexOf('function examStart('),source.indexOf('function examQuestion(')),ctx);
+vm.runInContext(source.slice(source.indexOf('function examBarrierQuestions('),source.indexOf('function examHome(')),ctx);
+ctx.examStart('barriers');assert.equal(ctx.state.exam1Run.ids.length,7);assert.ok(ctx.state.exam1Run.ids.includes('E1-49'));assert.ok(ctx.state.exam1Run.ids.every(id=>/^E1-(43|44|45|46|47|48|49)$/.test(id)));
+vm.runInContext(source.slice(source.indexOf('function examBarriersGuide('),source.indexOf('function examBarrierQuestions(')),ctx);assert.ok(ctx.examBarriersGuide().includes('barriers-study'));
 ctx.examStart('20');assert.equal(ctx.state.exam1Run.ids.length,20);assert.equal(new Set(ctx.state.exam1Run.ids).size,20);
 ctx.state.exam1Run={ids:[open.id,pdca.id],index:0,answers:{},startedAt:Date.now(),finished:false};
 vm.runInContext(source.slice(source.indexOf('function examNext('),source.indexOf('function examResults(')),ctx);
