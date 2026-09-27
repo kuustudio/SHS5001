@@ -171,10 +171,10 @@ $('#voice-locale').addEventListener('change',e=>{state.locale=e.target.value;sav
 $('#import-picker').addEventListener('change',e=>{let f=e.target.files[0];if(!f)return;f.text().then(t=>{try{importJSON(t)}catch(x){notify('导入失败 / Import failed: '+x.message)}});e.target.value=''});
 // Responsive course navigation.
 const sidebar=document.querySelector('.sidebar');sidebar.id='course-sidebar';
-const menuButton=document.createElement('button');menuButton.type='button';menuButton.id='menu-toggle';menuButton.className='smallbtn';menuButton.textContent='☰ 课程菜单';menuButton.setAttribute('aria-controls','course-sidebar');menuButton.setAttribute('aria-expanded','false');document.querySelector('.topbar').prepend(menuButton);
+const menuButton=document.createElement('button');menuButton.type='button';menuButton.id='menu-toggle';menuButton.className='smallbtn';menuButton.textContent='☰ 课程菜单';menuButton.setAttribute('aria-controls','course-sidebar');menuButton.setAttribute('aria-expanded','false');document.body.appendChild(menuButton);
 const menuShade=document.createElement('button');menuShade.type='button';menuShade.id='menu-shade';menuShade.setAttribute('aria-label','关闭课程菜单');menuShade.tabIndex=-1;document.body.appendChild(menuShade);
 const mobileLayout=window.matchMedia('(max-width: 980px)');
-function setMenu(open,restoreFocus=false){document.body.classList.toggle('menu-open',open);menuButton.setAttribute('aria-expanded',String(open));sidebar.inert=mobileLayout.matches&&!open;if(restoreFocus)menuButton.focus()}
+function setMenu(open,restoreFocus=false){menuButton.textContent=open?'✕ 关闭菜单':'☰ 课程菜单';menuButton.setAttribute('aria-label',open?'关闭课程菜单':'打开课程菜单');document.body.classList.toggle('menu-open',open);menuButton.setAttribute('aria-expanded',String(open));sidebar.inert=mobileLayout.matches&&!open;if(restoreFocus)menuButton.focus()}
 menuButton.addEventListener('click',()=>setMenu(!document.body.classList.contains('menu-open')));
 menuShade.addEventListener('click',()=>setMenu(false,true));
 sidebar.addEventListener('click',e=>{if(mobileLayout.matches&&e.target.closest('button'))setMenu(false,true)});
