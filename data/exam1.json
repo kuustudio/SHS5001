@@ -2585,6 +2585,81 @@
         }
       ],
       "note": "复杂性：非线性与变量交互作用；采用：统计能力不足、文化阻力、培训不足。不要把简化表述推成所有田口设计都只能处理线性关系。"
+    },
+    {
+      "id": "E1-80",
+      "group": "Lecture 3 · 采用障碍原题",
+      "question": {
+        "en": "Encourage critical reflection on barriers to adoption such as resistance to change and resource constraints",
+        "zh": "对采用新方法的障碍进行批判性反思，例如变革阻力和资源限制。"
+      },
+      "points": [
+        {
+          "label": "Resistance to change",
+          "zh": "变革阻力",
+          "accept": [
+            "Resistance to change",
+            "变革阻力",
+            "抵制变革"
+          ]
+        },
+        {
+          "label": "Open communication",
+          "zh": "开放沟通",
+          "accept": [
+            "Open communication",
+            "开放沟通",
+            "clear communication",
+            "清晰沟通"
+          ]
+        },
+        {
+          "label": "Staff involvement",
+          "zh": "员工参与",
+          "accept": [
+            "Staff involvement",
+            "员工参与",
+            "staff engagement",
+            "employee involvement",
+            "participatory decision making"
+          ]
+        },
+        {
+          "label": "Resource constraints",
+          "zh": "资源限制",
+          "accept": [
+            "Resource constraints",
+            "资源限制"
+          ]
+        },
+        {
+          "label": "Resource allocation",
+          "zh": "资源配置",
+          "accept": [
+            "Resource allocation",
+            "资源配置",
+            "allocate resources",
+            "合理分配资源"
+          ]
+        },
+        {
+          "label": "Prioritisation",
+          "zh": "优先级安排",
+          "accept": [
+            "Prioritisation",
+            "prioritization",
+            "prioritise",
+            "prioritize",
+            "优先级安排",
+            "排列优先级"
+          ]
+        }
+      ],
+      "answer": {
+        "en": "Resistance to change may come from fear of the unknown. Use open communication and staff involvement to help staff accept changes. Resource constraints include limited funds, staff and time. Improve resource allocation and prioritisation, with AI support where useful. Set clear rules and use human review to check AI suggestions. AI also needs resources and cannot solve every problem.",
+        "zh": "变革阻力可能来自对未知的担心，可通过开放沟通和员工参与帮助员工接受改变。资源限制包括资金、人手和时间不足，应改善资源配置和优先级安排，并适当使用 AI 辅助。通过明确规则和人工审核检查 AI 建议。AI 本身也需要资源，不能解决所有问题。"
+      },
+      "note": "答题顺序：障碍 → 原因 → 应对措施 → 局限。关键词用于快速记忆；回答 critical reflection 时，用简短句子解释原因和措施，并指出措施的局限。"
     }
   ],
   "cases": [
