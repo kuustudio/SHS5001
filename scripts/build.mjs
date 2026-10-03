@@ -11,3 +11,5 @@ for (const file of ['app.js', 'style.css']) copyFileSync(resolve(root, file), re
 console.log('Built dist/index.html, app.js, style.css');
 
 
+
+await import('./build5052.mjs');

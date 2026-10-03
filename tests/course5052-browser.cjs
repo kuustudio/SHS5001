@@ -1,0 +1,28 @@
+const {chromium}=require('playwright'),fs=require('node:fs'),assert=require('node:assert/strict');
+(async()=>{
+const b=await chromium.launch({headless:true,executablePath:process.env.CHROME_PATH||'/root/.cache/ms-playwright/chromium-1161/chrome-linux/chrome',args:['--no-sandbox']});
+const p=await b.newPage({viewport:{width:1440,height:1000}}),errors=[];p.setDefaultTimeout(12000);p.on('pageerror',e=>errors.push(e.message));
+const base=process.env.TEST_URL||'http://127.0.0.1:8765';
+await p.goto(base+'/index.html');await p.locator('a[href="sehs5052.html"]').click();await p.locator('h1').waitFor();assert.ok(await p.locator('h1').innerText().then(s=>s.includes('Cybersecurity')));
+await p.screenshot({path:'/tmp/sehs5052-desktop.png',fullPage:false});
+await p.goto(base+'/sehs5052.html#chapters');assert.equal(await p.locator('.chapter-group').count(),21);assert.equal(await p.locator('.chapter-links button').count(),235);
+await p.goto(base+'/sehs5052.html#foundation');await p.locator('[data-scope="foundation"]').click();assert.equal(await p.locator('#exam-scope').inputValue(),'foundation');await p.locator('[data-start]').click();const combined=await p.evaluate(()=>JSON.parse(localStorage.getItem('sehs5052-academy-v1')).run);const qb=JSON.parse(fs.readFileSync('data/sehs5052/course.json')).questions;for(const l of [1,2,3,4])assert.ok(combined.ids.filter(id=>qb.find(q=>q.id===id).lecture===l).length>=2);
+await p.goto(base+'/sehs5052.html#learn/6/3');await p.locator('.source-text[lang="en"]').waitFor();assert.ok((await p.locator('#content').innerText()).includes('Welcome to Lecture 6'));
+await p.locator('[data-lang="zh"]').click();assert.ok(await p.locator('body').evaluate(e=>e.classList.contains('lang-zh')));await p.locator('[data-lang="en"]').click();assert.ok((await p.locator('h1').innerText()).includes('Deep learning'));
+await p.locator('#search').fill('reconstruction');await p.locator('#search-form button').click();assert.ok(await p.locator('#search-results button').count()>0);
+await p.locator('[data-complete]').click();assert.equal(await p.locator('[data-complete]').getAttribute('aria-pressed'),'true');await p.reload();assert.equal(await p.locator('[data-complete]').getAttribute('aria-pressed'),'true');
+await p.locator('[data-scope="6"]').click();await p.locator('[data-lang="both"]').click();assert.equal(await p.locator('#exam-scope').inputValue(),'6');await p.locator('[data-start]').click();
+let run=await p.evaluate(()=>JSON.parse(localStorage.getItem('sehs5052-academy-v1')).run);assert.equal(run.ids.length,10);assert.equal(new Set(run.ids).size,10);
+const data=JSON.parse(fs.readFileSync('data/sehs5052/course.json'));
+for(let i=0;i<10;i++){const q=data.questions.find(q=>q.id===run.ids[i]);await p.locator(`input[name="answer"][value="${q.correct}"]`).check();if(i===3){await p.reload();assert.equal(await p.locator(`input[name="answer"][value="${q.correct}"]`).isChecked(),true);await p.locator('[data-lang="zh"]').click()}if(i<9)await p.locator(`[data-question="${i+1}"]`).first().click()}
+assert.equal(await p.locator('[data-submit-final]').count(),0);await p.locator('[data-submit-review]').click();await p.locator('[data-submit-final]').click();assert.ok((await p.locator('.score').innerText()).includes('100'));assert.equal(await p.locator('.panel.good').count(),10);
+await p.reload();assert.ok((await p.locator('.score').innerText()).includes('100'));
+const downloadPromise=p.waitForEvent('download');await p.locator('[data-export-result]').click();const download=await downloadPromise;await download.saveAs('/tmp/sehs5052-assessment.html');assert.ok(fs.readFileSync('/tmp/sehs5052-assessment.html','utf8').includes('100/100'));
+await p.locator('[data-scope="6"]').click();await p.locator('[data-start]').click();await p.locator('[data-submit-review]').click();assert.equal(await p.locator('.question-nav button').count(),10);await p.locator('[data-submit-final]').click();assert.ok((await p.locator('.score').innerText()).startsWith('0'));assert.equal(await p.locator('.panel.wrong').count(),10);
+let saved=await p.evaluate(()=>JSON.parse(localStorage.getItem('sehs5052-academy-v1')));assert.equal(saved.history.length,2);assert.equal(saved.wrong.length,10);
+await p.locator('[data-route="revision"]').click();await p.locator('#revision-select').selectOption('6');const dp=p.waitForEvent('download');await p.locator('[data-download="en"]').click();const dl=await dp;await dl.saveAs('/tmp/sehs5052-study.html');assert.ok(fs.readFileSync('/tmp/sehs5052-study.html','utf8').includes('Welcome to Lecture 6'));
+await p.setViewportSize({width:390,height:844});await p.goto(base+'/sehs5052.html#learn/6/3');await p.locator('[data-lang="both"]').click();assert.ok(await p.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));await p.screenshot({path:'/tmp/sehs5052-mobile.png',fullPage:false});
+await p.locator('[data-scope="6"]').click();await p.locator('[data-start]').click();assert.ok(await p.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));await p.screenshot({path:'/tmp/sehs5052-quiz-mobile.png',fullPage:false});
+await p.evaluate(()=>document.documentElement.style.fontSize='32px');assert.ok(await p.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));
+assert.deepEqual(errors,[]);await b.close();console.log('PASS: browser subject navigation, source page, three languages, search, progress restore, scope retention, randomized 10, shuffled grading, resume, submit/lock/results, 100/0 scores, history, downloads, mobile and 200% text without overflow.');
+})().catch(e=>{console.error(e);process.exit(1)});
