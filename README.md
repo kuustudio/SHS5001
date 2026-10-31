@@ -101,3 +101,35 @@ CHROME_PATH=/path/to/chrome TEST_URL=http://127.0.0.1:8765 node tests/course5052
 The subject selector separates SEHS5001 and SEHS5052. SEHS5052 has a Lecture → topic chapter → source-page study unit directory (21 chapters, 235 units). Its dedicated Lecture 1–4 combined assessment draws 10 of 48 questions: at least two from each lecture, plus two random remaining questions. Submission creates a local assessment with lecture diagnostics and a downloadable report. SEHS5001 retains its supplied Lecture 1–3 chapters; Lecture 4 has not been supplied.
 
 Source-page WebP images are compressed at quality 55 without reducing pixel dimensions (450 images: 25.06 MB → 20.40 MB), then losslessly bundled by lecture in `source-assets/*.json.gz`. The build restores all 450 original image bytes using Node built-in gzip support.
+# SEHS5083 Test 1 revision (2026-11-01)
+
+The subject menu now includes **SEHS5083 · Health statistics**. Open
+`sehs5083.html` on the existing deployment. This is a separate subject from
+SEHS5001 healthcare quality and SEHS5052 cybersecurity.
+
+The revision follows `Test 1 Scope.docx` exactly: 30 Chapter 1 slides,
+16 Chapter 2 slides, 14 Chapter 3 slides and 8 Chapter 4 slides. All 68 pages
+retain compressed full-slide images, original text and available speaker notes
+(61 pages), tables, SmartArt and separately labeled unverified OCR. Study
+commentary identifies copied or misleading source statements without altering
+the original extraction.
+
+The 150 simulated questions include 75 basic and 75 advanced questions:
+48 MCQs, 29 short answers, 20 calculations and 53 cases. Each question includes
+source slide references, simple English and Chinese answers, explanations and
+marking points. MCQs are automatically marked; written answers require explicit
+self-assessment. The two mock modes draw balanced questions across all four
+chapters and hide answers until submission. Practice progress and mistakes are
+saved in the current browser.
+
+Printable revision and question/answer reports are under `dist/reports/` after
+`npm run build`. Reviewed source data is in `data/sehs5083/test1.json`, compressed
+image bundles in `source-assets/sehs5083-C*.json.gz`, and printable sources in
+`notes/sehs5083/`. Source filenames, SHA-256 hashes and exact scope are recorded
+in the dataset. The original uploaded PPTX/DOCX files are not required to build
+the site. Regeneration from newly extracted and reviewed files is supported by
+`scripts/assemble5083.py --extracted DIR --content DIR --uploads DIR`.
+
+These questions are learning materials, not official teacher exam questions.
+Mock timings and marks do not establish the actual examination format.
+
